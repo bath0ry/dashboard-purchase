@@ -22,7 +22,8 @@
    "ganho": 0,
    "status": "sem",
    "fonte": "sim-PI",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26092484,
@@ -44,7 +45,8 @@
    "ganho": -80,
    "status": "acima",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26677284,
@@ -66,7 +68,8 @@
    "ganho": 19888,
    "status": "ganho",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26595639,
@@ -92,7 +95,8 @@
    "ganho": 5705.96,
    "status": "ganho",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26031970,
@@ -122,7 +126,8 @@
    "ganho": -6539.7,
    "status": "acima",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26563625,
@@ -144,7 +149,8 @@
    "ganho": 0,
    "status": "sem",
    "fonte": "sim-PI",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26286127,
@@ -166,7 +172,8 @@
    "ganho": -9596.64,
    "status": "acima",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26086551,
@@ -200,7 +207,8 @@
    "ganho": -3865,
    "status": "acima",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26268575,
@@ -222,7 +230,8 @@
    "ganho": 0,
    "status": "sem",
    "fonte": "sim-PI",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26200754,
@@ -238,7 +247,8 @@
    "piUSD": null,
    "ganho": 354.96,
    "status": "ganho",
-   "fonte": "comentario"
+   "fonte": "comentario",
+   "naoPreco": []
   },
   {
    "id": 26011706,
@@ -260,7 +270,8 @@
    "ganho": 0,
    "status": "sem",
    "fonte": "sim-PI",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26123042,
@@ -282,7 +293,8 @@
    "ganho": -7070,
    "status": "acima",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26109128,
@@ -304,7 +316,8 @@
    "ganho": 6400,
    "status": "ganho",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26143876,
@@ -326,7 +339,8 @@
    "ganho": -2020,
    "status": "acima",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26120310,
@@ -352,7 +366,8 @@
    "ganho": 1360,
    "status": "ganho",
    "fonte": "sim-PI",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26080439,
@@ -374,7 +389,8 @@
    "ganho": -8602,
    "status": "acima",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26051470,
@@ -396,7 +412,8 @@
    "ganho": -9638.75,
    "status": "acima",
    "fonte": "sim-PI",
-   "revisar": true
+   "revisar": true,
+   "naoPreco": []
   },
   {
    "id": 26052213,
@@ -418,7 +435,8 @@
    "ganho": 0,
    "status": "sem",
    "fonte": "sim-PI",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26013186,
@@ -434,7 +452,8 @@
    "piUSD": null,
    "ganho": 312.97,
    "status": "ganho",
-   "fonte": "comentario"
+   "fonte": "comentario",
+   "naoPreco": []
   },
   {
    "id": 26005324,
@@ -450,7 +469,8 @@
    "piUSD": null,
    "ganho": 10,
    "status": "ganho",
-   "fonte": "comentario"
+   "fonte": "comentario",
+   "naoPreco": []
   },
   {
    "id": 26550837,
@@ -466,7 +486,8 @@
    "piUSD": null,
    "ganho": null,
    "status": "pendente",
-   "fonte": "-"
+   "fonte": "-",
+   "naoPreco": []
   },
   {
    "id": 26519559,
@@ -482,7 +503,8 @@
    "piUSD": null,
    "ganho": null,
    "status": "pendente",
-   "fonte": "-"
+   "fonte": "-",
+   "naoPreco": []
   },
   {
    "id": 26401050,
@@ -498,7 +520,8 @@
    "piUSD": null,
    "ganho": null,
    "status": "pendente",
-   "fonte": "-"
+   "fonte": "-",
+   "naoPreco": []
   },
   {
    "id": 26401415,
@@ -514,7 +537,8 @@
    "piUSD": null,
    "ganho": null,
    "status": "pendente",
-   "fonte": "-"
+   "fonte": "-",
+   "naoPreco": []
   },
   {
    "id": 26098751,
@@ -530,7 +554,8 @@
    "piUSD": null,
    "ganho": null,
    "status": "pendente",
-   "fonte": "-"
+   "fonte": "-",
+   "naoPreco": []
   },
   {
    "id": 26083103,
@@ -546,7 +571,8 @@
    "piUSD": null,
    "ganho": null,
    "status": "pendente",
-   "fonte": "-"
+   "fonte": "-",
+   "naoPreco": []
   },
   {
    "id": 26161029,
@@ -562,7 +588,8 @@
    "piUSD": null,
    "ganho": null,
    "status": "pendente",
-   "fonte": "-"
+   "fonte": "-",
+   "naoPreco": []
   },
   {
    "id": 26268378,
@@ -578,7 +605,8 @@
    "piUSD": null,
    "ganho": null,
    "status": "pendente",
-   "fonte": "-"
+   "fonte": "-",
+   "naoPreco": []
   },
   {
    "id": 26286118,
@@ -594,7 +622,8 @@
    "piUSD": null,
    "ganho": null,
    "status": "pendente",
-   "fonte": "-"
+   "fonte": "-",
+   "naoPreco": []
   },
   {
    "id": 26083120,
@@ -615,7 +644,8 @@
    "piUSD": 30000,
    "ganho": null,
    "status": "pendente",
-   "fonte": "-"
+   "fonte": "-",
+   "naoPreco": []
   }
  ]
 }
