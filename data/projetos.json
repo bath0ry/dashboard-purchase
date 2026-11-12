@@ -1,0 +1,621 @@
+{
+ "atualizado": "2026-11-12 00:47",
+ "fonte": "Teamwork · Purchase › Projetos Fechados Purchase",
+ "projetos": [
+  {
+   "id": 26535362,
+   "link": "https://project.chinalinktrading.com/app/tasks/26535362",
+   "task": "P1 - STONE SOLUCOES LTDA (C B Rios Mesquita)",
+   "seg": "Químicos",
+   "tipo": "Resina epóxi e diluentes",
+   "comp": "Arthur L.",
+   "mes": "2026-09",
+   "simUSD": 40470.76,
+   "fornecedores": [
+    {
+     "nome": "Fornecedor químicos (PI final)",
+     "piUSD": 40470
+    }
+   ],
+   "nota": "",
+   "piUSD": 40470,
+   "ganho": 0,
+   "status": "sem",
+   "fonte": "sim-PI",
+   "revisar": false
+  },
+  {
+   "id": 26092484,
+   "link": "https://project.chinalinktrading.com/app/tasks/26092484",
+   "task": "P1 - NOVALUZ SERVIÇOS DE ITABIRA LTDA",
+   "seg": "Construção",
+   "tipo": "Casas container (16 un.)",
+   "comp": "Jonathan C.",
+   "mes": "2026-09",
+   "simUSD": 17280,
+   "fornecedores": [
+    {
+     "nome": "Container Speedy House",
+     "piUSD": 17360
+    }
+   ],
+   "nota": "PI atualizada set/26; preço mantido",
+   "piUSD": 17360,
+   "ganho": -80,
+   "status": "acima",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26677284,
+   "link": "https://project.chinalinktrading.com/app/tasks/26677284",
+   "task": "P2 - Silva Gym",
+   "seg": "Fitness / Academia",
+   "tipo": "Equipamentos de musculação",
+   "comp": "Rhaissa L.",
+   "mes": "2026-09",
+   "simUSD": 99440,
+   "fornecedores": [
+    {
+     "nome": "Shandong Luslud Health",
+     "piUSD": 79552
+    }
+   ],
+   "nota": "Simulação com 245 itens x PI com 196: há fornecedor(es) sem PI anexada",
+   "piUSD": 79552,
+   "ganho": 19888,
+   "status": "ganho",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26595639,
+   "link": "https://project.chinalinktrading.com/app/tasks/26595639",
+   "task": "P1 - M.g.v. Construtora e Incorporadora LTDA",
+   "seg": "Fitness / Academia",
+   "tipo": "Equipamentos fitness",
+   "comp": "Rhaissa L.",
+   "mes": "2026-08",
+   "simUSD": 12342.21,
+   "fornecedores": [
+    {
+     "nome": "BRTW",
+     "piUSD": 3835
+    },
+    {
+     "nome": "Minolta",
+     "piUSD": 2801.25
+    }
+   ],
+   "nota": "Minolta ainda sem o item X500B",
+   "piUSD": 6636.25,
+   "ganho": 5705.96,
+   "status": "ganho",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26031970,
+   "link": "https://project.chinalinktrading.com/app/tasks/26031970",
+   "task": "P2 - EHR SOLUTIONS",
+   "seg": "Industrial",
+   "tipo": "Conectores e componentes",
+   "comp": "Jonathan C.",
+   "mes": "2026-08",
+   "simUSD": 15259.3,
+   "fornecedores": [
+    {
+     "nome": "Fornecedor 1 (invoice 巴西)",
+     "piUSD": 21195
+    },
+    {
+     "nome": "Quick connector",
+     "piUSD": 172
+    },
+    {
+     "nome": "KJ",
+     "piUSD": 432
+    }
+   ],
+   "nota": "PI acima da simulação — revisar",
+   "piUSD": 21799,
+   "ganho": -6539.7,
+   "status": "acima",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26563625,
+   "link": "https://project.chinalinktrading.com/app/tasks/26563625",
+   "task": "P1 - Ultrazinco ind comércio metais ltda",
+   "seg": "Máquinas",
+   "tipo": "Máquinas industriais (+ moldes por fora)",
+   "comp": "Arthur L.",
+   "mes": "2026-08",
+   "simUSD": 13800,
+   "fornecedores": [
+    {
+     "nome": "Xinsheng",
+     "piUSD": 13800
+    }
+   ],
+   "nota": "Moldes 9.450 RMB pagos por fora",
+   "piUSD": 13800,
+   "ganho": 0,
+   "status": "sem",
+   "fonte": "sim-PI",
+   "revisar": false
+  },
+  {
+   "id": 26286127,
+   "link": "https://project.chinalinktrading.com/app/tasks/26286127",
+   "task": "P1 - Dega - Logistica e Transporte LTDA",
+   "seg": "Autopeças / Industrial",
+   "tipo": "Rolamentos",
+   "comp": "Jonathan C.",
+   "mes": "2026-06",
+   "simUSD": 28637.56,
+   "fornecedores": [
+    {
+     "nome": "JC (rolamentos)",
+     "piUSD": 38234.2
+    }
+   ],
+   "nota": "Cliente alterou quantidades após a simulação — revisar",
+   "piUSD": 38234.2,
+   "ganho": -9596.64,
+   "status": "acima",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26086551,
+   "link": "https://project.chinalinktrading.com/app/tasks/26086551",
+   "task": "P1 - Moisés de Freitas Oliveira",
+   "seg": "Industrial",
+   "tipo": "Medidores de fluxo e equipamentos",
+   "comp": "Victor Augusto S.",
+   "mes": "2026-06",
+   "simUSD": 16335,
+   "fornecedores": [
+    {
+     "nome": "Beijing Hantai (S1)",
+     "piUSD": 6000
+    },
+    {
+     "nome": "Qingdao Pengrui (S2)",
+     "piUSD": 1500
+    },
+    {
+     "nome": "Foshan Jinshengchi (S3)",
+     "piUSD": 8200
+    },
+    {
+     "nome": "Ningbo Jitian (S4)",
+     "piUSD": 4500
+    }
+   ],
+   "nota": "Cliente mudou p/ 40 un.; PI S1 em atualização",
+   "piUSD": 20200,
+   "ganho": -3865,
+   "status": "acima",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26268575,
+   "link": "https://project.chinalinktrading.com/app/tasks/26268575",
+   "task": "P1 - MANA ORIENTE ASI PARTS LTDA",
+   "seg": "Autopeças / Industrial",
+   "tipo": "Autopeças",
+   "comp": "Jonathan C.",
+   "mes": "2026-05",
+   "simUSD": 8682,
+   "fornecedores": [
+    {
+     "nome": "Jao (1468 pcs)",
+     "piUSD": 8682
+    }
+   ],
+   "nota": "",
+   "piUSD": 8682,
+   "ganho": 0,
+   "status": "sem",
+   "fonte": "sim-PI",
+   "revisar": false
+  },
+  {
+   "id": 26200754,
+   "link": "https://project.chinalinktrading.com/app/tasks/26200754",
+   "task": "P1 - Verdes Mares Comercio de Materiais de Construcao LTDA",
+   "seg": "Construção",
+   "tipo": "Materiais de construção",
+   "comp": "Natalia C.",
+   "mes": "2026-05",
+   "simUSD": null,
+   "fornecedores": [],
+   "nota": "Ganho informado no comentário da PI (PI no SharePoint/RMB)",
+   "piUSD": null,
+   "ganho": 354.96,
+   "status": "ganho",
+   "fonte": "comentario"
+  },
+  {
+   "id": 26011706,
+   "link": "https://project.chinalinktrading.com/app/tasks/26011706",
+   "task": "P1 - CAPSOLUTION",
+   "seg": "Embalagens",
+   "tipo": "Copos descartáveis 3oz/6oz",
+   "comp": "Natalia C.",
+   "mes": "2026-05",
+   "simUSD": 12075,
+   "fornecedores": [
+    {
+     "nome": "Anqing Jinye",
+     "piUSD": 12075
+    }
+   ],
+   "nota": "",
+   "piUSD": 12075,
+   "ganho": 0,
+   "status": "sem",
+   "fonte": "sim-PI",
+   "revisar": false
+  },
+  {
+   "id": 26123042,
+   "link": "https://project.chinalinktrading.com/app/tasks/26123042",
+   "task": "P2 - Mundo das Capas",
+   "seg": "Acessórios / Eletrônicos",
+   "tipo": "Capas (glitter e lisas)",
+   "comp": "Paulo Cesar N.",
+   "mes": "2026-04",
+   "simUSD": 2800,
+   "fornecedores": [
+    {
+     "nome": "26FX (capas)",
+     "piUSD": 9870
+    }
+   ],
+   "nota": "Simulação ajustada (2.800) bem abaixo da PI — revisar arquivo de fechamento",
+   "piUSD": 9870,
+   "ganho": -7070,
+   "status": "acima",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26109128,
+   "link": "https://project.chinalinktrading.com/app/tasks/26109128",
+   "task": "P1 - Plano A Comércio de Produtos Promocionais Ltda",
+   "seg": "Brindes",
+   "tipo": "Toalhas + box",
+   "comp": "—",
+   "mes": "2026-04",
+   "simUSD": 12600,
+   "fornecedores": [
+    {
+     "nome": "Fornecedor toalhas",
+     "piUSD": 6200
+    }
+   ],
+   "nota": "Ganho > 35% — confirmar se a PI cobre todos os itens",
+   "piUSD": 6200,
+   "ganho": 6400,
+   "status": "ganho",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26143876,
+   "link": "https://project.chinalinktrading.com/app/tasks/26143876",
+   "task": "P1 - Nauticomar Hotel Intermares",
+   "seg": "Lazer",
+   "tipo": "Parque aquático inflável",
+   "comp": "Vicenzo S.",
+   "mes": "2026-04",
+   "simUSD": 20200,
+   "fornecedores": [
+    {
+     "nome": "Lilytoys",
+     "piUSD": 22220
+    }
+   ],
+   "nota": "PI acima da simulação",
+   "piUSD": 22220,
+   "ganho": -2020,
+   "status": "acima",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26120310,
+   "link": "https://project.chinalinktrading.com/app/tasks/26120310",
+   "task": "P1/AutoMech - Tecnodiesel Brasil Soares",
+   "seg": "Autopeças / Industrial",
+   "tipo": "Sensores NOx e peças",
+   "comp": "—",
+   "mes": "2026-04",
+   "simUSD": 18360,
+   "fornecedores": [
+    {
+     "nome": "Shanghai Balance (S1)",
+     "piUSD": 12500
+    },
+    {
+     "nome": "S2",
+     "piUSD": 4500
+    }
+   ],
+   "nota": "Ganho informado no comentário: S1 1.250 + S2 110",
+   "piUSD": 17000,
+   "ganho": 1360,
+   "status": "ganho",
+   "fonte": "sim-PI",
+   "revisar": false
+  },
+  {
+   "id": 26080439,
+   "link": "https://project.chinalinktrading.com/app/tasks/26080439",
+   "task": "P1 - SRP Alumínio",
+   "seg": "Ferragens",
+   "tipo": "Rodízios",
+   "comp": "Natalia C.",
+   "mes": "2026-04",
+   "simUSD": 20258,
+   "fornecedores": [
+    {
+     "nome": "Yier HK / rodízios",
+     "piUSD": 28860
+    }
+   ],
+   "nota": "PI revisada com aumento de matéria-prima",
+   "piUSD": 28860,
+   "ganho": -8602,
+   "status": "acima",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26051470,
+   "link": "https://project.chinalinktrading.com/app/tasks/26051470",
+   "task": "P1 - D & P Enxovais Comercial LTDA",
+   "seg": "Mobilidade elétrica",
+   "tipo": "Veículos elétricos (lítio)",
+   "comp": "Victor Augusto S.",
+   "mes": "2026-04",
+   "simUSD": 22706.25,
+   "fornecedores": [
+    {
+     "nome": "Linyi Kelansini",
+     "piUSD": 32345
+    }
+   ],
+   "nota": "Comentário: 'PI atualizada com ganho nosso' — revisar escopo",
+   "piUSD": 32345,
+   "ganho": -9638.75,
+   "status": "acima",
+   "fonte": "sim-PI",
+   "revisar": true
+  },
+  {
+   "id": 26052213,
+   "link": "https://project.chinalinktrading.com/app/tasks/26052213",
+   "task": "P1 - Rf Atacado Distribuidor e Industria LTDA",
+   "seg": "Atacado / Distribuição",
+   "tipo": "Mercadorias diversas",
+   "comp": "Victor Augusto S.",
+   "mes": "2026-04",
+   "simUSD": 33411,
+   "fornecedores": [
+    {
+     "nome": "Fornecedor (Nilton Ferraz)",
+     "piUSD": 33411
+    }
+   ],
+   "nota": "",
+   "piUSD": 33411,
+   "ganho": 0,
+   "status": "sem",
+   "fonte": "sim-PI",
+   "revisar": false
+  },
+  {
+   "id": 26013186,
+   "link": "https://project.chinalinktrading.com/app/tasks/26013186",
+   "task": "P1 - AGROVESSO",
+   "seg": "Agro",
+   "tipo": "Tela sombrite",
+   "comp": "Apollo D.",
+   "mes": "2026-03",
+   "simUSD": null,
+   "fornecedores": [],
+   "nota": "Ganho informado no comentário da PI (PI no SharePoint/RMB)",
+   "piUSD": null,
+   "ganho": 312.97,
+   "status": "ganho",
+   "fonte": "comentario"
+  },
+  {
+   "id": 26005324,
+   "link": "https://project.chinalinktrading.com/app/tasks/26005324",
+   "task": "P1 - Dalia Varejo",
+   "seg": "Varejo",
+   "tipo": "—",
+   "comp": "Natalia C.",
+   "mes": "2026-03",
+   "simUSD": null,
+   "fornecedores": [],
+   "nota": "Ganho informado no comentário da PI (PI no SharePoint/RMB)",
+   "piUSD": null,
+   "ganho": 10,
+   "status": "ganho",
+   "fonte": "comentario"
+  },
+  {
+   "id": 26550837,
+   "link": "https://project.chinalinktrading.com/app/tasks/26550837",
+   "task": "Prime Fit LTDA",
+   "seg": "Fitness / Academia",
+   "tipo": "Equipamentos fitness",
+   "comp": "Arthur L.",
+   "mes": "2026-08",
+   "simUSD": null,
+   "fornecedores": [],
+   "nota": "PI não anexada",
+   "piUSD": null,
+   "ganho": null,
+   "status": "pendente",
+   "fonte": "-"
+  },
+  {
+   "id": 26519559,
+   "link": "https://project.chinalinktrading.com/app/tasks/26519559",
+   "task": "P2 - Smart Luizetti",
+   "seg": "Impressão 3D",
+   "tipo": "Filamentos",
+   "comp": "Alan C.",
+   "mes": "2026-07",
+   "simUSD": null,
+   "fornecedores": [],
+   "nota": "PI no SharePoint",
+   "piUSD": null,
+   "ganho": null,
+   "status": "pendente",
+   "fonte": "-"
+  },
+  {
+   "id": 26401050,
+   "link": "https://project.chinalinktrading.com/app/tasks/26401050",
+   "task": "MAXXO COMERCIO E IMPORTACAO LTDA",
+   "seg": "Utilidades",
+   "tipo": "Carrinho dobrável",
+   "comp": "Paulo Cesar N.",
+   "mes": "2026-06",
+   "simUSD": null,
+   "fornecedores": [],
+   "nota": "PI não anexada",
+   "piUSD": null,
+   "ganho": null,
+   "status": "pendente",
+   "fonte": "-"
+  },
+  {
+   "id": 26401415,
+   "link": "https://project.chinalinktrading.com/app/tasks/26401415",
+   "task": "P1 - ANDAIMES PORTO LTDA",
+   "seg": "Construção",
+   "tipo": "Andaimes",
+   "comp": "Camily T.",
+   "mes": "2026-06",
+   "simUSD": null,
+   "fornecedores": [],
+   "nota": "PI no SharePoint (mesmo preço)",
+   "piUSD": null,
+   "ganho": null,
+   "status": "pendente",
+   "fonte": "-"
+  },
+  {
+   "id": 26098751,
+   "link": "https://project.chinalinktrading.com/app/tasks/26098751",
+   "task": "P1 - Sr Com. e Serv. LTDA",
+   "seg": "Fitness / Academia",
+   "tipo": "Equipamentos (BRTW)",
+   "comp": "—",
+   "mes": "2026-04",
+   "simUSD": 37656,
+   "fornecedores": [],
+   "nota": "PI > 10 MB (não lida)",
+   "piUSD": null,
+   "ganho": null,
+   "status": "pendente",
+   "fonte": "-"
+  },
+  {
+   "id": 26083103,
+   "link": "https://project.chinalinktrading.com/app/tasks/26083103",
+   "task": "P1 - Aquarius Comercio de Produtos Alimenticios",
+   "seg": "Máquinas",
+   "tipo": "Colheitadeira (Harvester)",
+   "comp": "Jonathan C.",
+   "mes": "2026-04",
+   "simUSD": 28714,
+   "fornecedores": [],
+   "nota": "PI em imagem (sem texto)",
+   "piUSD": null,
+   "ganho": null,
+   "status": "pendente",
+   "fonte": "-"
+  },
+  {
+   "id": 26161029,
+   "link": "https://project.chinalinktrading.com/app/tasks/26161029",
+   "task": "P1 - S/A LUCIANO NUNES PINTO",
+   "seg": "Máquinas",
+   "tipo": "Motor / equipamentos",
+   "comp": "Arthur L.",
+   "mes": "2026-05",
+   "simUSD": null,
+   "fornecedores": [],
+   "nota": "Arquivos > 10 MB",
+   "piUSD": null,
+   "ganho": null,
+   "status": "pendente",
+   "fonte": "-"
+  },
+  {
+   "id": 26268378,
+   "link": "https://project.chinalinktrading.com/app/tasks/26268378",
+   "task": "P1 - Sacx Suporte",
+   "seg": "Varejo",
+   "tipo": "—",
+   "comp": "—",
+   "mes": "2026-05",
+   "simUSD": 1500,
+   "fornecedores": [],
+   "nota": "PI ilegível no Teamwork",
+   "piUSD": null,
+   "ganho": null,
+   "status": "pendente",
+   "fonte": "-"
+  },
+  {
+   "id": 26286118,
+   "link": "https://project.chinalinktrading.com/app/tasks/26286118",
+   "task": "P1 - Justi Equipamentos",
+   "seg": "Máquinas",
+   "tipo": "Equipamentos",
+   "comp": "Natalia C.",
+   "mes": "2026-05",
+   "simUSD": null,
+   "fornecedores": [],
+   "nota": "PI não anexada",
+   "piUSD": null,
+   "ganho": null,
+   "status": "pendente",
+   "fonte": "-"
+  },
+  {
+   "id": 26083120,
+   "link": "https://project.chinalinktrading.com/app/tasks/26083120",
+   "task": "P1 - MOTORTEC FIRE LTDA",
+   "seg": "Máquinas",
+   "tipo": "Máquina (3 un.)",
+   "comp": "Renato N.",
+   "mes": "2026-04",
+   "simUSD": null,
+   "fornecedores": [
+    {
+     "nome": "Smile",
+     "piUSD": 30000
+    }
+   ],
+   "nota": "Simulação > 10 MB (não lida)",
+   "piUSD": 30000,
+   "ganho": null,
+   "status": "pendente",
+   "fonte": "-"
+  }
+ ]
+}
