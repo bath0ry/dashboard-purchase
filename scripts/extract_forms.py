@@ -4,7 +4,7 @@ Fonte principal: Sales Support (414644) › "Handover - Delivery" (1638997) — 
 Complemento:     Sales Support (414644) › "Purchase - Ganho" (1639147) — mesmo formulário, enviado ao Purchase.
 Corte: tasks criadas a partir de 2026-07-01.
 
-Uso: python3 scripts/extract_forms.py handover.json ganho.json [data/projetos.json] [fob.json]
+Uso: python3 scripts/extract_forms.py handover.json ganho.json [data/projetos.json] [fob.json] [data/ganhos_comentarios.json]
   handover.json / ganho.json = saída de twprojects-list_tasks (fields id,name,createdAt,status,description)
   data/projetos.json existente (opcional) = preserva FOB/PI/não-preço/segmento já levantados
   fob.json (opcional) = {task_id: {"valorMercadoriaUSD":..., "incoterm":..., "piUSD":..., "fornecedores":[...], "simFile":..., "seg":..., "tipo":...}}
@@ -104,6 +104,8 @@ def main():
     ganho = json.load(open(sys.argv[2]))["tasks"] if len(sys.argv) > 2 else []
     out_path = pathlib.Path(sys.argv[3]) if len(sys.argv) > 3 else pathlib.Path("data/projetos.json")
     fob = json.load(open(sys.argv[4])) if len(sys.argv) > 4 else {}
+    # ganhos levantados nas conversas (comentários) das tasks de Handover / Purchase-Ganho / Projetos Fechados
+    coment = json.load(open(sys.argv[5])) if len(sys.argv) > 5 and pathlib.Path(sys.argv[5]).exists() else {}
     antigo = {}
     if out_path.exists():
         try: antigo = {str(p["id"]): p for p in json.load(open(out_path))["projetos"]}
@@ -142,6 +144,14 @@ def main():
         p["seg"] = ext.get("seg") or segmento(p["cliente"])
         p["tipo"] = ext.get("tipo") or "—"
         # ganho: valor informado no formulário; se só veio %, converte com o FOB; se não informado, usa simulação − PI
+        p["ganhoFonte"] = "formulário" if p["temGanho"] else ""
+        c = coment.get(str(p["id"])) or (coment.get(p.get("purchaseTask", "").rsplit("/", 1)[-1]) if p.get("purchaseTask") else None)
+        if c:  # a conversa da task é mais recente que o formulário e prevalece
+            p["temGanho"] = bool(c.get("temGanho", True))
+            p["ganhoInformado"] = c.get("ganhoUSD"); p["ganhoPct"] = c.get("ganhoPct", p["ganhoPct"] if c.get("ganhoUSD") is None else None)
+            p["ganhoFonte"] = f"comentário de {c.get('autor','?')} em {c.get('data','?')}"
+            p["ganhoComentario"] = dict(texto=c.get("texto", ""), link=c.get("link", ""), autor=c.get("autor", ""), data=c.get("data", ""))
+            if c.get("nota"): p["nota"] = c["nota"]
         g = p["ganhoInformado"]
         if g is None and p["ganhoPct"] and p.get("valorMercadoriaUSD"): g = round(p["valorMercadoriaUSD"] * p["ganhoPct"] / 100, 2)
         if g is None and p["temGanho"] and p.get("valorMercadoriaUSD") and p.get("piUSD"): g = round(p["valorMercadoriaUSD"] - p["piUSD"], 2)
@@ -163,7 +173,7 @@ def main():
     agora = datetime.datetime.now(zoneinfo.ZoneInfo("America/Sao_Paulo")).strftime("%Y-%m-%d %H:%M")
     out_path.parent.mkdir(parents=True, exist_ok=True)
     json.dump(dict(atualizado=agora, desde=CORTE,
-                   fonte="Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho",
+                   fonte="Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
                    projetos=lista), open(out_path, "w"), ensure_ascii=False, indent=1)
     com = [p for p in lista if p["status"] == "ganho"]
     print(f"{len(lista)} projetos | com ganho {len(com)} | US$ {sum(p['ganho'] for p in com):,.2f} | sem valor {sum(p['status']=='ganho_sem_valor' for p in lista)}")
