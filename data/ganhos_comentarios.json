@@ -1,0 +1,63 @@
+{
+ "26741932": {
+  "ganhoUSD": 135,
+  "autor": "Jonathan Corrêa",
+  "data": "2026-09-10",
+  "texto": "Foi 1% de ganho 135 dolares",
+  "link": "https://project.chinalinktrading.com/app/tasks/26741932"
+ },
+ "26611823": {
+  "ganhoUSD": 655.42,
+  "autor": "Arthur Leite",
+  "data": "2026-08-18",
+  "texto": "Ganho de 655,42USD",
+  "link": "https://project.chinalinktrading.com/app/tasks/26611823"
+ },
+ "26657425": {
+  "ganhoUSD": 211.03,
+  "autor": "Rhaissa Leite",
+  "data": "2026-08-26",
+  "texto": "Após correção com a fornecedora, informo que o ganho atual é de 211,03 (antes: 155,60)",
+  "link": "https://project.chinalinktrading.com/app/tasks/26657425"
+ },
+ "26765213": {
+  "ganhoUSD": 300,
+  "autor": "Bruna Zambao",
+  "data": "2026-09-16",
+  "texto": "Personalização da caixa custa US$ 200 e o cliente pagará US$ 500 (pode mudar se o preço da caixa mudar)",
+  "link": "https://project.chinalinktrading.com/app/tasks/26765213",
+  "nota": "Ganho de US$ 300 na personalização da gift box; confirmar valor final"
+ },
+ "26987151": {
+  "ganhoUSD": 40,
+  "autor": "Erika Matos / Antonio Rosa",
+  "data": "2026-11-09",
+  "texto": "Diferença de 40 USD, posso deixar de ganho? — pode sim",
+  "link": "https://project.chinalinktrading.com/app/tasks/26987151"
+ },
+ "26931890": {
+  "temGanho": false,
+  "ganhoUSD": 0,
+  "autor": "Vitória Silvestre",
+  "data": "2026-11-06",
+  "texto": "Não precisa atualizar a simu porque está correta, só não vai ter o ganho de 300 USD",
+  "link": "https://project.chinalinktrading.com/app/tasks/26931890",
+  "nota": "Ganho de US$ 300 do formulário cancelado na conversa da task"
+ },
+ "26562821": {
+  "ganhoUSD": null,
+  "autor": "Thiago Masaki",
+  "data": "2026-08-13",
+  "texto": "A diferença no valor se trata de um ganho de produto",
+  "link": "https://project.chinalinktrading.com/app/tasks/26562821",
+  "nota": "Ganho de produto citado sem valor; calcular simulação − PI"
+ },
+ "26536292": {
+  "ganhoUSD": null,
+  "autor": "Jonathan Corrêa",
+  "data": "2026-08-04",
+  "texto": "Atenção ao ganho de produto nas 3 PIs (projeto pausado)",
+  "link": "https://project.chinalinktrading.com/app/tasks/26536292",
+  "nota": "Ganho de produto citado nas 3 PIs, sem valor; projeto pausado"
+ }
+}
