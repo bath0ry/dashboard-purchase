@@ -1,10 +1,12 @@
 """Gera index.html (GitHub/standalone) e dist/artifact.html (página publicada no Claude) a partir de data/projetos.json."""
-import json, pathlib, re
+import json, pathlib, re, base64
 root = pathlib.Path(__file__).resolve().parent.parent
 data = json.loads((root/"data/projetos.json").read_text(encoding="utf-8"))
+for p in data["projetos"]: p.setdefault("naoPreco", [])
 html = (root/"src/template.html").read_text(encoding="utf-8")
+logo = "data:image/png;base64," + base64.b64encode((root/"assets/logo-white.png").read_bytes()).decode()
 payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-full = html.replace("/*__DATA__*/", payload)
+full = html.replace("/*__LOGO__*/", logo).replace("/*__DATA__*/", payload)
 (root/"index.html").write_text(full, encoding="utf-8")
 frag = re.sub(r"<!DOCTYPE html>\s*<html[^>]*>\s*<head>\s*<meta charset=\"UTF-8\">\s*<meta name=\"viewport\"[^>]*>\s*", "", full)
 frag = frag.replace("</head>\n<body>", "").replace("</body>\n</html>", "")
