@@ -7,7 +7,7 @@ Corte: tasks criadas a partir de 2026-07-01.
 Uso: python3 scripts/extract_forms.py handover.json ganho.json [data/projetos.json] [fob.json]
   handover.json / ganho.json = saída de twprojects-list_tasks (fields id,name,createdAt,status,description)
   data/projetos.json existente (opcional) = preserva FOB/PI/não-preço/segmento já levantados
-  fob.json (opcional) = {task_id: {"simUSD":..., "piUSD":..., "fornecedores":[...], "simFile":..., "seg":..., "tipo":...}}
+  fob.json (opcional) = {task_id: {"valorMercadoriaUSD":..., "incoterm":..., "piUSD":..., "fornecedores":[...], "simFile":..., "seg":..., "tipo":...}}
 """
 import json, re, sys, datetime, unicodedata, zoneinfo, pathlib
 
@@ -134,21 +134,23 @@ def main():
     lista = []
     for p in projetos.values():
         ext = {**antigo.get(str(p["id"]), {}), **fob.get(str(p["id"]), {})}
-        for f in ("simUSD", "piUSD", "fornecedores", "simFile", "naoPreco", "nota"):
+        if ext.get("simUSD") and not ext.get("valorMercadoriaUSD"): ext["valorMercadoriaUSD"] = ext["simUSD"]  # formato antigo
+        for f in ("valorMercadoriaUSD", "incoterm", "piUSD", "fornecedores", "simFile", "simTentado", "nota"):
             if f in ext and ext[f] not in (None, "", []): p[f] = ext[f]
-        p.setdefault("fornecedores", []); p.setdefault("naoPreco", []); p.setdefault("nota", "")
+        p.pop("simUSD", None); p.pop("naoPreco", None)
+        p.setdefault("fornecedores", []); p.setdefault("nota", "")
         p["seg"] = ext.get("seg") or segmento(p["cliente"])
         p["tipo"] = ext.get("tipo") or "—"
         # ganho: valor informado no formulário; se só veio %, converte com o FOB; se não informado, usa simulação − PI
         g = p["ganhoInformado"]
-        if g is None and p["ganhoPct"] and p.get("simUSD"): g = round(p["simUSD"] * p["ganhoPct"] / 100, 2)
-        if g is None and p["temGanho"] and p.get("simUSD") and p.get("piUSD"): g = round(p["simUSD"] - p["piUSD"], 2)
+        if g is None and p["ganhoPct"] and p.get("valorMercadoriaUSD"): g = round(p["valorMercadoriaUSD"] * p["ganhoPct"] / 100, 2)
+        if g is None and p["temGanho"] and p.get("valorMercadoriaUSD") and p.get("piUSD"): g = round(p["valorMercadoriaUSD"] - p["piUSD"], 2)
         p["ganho"] = g if p["temGanho"] else 0.0
         if p["temGanho"] and g is None:
             p["status"] = "ganho_sem_valor"; p["nota"] = p["nota"] or f"Ganho informado como '{p['ganhoTexto'] or 'Sim'}' sem valor em USD"
         else:
             p["status"] = "ganho" if p["temGanho"] and (p["ganho"] or 0) > 0 else "sem"
-        p["revisar"] = p["status"] == "ganho_sem_valor" or bool(p.get("simUSD") and p["ganho"] and p["ganho"] / p["simUSD"] > 0.35)
+        p["revisar"] = p["status"] == "ganho_sem_valor" or bool(p.get("valorMercadoriaUSD") and p["ganho"] and p["ganho"] / p["valorMercadoriaUSD"] > 0.35)
         lista.append(p)
     import collections  # unifica grafias do mesmo nome (com/sem acento)
     for campo_nome in ("comercial", "comp"):
