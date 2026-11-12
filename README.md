@@ -1,6 +1,17 @@
 # Dashboard de Ganhos · Purchase (China Link)
 
-Dashboard de KPIs do time de Purchase: ganho por projeto fechado (simulação × PI final), por segmento, tipo de produto, comprador e mês.
+Dashboard de KPIs do time de Purchase (identidade visual China Link): resultado financeiro por projeto fechado (simulação × PI final), por segmento, tipo de produto, comprador e mês. Atualizado 1x por dia.
+
+## KPIs — 1. Resultado financeiro
+| KPI | Cálculo | Meta inicial |
+|---|---|---|
+| Saving total (USD) | Σ (FOB simulado − PI final) dos projetos com ganho | baseline após o piloto |
+| Saving % | Saving total ÷ Σ FOB simulado | 3–5% |
+| Taxa de ganho | Projetos com ganho ÷ projetos fechados | ≥ 60% |
+| Ganho médio por projeto | Saving total ÷ projetos fechados | tendência mensal |
+| Saving não-preço (USD) | Pagamento, frete interno, amostras e peças grátis em USD | registrar em 100% |
+
+Registro do saving não-preço no comentário da PI: `Não-preço: pagamento 20/80 – US$ 350` (tipos: pagamento, frete, amostra, peças, outro).
 
 ## Regra de cálculo
 - **Valor inicial**: `VALOR FOB` (USD) da simulação de fechamento anexada na task (aba `CONVENCIONAL`, célula B10).
@@ -18,6 +29,7 @@ src/template.html          front-end (HTML/CSS/JS puro, sem dependências)
 scripts/build.py           injeta o JSON no template -> index.html e dist/artifact.html
 scripts/sim_fob.py         lê o VALOR FOB das simulações (.xlsx)
 scripts/pi_total.py        acha o TOTAL das PIs (.xlsx/.xls); PDFs via `pdftotext -layout`
+assets/logo-white.png      logo (manual de marca 2026)
 ```
 
 ## Atualizar
