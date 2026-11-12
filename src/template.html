@@ -5,109 +5,129 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ganhos Purchase China Link</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap">
 <style>
-  /* Layout: cabeçalho navy da marca, KPIs no topo, gráficos, tabela de projetos. */
+  /* Layout: faixa azul da marca (60%) com logo e filtros; vermelho (30%) só em destaques e alertas;
+     KPIs com meta logo abaixo, depois tendência, distribuição e a tabela de projetos.
+     Tipografia: Brunson (manual) -> Anton como substituta web nos títulos; Montserrat no corpo. */
   :root{
-    --navy:#0B2545; --navy-2:#13315C; --head:#0B2545; --head-2:#13315C; --head-line:#2C4C7C; --head-sub:#AFC3E0;
-    --red:#C8102E; --amber:#9A6412;
-    --bg:#F4F6FA; --card:#FFFFFF; --soft:#FAFBFD; --track:#EEF1F6; --text:#1B2433; --muted:#5E6A80; --line:#E3E7EE;
-    --pos:#1E8E5A; --neg:#C8102E; --neutral:#A7B0C0;
-    --pill-ganho:#E3F4EC; --pill-sem:#ECEEF2; --pill-acima:#FBE6E9; --pill-pend:#FFF4D6; --pill-pend-fg:#8A6400; --pill-sem-fg:#4A5468;
+    --brand-blue:#001489; --brand-red:#E10600; --brand-white:#FFFFFF; --brand-black:#000000;
+    --band:#001489; --band-2:#0A1F9E; --band-line:#2A3DB0; --band-sub:#B9C3F2;
+    --bg:#F3F5FA; --card:#FFFFFF; --soft:#EEF1FA; --track:#E3E8F6; --text:#0B1030; --muted:#56608A; --line:#DDE2F0;
+    --ink:#001489; --accent:#E10600; --bar:#001489;
+    --pos:#12805C; --neg:#E10600; --warn:#A15C00; --neutral:#A9B2CF;
+    --pill-ok:#DFF3EA; --pill-bad:#FDE3E1; --pill-mid:#ECEEF6; --pill-warn:#FFF1D9;
+    --display:"Anton","Brunson","Impact","Arial Narrow",sans-serif;
+    --body:"Montserrat","Segoe UI",Arial,sans-serif;
   }
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-    --navy:#9DB8E0; --navy-2:#13315C; --head:#081A33; --head-2:#13315C; --head-line:#2C4C7C; --head-sub:#AFC3E0;
-    --red:#E0445C; --amber:#E0A84A; --bg:#0E141E; --card:#161E2B; --soft:#1B2433; --track:#232D3D; --text:#E4E9F2; --muted:#9AA5B8; --line:#2A3445;
-    --pos:#4CC38A; --neg:#F06A7E; --neutral:#5D6880;
-    --pill-ganho:#173A2A; --pill-sem:#26303F; --pill-acima:#45202A; --pill-pend:#3D3016; --pill-pend-fg:#F0C674; --pill-sem-fg:#C3CBD8; color-scheme:dark } }
+    --band:#000F66; --band-2:#0A1F9E; --band-line:#2A3DB0; --band-sub:#B9C3F2;
+    --bg:#030824; --card:#0A1240; --soft:#0F1A52; --track:#16225F; --text:#EEF1FF; --muted:#A3ACD6; --line:#1C2A6B;
+    --ink:#C9D2FF; --accent:#FF3B30; --bar:#4D6BFF; --pos:#43D19A; --neg:#FF5A4F; --warn:#F3B04B; --neutral:#4A5690;
+    --pill-ok:#0E3A2D; --pill-bad:#4A1210; --pill-mid:#18245E; --pill-warn:#40300E; color-scheme:dark } }
   :root[data-theme="dark"]{
-    --navy:#9DB8E0; --navy-2:#13315C; --head:#081A33; --head-2:#13315C; --head-line:#2C4C7C; --head-sub:#AFC3E0;
-    --red:#E0445C; --amber:#E0A84A; --bg:#0E141E; --card:#161E2B; --soft:#1B2433; --track:#232D3D; --text:#E4E9F2; --muted:#9AA5B8; --line:#2A3445;
-    --pos:#4CC38A; --neg:#F06A7E; --neutral:#5D6880;
-    --pill-ganho:#173A2A; --pill-sem:#26303F; --pill-acima:#45202A; --pill-pend:#3D3016; --pill-pend-fg:#F0C674; --pill-sem-fg:#C3CBD8; color-scheme:dark }
+    --band:#000F66; --band-2:#0A1F9E; --band-line:#2A3DB0; --band-sub:#B9C3F2;
+    --bg:#030824; --card:#0A1240; --soft:#0F1A52; --track:#16225F; --text:#EEF1FF; --muted:#A3ACD6; --line:#1C2A6B;
+    --ink:#C9D2FF; --accent:#FF3B30; --bar:#4D6BFF; --pos:#43D19A; --neg:#FF5A4F; --warn:#F3B04B; --neutral:#4A5690;
+    --pill-ok:#0E3A2D; --pill-bad:#4A1210; --pill-mid:#18245E; --pill-warn:#40300E; color-scheme:dark }
+
   *{box-sizing:border-box}
-  body{margin:0;font-family:"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);font-size:14px}
-  header{background:var(--head);color:#fff;padding-block:14px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:4px solid var(--red)}
-  .brand{display:flex;align-items:center;gap:12px}
-  .logo{width:38px;height:38px;border-radius:8px;background:#C8102E;color:#fff;display:grid;place-items:center;font-weight:800}
-  .brand h1{font-size:18px;margin:0}
-  .brand small{display:block;color:var(--head-sub);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
-  .upd{font-size:11px;color:var(--head-sub);margin-top:2px}
+  body{margin:0;font-family:var(--body);background:var(--bg);color:var(--text);font-size:14px;line-height:1.45}
+  .gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  header{background:var(--band);color:#fff;border-bottom:4px solid var(--brand-red)}
+  .head-in{max-width:1320px;margin:0 auto;padding-block:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+  .brand{display:flex;align-items:center;gap:16px;min-width:0}
+  .brand img{height:44px;width:auto;display:block}
+  .brand .sep{width:1px;align-self:stretch;background:var(--band-line)}
+  .brand small{display:block;color:var(--band-sub);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+  .brand h1{font-family:var(--display);font-weight:400;font-size:28px;letter-spacing:.01em;margin:0;line-height:1.05;text-transform:uppercase;text-wrap:balance}
+  .upd{font-size:11px;color:var(--band-sub);margin-top:3px}
   .filters{display:flex;gap:8px;flex-wrap:wrap}
-  select{background:var(--head-2);color:#fff;border:1px solid var(--head-line);border-radius:6px;padding:7px 10px;font-size:13px;max-width:220px}
-  main{max-width:1320px;margin:0 auto;padding-block:20px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-  .section-title{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin:22px 0 10px;font-weight:700}
+  select{font-family:var(--body);background:var(--band-2);color:#fff;border:1px solid var(--band-line);border-radius:8px;padding:8px 10px;font-size:13px;max-width:220px}
+  select:focus-visible,.tab:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  main{max-width:1320px;margin:0 auto;padding-block:22px 40px}
+  h2.sec{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:20px;letter-spacing:.02em;color:var(--ink);margin:28px 0 12px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  h2.sec span{font-family:var(--body);font-size:12px;text-transform:none;letter-spacing:0;color:var(--muted);font-weight:500}
+  h2.sec:first-child{margin-top:0}
   .grid{display:grid;gap:14px}
-  .kpis{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}
-  .kpi .label{font-size:12px;color:var(--muted)}
-  .kpi .value{font-size:24px;white-space:nowrap;font-weight:700;margin-top:6px;color:var(--navy)}
-  .kpi .sub{font-size:12px;margin-top:4px;color:var(--muted)}
-  .kpi.accent{border-top:3px solid var(--red)}
-  .up{color:var(--pos)} .down{color:var(--neg)} .warn{color:var(--amber)}
-  .two{grid-template-columns:2fr 1fr} .three{grid-template-columns:repeat(3,1fr)}
+  .kpis{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0}
+  .kpi{display:flex;flex-direction:column;gap:6px}
+  .kpi .label{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+  .kpi .value{font-family:var(--display);font-size:34px;line-height:1;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .kpi .calc{font-size:11px;color:var(--muted)}
+  .kpi .sub{font-size:12px;color:var(--muted)}
+  .meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:8px;border-top:1px dashed var(--line);font-size:12px}
+  .chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:700;white-space:nowrap}
+  .ok{background:var(--pill-ok);color:var(--pos)} .bad{background:var(--pill-bad);color:var(--neg)}
+  .mid{background:var(--pill-mid);color:var(--muted)} .wrn{background:var(--pill-warn);color:var(--warn)}
+  .gauge{height:6px;background:var(--track);border-radius:3px;position:relative;overflow:hidden}
+  .gauge i{position:absolute;inset:0 auto 0 0;background:var(--bar);border-radius:3px}
+  .gauge b{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--accent)}
+  .up{color:var(--pos)} .down{color:var(--neg)}
+  .two{grid-template-columns:3fr 2fr} .three{grid-template-columns:repeat(3,1fr)}
   @media(max-width:900px){.two,.three{grid-template-columns:1fr}}
-  .card h3{margin:0 0 12px;font-size:14px;color:var(--navy)}
-  .card h3 small{font-weight:400;color:var(--muted);font-size:11px}
-  .bars{display:flex;align-items:flex-end;gap:10px;height:180px;padding-top:10px;border-bottom:1px solid var(--line)}
-  .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px}
-  .bar-stack{width:100%;max-width:38px;display:flex;flex-direction:column;justify-content:flex-end;height:85%}
-  .bar{width:100%;background:var(--navy);border-radius:4px 4px 0 0}
-  .bar-val{font-size:10px;color:var(--muted)}
-  .bar-labels{display:flex;gap:10px;margin-top:6px}
-  .bar-labels span{flex:1;text-align:center;font-size:11px;color:var(--muted)}
-  .hrow{display:grid;grid-template-columns:130px 1fr 84px;align-items:center;gap:10px;margin:10px 0;font-size:13px}
+  .card h3{margin:0 0 12px;font-size:14px;color:var(--ink);font-weight:700}
+  .card h3 small{font-weight:500;color:var(--muted);font-size:11px}
+  .chart{width:100%;height:auto;display:block}
+  .chart text{font-family:var(--body);fill:var(--muted);font-size:11px}
+  .chart .lbl{fill:var(--text);font-weight:600}
+  .hrow{display:grid;grid-template-columns:minmax(0,130px) 1fr 84px;align-items:center;gap:10px;margin:10px 0;font-size:13px}
   .hrow span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .hrow span:last-child{text-align:right;font-variant-numeric:tabular-nums}
   .track{background:var(--track);border-radius:4px;height:12px;overflow:hidden}
-  .fill{height:100%;background:var(--navy);border-radius:4px}
-  .fill.red{background:var(--red)}
+  .fill{height:100%;background:var(--bar);border-radius:4px}
+  .fill.red{background:var(--accent)}
   .split{display:flex;height:16px;border-radius:6px;overflow:hidden;margin:10px 0}
   .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
   .dot{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
   .table-wrap{overflow-x:auto}
-  table{width:100%;border-collapse:collapse;font-size:13px;min-width:1050px}
-  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);padding:10px 8px;border-bottom:2px solid var(--line);background:var(--soft)}
+  table{width:100%;border-collapse:collapse;font-size:13px;min-width:1120px}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:10px 8px;border-bottom:2px solid var(--line);background:var(--soft);font-weight:700}
   td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
   td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
   tr.proj{cursor:pointer} tr.proj:hover{background:var(--soft)}
   tr.sup td{background:var(--soft);font-size:12px;color:var(--muted);padding:6px 8px}
   .caret{display:inline-block;width:14px;color:var(--muted)}
-  .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:600;white-space:nowrap}
-  .p-ganho{background:var(--pill-ganho);color:var(--pos)} .p-sem{background:var(--pill-sem);color:var(--pill-sem-fg)}
-  .p-acima{background:var(--pill-acima);color:var(--neg)} .p-pendente{background:var(--pill-pend);color:var(--pill-pend-fg)}
-  .tag{display:inline-block;background:var(--track);color:var(--navy);border-radius:4px;padding:1px 6px;font-size:11px}
-  .flag{display:inline-block;margin-top:4px;font-size:11px;color:var(--amber)}
-  a.tw{color:var(--navy);font-size:11px;text-decoration:none;border-bottom:1px dotted var(--navy)}
+  .tag{display:inline-block;background:var(--track);color:var(--ink);border-radius:4px;padding:1px 6px;font-size:11px;font-weight:600}
+  .flag{display:inline-block;margin-top:4px;font-size:11px;color:var(--warn)}
+  a.tw{color:var(--ink);font-size:11px;text-decoration:none;border-bottom:1px dotted currentColor}
   .tabs{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
-  .tab{border:1px solid var(--line);background:var(--card);border-radius:6px;padding:6px 12px;cursor:pointer;font-size:12px;color:var(--text)}
-  .tab.active{background:var(--head-2);color:#fff;border-color:var(--head-2)}
-  .note{font-size:12px;color:var(--muted);line-height:1.6}
+  .tab{font-family:var(--body);border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:12px;font-weight:600;color:var(--text)}
+  .tab.active{background:var(--brand-blue);color:#fff;border-color:var(--brand-blue)}
+  .note{font-size:12px;color:var(--muted);line-height:1.7}
   .note b{color:var(--text)}
+  .note code{background:var(--soft);padding:1px 5px;border-radius:4px;font-size:11px}
   footer{text-align:center;color:var(--muted);font-size:11px;padding:20px}
 </style>
 </head>
 <body>
-<header>
-  <div class="brand">
-    <div class="logo">CL</div>
-    <div><small>Escritório China · Purchase</small><h1>Dashboard de Ganhos · Projetos Fechados</h1><div class="upd" id="upd"></div></div>
-  </div>
-  <div class="filters">
-    <select id="fPeriodo"></select>
-    <select id="fSegmento"></select>
-    <select id="fComprador"></select>
+<header class="gutter">
+  <div class="head-in">
+    <div class="brand">
+      <img src="/*__LOGO__*/" alt="China Link">
+      <div class="sep" aria-hidden="true"></div>
+      <div><small>Escritório China · Purchase</small><h1>KPIs de Purchase</h1><div class="upd" id="upd"></div></div>
+    </div>
+    <div class="filters">
+      <label class="sr" hidden for="fPeriodo">Mês</label><select id="fPeriodo"></select>
+      <label class="sr" hidden for="fSegmento">Segmento</label><select id="fSegmento"></select>
+      <label class="sr" hidden for="fComprador">Comprador</label><select id="fComprador"></select>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="section-title">Visão geral</div>
+<main class="gutter">
+  <h2 class="sec">1 · Resultado financeiro <span>simulação de fechamento × PI final · metas da fase piloto</span></h2>
   <div class="grid kpis" id="kpis"></div>
 
-  <div class="section-title">Ganhos</div>
+  <h2 class="sec">Tendência <span>por mês de fechamento</span></h2>
   <div class="grid two">
     <div class="card">
-      <h3>Ganho por mês (USD) <small>· simulação − PI final, só ganhos positivos</small></h3>
-      <div class="bars" id="barsMes"></div>
-      <div class="bar-labels" id="barsMesLbl"></div>
+      <h3>Saving por mês (USD) <small>· barras = saving, linha = saving %</small></h3>
+      <div id="chartMes"></div>
     </div>
     <div class="card">
       <h3>Resultado dos projetos fechados</h3>
@@ -116,129 +136,170 @@
   </div>
 
   <div class="grid three" style="margin-top:14px">
-    <div class="card"><h3>Ganho por segmento</h3><div id="porSegmento"></div></div>
-    <div class="card"><h3>Ganho por tipo de produto</h3><div id="porTipo"></div></div>
-    <div class="card"><h3>Ganho por comprador</h3><div id="porComprador"></div></div>
+    <div class="card"><h3>Saving por segmento</h3><div id="porSegmento"></div></div>
+    <div class="card"><h3>Saving por tipo de produto</h3><div id="porTipo"></div></div>
+    <div class="card"><h3>Saving por comprador</h3><div id="porComprador"></div></div>
   </div>
 
-  <div class="section-title">Projetos <span style="text-transform:none;letter-spacing:0;font-weight:400">— clique para ver os fornecedores</span></div>
+  <h2 class="sec">Projetos <span>clique na linha para ver fornecedores e saving não-preço</span></h2>
   <div class="card">
-    <div class="tabs" id="tabs">
+    <div class="tabs" id="tabs" role="tablist">
       <button class="tab active" data-f="all">Todos</button>
       <button class="tab" data-f="ganho">Com ganho</button>
       <button class="tab" data-f="sem">Sem ganho</button>
       <button class="tab" data-f="acima">PI acima da simulação</button>
       <button class="tab" data-f="pendente">PI pendente</button>
       <button class="tab" data-f="revisar">⚠ Revisar</button>
+      <button class="tab" data-f="semnp">Sem saving não-preço</button>
     </div>
     <div class="table-wrap">
       <table>
         <thead><tr>
           <th>Cliente / Task</th><th>Segmento</th><th>Tipo de produto</th><th>Comprador</th><th>Mês</th>
-          <th class="num">Simulação (USD)</th><th class="num">PI final (USD)</th>
-          <th class="num">Ganho USD</th><th class="num">Ganho %</th><th>Status</th>
+          <th class="num">Simulação FOB</th><th class="num">PI final</th>
+          <th class="num">Saving USD</th><th class="num">Saving %</th><th class="num">Não-preço USD</th><th>Status</th>
         </tr></thead>
         <tbody id="tbody"></tbody>
       </table>
     </div>
   </div>
 
-  <div class="section-title">Regra de cálculo</div>
+  <h2 class="sec">Como cada KPI é calculado</h2>
   <div class="card note">
-    <b>Valor inicial</b> = VALOR FOB (USD) da simulação de fechamento anexada na task (aba CONVENCIONAL).<br>
-    <b>Valor final</b> = soma das PIs finais anexadas na task (última versão de cada fornecedor).<br>
-    <b>Ganho</b> = inicial − final. Quando a PI está no SharePoint ou em RMB e o comprador informa o ganho no comentário, usamos o valor do comentário.<br>
-    <b>⚠ Revisar</b> = PI acima da simulação, ganho &gt; 35% ou PI parcial — normalmente simulação desatualizada ou PI de só parte dos fornecedores.<br>
-    <b>Fonte</b>: Teamwork › Purchase › Projetos Fechados Purchase. Atualização automática a cada 24h.
+    <b>Saving total</b> = Σ (VALOR FOB da simulação − PI final) dos projetos com ganho. Quando a PI está no SharePoint ou em RMB e o comprador informa o ganho no comentário, usamos esse valor.<br>
+    <b>Saving %</b> = saving total ÷ Σ VALOR FOB simulado dos projetos fechados com simulação lida.<br>
+    <b>Taxa de ganho</b> = projetos com ganho ÷ projetos fechados (fechados = simulação e PI lidas, ou ganho informado no comentário; pendentes ficam fora).<br>
+    <b>Ganho médio por projeto</b> = saving total ÷ projetos fechados.<br>
+    <b>Saving não-preço</b> = condição de pagamento melhor, frete interno incluso, amostras e peças grátis, convertidos em USD. Registro no comentário da PI:
+    <code>Não-preço: pagamento 20/80 – US$ 350</code> · tipos: <code>pagamento</code>, <code>frete</code>, <code>amostra</code>, <code>peças</code>, <code>outro</code>.<br>
+    <b>⚠ Revisar</b> = PI acima da simulação, saving &gt; 35% ou PI parcial. Fonte: Teamwork › Purchase › Projetos Fechados Purchase. Atualização diária.
   </div>
 </main>
 <footer id="foot"></footer>
 
 <script id="dados" type="application/json">/*__DATA__*/</script>
 <script>
-const DATA = JSON.parse(document.getElementById("dados").textContent);
-const projetos = DATA.projetos;
+let DATA = JSON.parse(document.getElementById("dados").textContent);
+const META = { savingPctMin:3, savingPctMax:5, taxaGanho:60, registroNaoPreco:100 };
 const MES={"01":"Jan","02":"Fev","03":"Mar","04":"Abr","05":"Mai","06":"Jun","07":"Jul","08":"Ago","09":"Set","10":"Out","11":"Nov","12":"Dez"};
 const usd=v=>v==null?"—":"US$ "+Math.round(v).toLocaleString("pt-BR");
-const pct=v=>(isFinite(v)?v.toFixed(1):"0.0")+"%";
-const k=v=>Math.abs(v)>=1000?(v/1000).toFixed(1)+"k":Math.round(v);
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pct=(v,d=1)=>(isFinite(v)?v.toFixed(d).replace(".",","):"0")+"%";
+const kfmt=v=>Math.abs(v)>=1000?(v/1000).toFixed(1).replace(".",",")+"k":String(Math.round(v));
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const mesLbl=m=>MES[m.slice(5)]+"/"+m.slice(2,4);
-projetos.forEach(p=>{p.cliente=p.task.replace(/^P\d+[^-]*-\s*/i,"").replace(/^P\d+\/[^-]*-\s*/i,"");});
-const STATUS={ganho:["Com ganho","p-ganho"],sem:["Sem ganho","p-sem"],acima:["PI acima","p-acima"],pendente:["PI pendente","p-pendente"]};
-
-upd.textContent="Atualizado em "+DATA.atualizado;
-foot.textContent="Fonte: "+DATA.fonte+" · "+projetos.length+" projetos";
-
 const uniq=a=>[...new Set(a)].sort();
-const fill=(el,label,vals,fmt=x=>x)=>{el.innerHTML=`<option value="all">${label}</option>`+vals.map(v=>`<option value="${esc(v)}">${esc(fmt(v))}</option>`).join("");};
-fill(fPeriodo,"Todos os meses",uniq(projetos.map(p=>p.mes)),mesLbl);
-fill(fSegmento,"Todos os segmentos",uniq(projetos.map(p=>p.seg)));
-fill(fComprador,"Todos os compradores",uniq(projetos.map(p=>p.comp)));
-let tabFilter="all"; const abertos=new Set();
+const npUSD=p=>(p.naoPreco||[]).reduce((s,x)=>s+(+x.usd||0),0);
+const STATUS={ganho:["Com ganho","ok"],sem:["Sem ganho","mid"],acima:["PI acima","bad"],pendente:["PI pendente","wrn"]};
+let projetos=[], tabFilter="all"; const abertos=new Set();
+const $=id=>document.getElementById(id);
 
-const filtrados=()=>projetos.filter(p=>(fPeriodo.value==="all"||p.mes===fPeriodo.value)&&(fSegmento.value==="all"||p.seg===fSegmento.value)&&(fComprador.value==="all"||p.comp===fComprador.value));
+function prep(){
+  projetos=DATA.projetos;
+  projetos.forEach(p=>{p.cliente=p.task.replace(/^P\d+(\/[^-]*)?\s*-\s*/i,"");p.naoPreco=p.naoPreco||[];});
+  $("upd").textContent="Atualizado em "+DATA.atualizado;
+  $("foot").textContent="Fonte: "+DATA.fonte+" · "+projetos.length+" projetos";
+  const fill=(el,label,vals,fmt=x=>x)=>{const cur=el.value;el.innerHTML=`<option value="all">${label}</option>`+vals.map(v=>`<option value="${esc(v)}">${esc(fmt(v))}</option>`).join("");if([...el.options].some(o=>o.value===cur))el.value=cur;};
+  fill($("fPeriodo"),"Todos os meses",uniq(projetos.map(p=>p.mes)),mesLbl);
+  fill($("fSegmento"),"Todos os segmentos",uniq(projetos.map(p=>p.seg)));
+  fill($("fComprador"),"Todos os compradores",uniq(projetos.map(p=>p.comp)));
+}
+const filtrados=()=>projetos.filter(p=>($("fPeriodo").value==="all"||p.mes===$("fPeriodo").value)&&($("fSegmento").value==="all"||p.seg===$("fSegmento").value)&&($("fComprador").value==="all"||p.comp===$("fComprador").value));
+
+function stats(list){
+  const fech=list.filter(p=>p.ganho!=null);
+  const com=fech.filter(p=>p.status==="ganho");
+  const saving=com.reduce((s,p)=>s+p.ganho,0);
+  const savingOk=com.filter(p=>!p.revisar).reduce((s,p)=>s+p.ganho,0);
+  const comSim=fech.filter(p=>p.simUSD);
+  const fob=comSim.reduce((s,p)=>s+p.simUSD,0);
+  const np=fech.reduce((s,p)=>s+npUSD(p),0), npReg=fech.filter(p=>p.naoPreco.length).length;
+  return {fech,com,saving,savingOk,fob,savingPct:fob?saving/fob*100:0,taxa:fech.length?com.length/fech.length*100:0,
+    medio:fech.length?saving/fech.length:0,np,npReg,regPct:fech.length?npReg/fech.length*100:0};
+}
+function gauge(v,max,mark){return `<div class="gauge" aria-hidden="true"><i style="width:${Math.min(100,v/max*100)}%"></i><b style="left:${Math.min(100,mark/max*100)}%"></b></div>`;}
+
 function hbars(el,map,cls=""){
   const arr=Object.entries(map).filter(a=>a[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,6); const max=Math.max(1,...arr.map(a=>a[1]));
-  el.innerHTML=arr.length?arr.map(([n,v])=>`<div class="hrow"><span title="${esc(n)}">${esc(n)}</span><div class="track"><div class="fill ${cls}" style="width:${v/max*100}%"></div></div><span style="text-align:right">${usd(v)}</span></div>`).join(""):'<p style="color:var(--muted)">Sem ganhos no filtro</p>';
+  el.innerHTML=arr.length?arr.map(([n,v])=>`<div class="hrow"><span title="${esc(n)}">${esc(n)}</span><div class="track"><div class="fill ${cls}" style="width:${v/max*100}%"></div></div><span>${usd(v)}</span></div>`).join(""):'<p style="color:var(--muted)">Sem saving no filtro</p>';
 }
+
+function chartMes(list){
+  const meses=uniq(projetos.map(p=>p.mes));
+  const rows=meses.map(m=>{const s=stats(list.filter(p=>p.mes===m));return {m,sv:s.saving,pc:s.savingPct,n:s.fech.length}});
+  const W=640,H=230,L=46,R=40,T=22,B=40,iw=W-L-R,ih=H-T-B;
+  const maxV=Math.max(1000,...rows.map(r=>r.sv)); const step=Math.pow(10,Math.floor(Math.log10(maxV)));
+  const top=Math.ceil(maxV/step)*step; const maxP=Math.max(META.savingPctMax+1,...rows.map(r=>r.pc)); const topP=Math.ceil(maxP/5)*5;
+  const bw=iw/rows.length; const y=v=>T+ih-v/top*ih; const yp=v=>T+ih-v/topP*ih;
+  let g="";
+  for(let i=0;i<=4;i++){const v=top*i/4;g+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end">${kfmt(v)}</text><text x="${W-R+6}" y="${yp(topP*i/4)+4}">${Math.round(topP*i/4)}%</text>`;}
+  g+=`<rect x="${L}" y="${yp(META.savingPctMax)}" width="${iw}" height="${yp(META.savingPctMin)-yp(META.savingPctMax)}" fill="var(--accent)" opacity=".08"/><text x="${L+4}" y="${yp(META.savingPctMax)-4}" style="fill:var(--accent)">meta 3–5%</text>`;
+  rows.forEach((r,i)=>{const x=L+i*bw+bw*.2,w=bw*.6;
+    g+=`<rect x="${x}" y="${y(r.sv)}" width="${w}" height="${T+ih-y(r.sv)}" rx="3" fill="var(--bar)"><title>${mesLbl(r.m)}: ${usd(r.sv)} · ${pct(r.pc)} · ${r.n} fechados</title></rect>`;
+    if(r.sv) g+=`<text class="lbl" x="${x+w/2}" y="${y(r.sv)-5}" text-anchor="middle">${kfmt(r.sv)}</text>`;
+    g+=`<text x="${x+w/2}" y="${H-B+16}" text-anchor="middle">${MES[r.m.slice(5)]}</text><text x="${x+w/2}" y="${H-B+30}" text-anchor="middle">${r.n} fech.</text>`;});
+  const pts=rows.map((r,i)=>`${L+i*bw+bw/2},${yp(r.pc)}`).join(" ");
+  g+=`<polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="2"/>`+rows.map((r,i)=>`<circle cx="${L+i*bw+bw/2}" cy="${yp(r.pc)}" r="3.5" fill="var(--accent)"/>`).join("");
+  $("chartMes").innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Saving por mês">${g}</svg>`;
+}
+
 function render(){
-  const d=filtrados();
-  const calc=d.filter(p=>p.ganho!=null);
-  const com=calc.filter(p=>p.status==="ganho"), sem=calc.filter(p=>p.status==="sem"), acima=calc.filter(p=>p.status==="acima");
+  const d=filtrados(), s=stats(d);
   const pend=d.filter(p=>p.status==="pendente"), rev=d.filter(p=>p.revisar);
-  const ganhoTot=com.reduce((s,p)=>s+p.ganho,0);
-  const ganhoOk=com.filter(p=>!p.revisar).reduce((s,p)=>s+p.ganho,0);
-  const comSim=calc.filter(p=>p.simUSD&&p.piUSD);
-  const totSim=comSim.reduce((s,p)=>s+p.simUSD,0), totPI=comSim.reduce((s,p)=>s+p.piUSD,0);
-
-  const kpis=[
-    ["Ganho total (USD)",usd(ganhoTot),`${usd(ganhoOk)} confirmado · ${usd(ganhoTot-ganhoOk)} a validar`,true],
-    ["Simulado × PI",usd(totSim),`PI final: ${usd(totPI)} (${comSim.length} projetos)`],
-    ["Projetos com ganho",com.length,`<span class="up">${pct(calc.length?com.length/calc.length*100:0)} dos calculados</span>`],
-    ["Sem ganho",sem.length,`fechados no preço da simulação`],
-    ["PI acima da simulação",acima.length,`<span class="down">${usd(acima.reduce((s,p)=>s-p.ganho,0))} acima</span>`],
-    ["PI pendente / ⚠ revisar",pend.length+" / "+rev.length,`sem PI legível · dados divergentes`,true],
+  const sem=s.fech.filter(p=>p.status==="sem"), acima=s.fech.filter(p=>p.status==="acima");
+  const metaPct=s.savingPct>=META.savingPctMin?["ok","Na meta"]:["bad","Abaixo da meta"];
+  const metaTx=s.taxa>=META.taxaGanho?["ok","Na meta"]:["bad","Abaixo da meta"];
+  const metaReg=s.regPct>=META.registroNaoPreco?["ok","100% registrado"]:["bad",`${s.npReg} de ${s.fech.length} registrados`];
+  const meses=uniq(d.filter(p=>p.ganho!=null).map(p=>p.mes)); const ult=meses.slice(-2).map(m=>stats(d.filter(p=>p.mes===m)).medio);
+  const tend=ult.length===2?(ult[1]>=ult[0]?`<span class="up">▲ ${usd(ult[1])} no último mês</span>`:`<span class="down">▼ ${usd(ult[1])} no último mês</span>`):"";
+  const K=[
+    {l:"Saving total",v:usd(s.saving),c:"Σ (FOB simulado − PI) dos projetos com ganho",sub:`${usd(s.savingOk)} confirmado · ${usd(s.saving-s.savingOk)} a validar`,m:`<span class="chip mid">Meta: baseline após o piloto</span>`},
+    {l:"Saving %",v:pct(s.savingPct),c:`saving ÷ ${usd(s.fob)} FOB simulado`,sub:gauge(s.savingPct,Math.max(10,s.savingPct),META.savingPctMin),m:`<span class="chip ${metaPct[0]}">${metaPct[1]}</span> meta 3–5%`},
+    {l:"Taxa de ganho",v:pct(s.taxa,0),c:`${s.com.length} com ganho ÷ ${s.fech.length} fechados`,sub:gauge(s.taxa,100,META.taxaGanho),m:`<span class="chip ${metaTx[0]}">${metaTx[1]}</span> meta ≥ 60%`},
+    {l:"Ganho médio por projeto",v:usd(s.medio),c:"saving total ÷ projetos fechados",sub:tend||"&nbsp;",m:`<span class="chip mid">Acompanhar tendência mensal</span>`},
+    {l:"Saving não-preço",v:usd(s.np),c:"pagamento, frete, amostras e peças em USD",sub:gauge(s.regPct,100,META.registroNaoPreco),m:`<span class="chip ${metaReg[0]}">${metaReg[1]}</span> meta 100%`},
   ];
-  kpisEl.innerHTML=kpis.map(([l,v,s,a])=>`<div class="card kpi ${a?"accent":""}"><div class="label">${l}</div><div class="value">${v}</div><div class="sub">${s}</div></div>`).join("");
+  $("kpis").innerHTML=K.map(k=>`<div class="card kpi"><div class="label">${k.l}</div><div class="value">${k.v}</div><div class="calc">${k.c}</div><div class="sub">${k.sub}</div><div class="meta">${k.m}</div></div>`).join("");
 
-  const meses=uniq(projetos.map(p=>p.mes)); const porMes=Object.fromEntries(meses.map(m=>[m,0]));
-  com.forEach(p=>porMes[p.mes]+=p.ganho); const maxM=Math.max(1,...Object.values(porMes));
-  barsMes.innerHTML=meses.map(m=>`<div class="bar-col"><span class="bar-val">${porMes[m]?k(porMes[m]):""}</span><div class="bar-stack"><div class="bar" style="height:${porMes[m]/maxM*100}%"></div></div></div>`).join("");
-  barsMesLbl.innerHTML=meses.map(m=>`<span>${MES[m.slice(5)]}</span>`).join("");
+  chartMes(d);
+  const t=Math.max(1,s.fech.length);
+  $("splitBox").innerHTML=`
+    <div style="font-family:var(--display);font-size:40px;line-height:1;color:var(--ink)">${s.com.length}<span style="font-family:var(--body);font-size:16px;color:var(--muted)"> / ${s.fech.length} fechados</span></div>
+    <div style="color:var(--muted);font-size:12px;margin-top:4px">${d.length} no filtro · ${pend.length} com PI pendente · ${rev.length} para revisar</div>
+    <div class="split"><div style="width:${s.com.length/t*100}%;background:var(--bar)"></div><div style="width:${sem.length/t*100}%;background:var(--neutral)"></div><div style="width:${acima.length/t*100}%;background:var(--accent)"></div></div>
+    <div class="legend"><span><i class="dot" style="background:var(--bar)"></i>Com ganho (${s.com.length})</span><span><i class="dot" style="background:var(--neutral)"></i>Sem ganho (${sem.length})</span><span><i class="dot" style="background:var(--accent)"></i>PI acima (${acima.length})</span></div>
+    <div style="margin-top:14px;font-size:12px;color:var(--muted)">PI acima da simulação soma <b class="down">${usd(acima.reduce((x,p)=>x-p.ganho,0))}</b>. Normalmente é simulação desatualizada (cliente mudou quantidade) ou reajuste do fornecedor.</div>`;
 
-  const t=Math.max(1,calc.length);
-  splitBox.innerHTML=`
-    <div style="font-size:32px;font-weight:700;color:var(--navy)">${com.length}<span style="font-size:16px;color:var(--muted)"> / ${calc.length}</span></div>
-    <div style="color:var(--muted);font-size:12px">projetos com ganho (de ${d.length} no filtro; ${pend.length} sem PI legível)</div>
-    <div class="split"><div style="width:${com.length/t*100}%;background:var(--navy)"></div><div style="width:${sem.length/t*100}%;background:var(--neutral)"></div><div style="width:${acima.length/t*100}%;background:var(--red)"></div></div>
-    <div class="legend"><span><i class="dot" style="background:var(--navy)"></i>Com ganho (${com.length})</span><span><i class="dot" style="background:var(--neutral)"></i>Sem ganho (${sem.length})</span><span><i class="dot" style="background:var(--red)"></i>PI acima (${acima.length})</span></div>`;
+  const agg=key=>{const m={}; s.com.forEach(p=>m[p[key]]=(m[p[key]]||0)+p.ganho); return m;};
+  hbars($("porSegmento"),agg("seg")); hbars($("porTipo"),agg("tipo"),"red"); hbars($("porComprador"),agg("comp"));
 
-  const agg=key=>{const m={}; com.forEach(p=>m[p[key]]=(m[p[key]]||0)+p.ganho); return m;};
-  hbars(porSegmento,agg("seg")); hbars(porTipo,agg("tipo"),"red"); hbars(porComprador,agg("comp"));
-
-  const rows=d.filter(p=>tabFilter==="all"||(tabFilter==="revisar"?p.revisar:p.status===tabFilter));
-  tbody.innerHTML=rows.map(p=>{
-    const open=abertos.has(p.id), gp=p.ganho!=null&&p.simUSD?p.ganho/p.simUSD*100:null;
+  const rows=d.filter(p=>tabFilter==="all"||(tabFilter==="revisar"?p.revisar:tabFilter==="semnp"?(p.ganho!=null&&!p.naoPreco.length):p.status===tabFilter));
+  $("tbody").innerHTML=rows.map(p=>{
+    const open=abertos.has(p.id), gp=p.ganho!=null&&p.simUSD?p.ganho/p.simUSD*100:null, np=npUSD(p);
+    const temSub=p.fornecedores.length||p.naoPreco.length;
     const main=`<tr class="proj" data-id="${p.id}">
-      <td><span class="caret">${p.fornecedores.length?(open?"▾":"▸"):""}</span><b>${esc(p.cliente)}</b><br>
-        <span style="color:var(--muted);margin-left:14px">${esc(p.task)}</span> <a class="tw" href="${p.link}" target="_blank" rel="noopener">abrir task</a>
+      <td><span class="caret">${temSub?(open?"▾":"▸"):""}</span><b>${esc(p.cliente)}</b><br>
+        <span style="color:var(--muted);margin-left:14px">${esc(p.task)}</span> <a class="tw" href="${esc(p.link)}" target="_blank" rel="noopener">abrir task</a>
         ${p.nota?`<br><span class="flag" style="margin-left:14px">${p.revisar?"⚠ ":""}${esc(p.nota)}</span>`:""}</td>
       <td><span class="tag">${esc(p.seg)}</span></td><td>${esc(p.tipo)}</td><td>${esc(p.comp)}</td><td>${mesLbl(p.mes)}</td>
       <td class="num">${usd(p.simUSD)}</td><td class="num">${usd(p.piUSD)}</td>
       <td class="num ${p.ganho>0?"up":p.ganho<0?"down":""}">${usd(p.ganho)}</td>
       <td class="num">${gp==null?"—":pct(gp)}</td>
-      <td><span class="pill ${STATUS[p.status][1]}">${STATUS[p.status][0]}</span></td></tr>`;
-    const subs=open?p.fornecedores.map(f=>`<tr class="sup"><td colspan="6" style="padding-left:30px">↳ ${esc(f.nome)}</td><td class="num">${usd(f.piUSD)}</td><td colspan="3"></td></tr>`).join(""):"";
+      <td class="num">${p.ganho==null?"—":(p.naoPreco.length?usd(np):'<span class="chip wrn">sem registro</span>')}</td>
+      <td><span class="chip ${STATUS[p.status][1]}">${STATUS[p.status][0]}</span></td></tr>`;
+    const subs=open?p.fornecedores.map(f=>`<tr class="sup"><td colspan="6" style="padding-left:30px">↳ ${esc(f.nome)}</td><td class="num">${usd(f.piUSD)}</td><td colspan="4"></td></tr>`).join("")
+      +p.naoPreco.map(x=>`<tr class="sup"><td colspan="9" style="padding-left:30px">↳ Não-preço · ${esc(x.tipo)}: ${esc(x.descricao||"")}</td><td class="num">${usd(x.usd)}</td><td></td></tr>`).join(""):"";
     return main+subs;
-  }).join("") || '<tr><td colspan="10" style="text-align:center;color:var(--muted)">Nenhum projeto</td></tr>';
+  }).join("") || '<tr><td colspan="11" style="text-align:center;color:var(--muted)">Nenhum projeto neste filtro</td></tr>';
 }
-const kpisEl=document.getElementById("kpis");
 document.querySelectorAll("select").forEach(s=>s.addEventListener("change",render));
-tabs.addEventListener("click",e=>{const b=e.target.closest(".tab"); if(!b)return;
+$("tabs").addEventListener("click",e=>{const b=e.target.closest(".tab"); if(!b)return;
   document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active")); b.classList.add("active"); tabFilter=b.dataset.f; render();});
-tbody.addEventListener("click",e=>{if(e.target.closest("a"))return; const r=e.target.closest("tr.proj"); if(!r)return; const id=+r.dataset.id; abertos.has(id)?abertos.delete(id):abertos.add(id); render();});
-render();
+$("tbody").addEventListener("click",e=>{if(e.target.closest("a"))return; const r=e.target.closest("tr.proj"); if(!r)return; const id=+r.dataset.id; abertos.has(id)?abertos.delete(id):abertos.add(id); render();});
+prep(); render();
+// No GitHub Pages, busca o data/projetos.json mais recente (commit diário); sem servidor, usa os dados embutidos.
+if(location.protocol.startsWith("http") && !location.hostname.endsWith("claude.ai")){
+  fetch("data/projetos.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.atualizado&&j.atualizado>DATA.atualizado){DATA=j;prep();render();}}).catch(()=>{});
+}
 </script>
 </body>
 </html>
