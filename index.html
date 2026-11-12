@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ganhos Purchase China Link</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+  /* Layout: cabeçalho navy da marca, KPIs no topo, gráficos, tabela de projetos. */
+  :root{
+    --navy:#0B2545; --navy-2:#13315C; --head:#0B2545; --head-2:#13315C; --head-line:#2C4C7C; --head-sub:#AFC3E0;
+    --red:#C8102E; --amber:#9A6412;
+    --bg:#F4F6FA; --card:#FFFFFF; --soft:#FAFBFD; --track:#EEF1F6; --text:#1B2433; --muted:#5E6A80; --line:#E3E7EE;
+    --pos:#1E8E5A; --neg:#C8102E; --neutral:#A7B0C0;
+    --pill-ganho:#E3F4EC; --pill-sem:#ECEEF2; --pill-acima:#FBE6E9; --pill-pend:#FFF4D6; --pill-pend-fg:#8A6400; --pill-sem-fg:#4A5468;
+  }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+    --navy:#9DB8E0; --navy-2:#13315C; --head:#081A33; --head-2:#13315C; --head-line:#2C4C7C; --head-sub:#AFC3E0;
+    --red:#E0445C; --amber:#E0A84A; --bg:#0E141E; --card:#161E2B; --soft:#1B2433; --track:#232D3D; --text:#E4E9F2; --muted:#9AA5B8; --line:#2A3445;
+    --pos:#4CC38A; --neg:#F06A7E; --neutral:#5D6880;
+    --pill-ganho:#173A2A; --pill-sem:#26303F; --pill-acima:#45202A; --pill-pend:#3D3016; --pill-pend-fg:#F0C674; --pill-sem-fg:#C3CBD8; color-scheme:dark } }
+  :root[data-theme="dark"]{
+    --navy:#9DB8E0; --navy-2:#13315C; --head:#081A33; --head-2:#13315C; --head-line:#2C4C7C; --head-sub:#AFC3E0;
+    --red:#E0445C; --amber:#E0A84A; --bg:#0E141E; --card:#161E2B; --soft:#1B2433; --track:#232D3D; --text:#E4E9F2; --muted:#9AA5B8; --line:#2A3445;
+    --pos:#4CC38A; --neg:#F06A7E; --neutral:#5D6880;
+    --pill-ganho:#173A2A; --pill-sem:#26303F; --pill-acima:#45202A; --pill-pend:#3D3016; --pill-pend-fg:#F0C674; --pill-sem-fg:#C3CBD8; color-scheme:dark }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);font-size:14px}
+  header{background:var(--head);color:#fff;padding-block:14px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:4px solid var(--red)}
+  .brand{display:flex;align-items:center;gap:12px}
+  .logo{width:38px;height:38px;border-radius:8px;background:#C8102E;color:#fff;display:grid;place-items:center;font-weight:800}
+  .brand h1{font-size:18px;margin:0}
+  .brand small{display:block;color:var(--head-sub);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+  .upd{font-size:11px;color:var(--head-sub);margin-top:2px}
+  .filters{display:flex;gap:8px;flex-wrap:wrap}
+  select{background:var(--head-2);color:#fff;border:1px solid var(--head-line);border-radius:6px;padding:7px 10px;font-size:13px;max-width:220px}
+  main{max-width:1320px;margin:0 auto;padding-block:20px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .section-title{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin:22px 0 10px;font-weight:700}
+  .grid{display:grid;gap:14px}
+  .kpis{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}
+  .kpi .label{font-size:12px;color:var(--muted)}
+  .kpi .value{font-size:24px;white-space:nowrap;font-weight:700;margin-top:6px;color:var(--navy)}
+  .kpi .sub{font-size:12px;margin-top:4px;color:var(--muted)}
+  .kpi.accent{border-top:3px solid var(--red)}
+  .up{color:var(--pos)} .down{color:var(--neg)} .warn{color:var(--amber)}
+  .two{grid-template-columns:2fr 1fr} .three{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:900px){.two,.three{grid-template-columns:1fr}}
+  .card h3{margin:0 0 12px;font-size:14px;color:var(--navy)}
+  .card h3 small{font-weight:400;color:var(--muted);font-size:11px}
+  .bars{display:flex;align-items:flex-end;gap:10px;height:180px;padding-top:10px;border-bottom:1px solid var(--line)}
+  .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px}
+  .bar-stack{width:100%;max-width:38px;display:flex;flex-direction:column;justify-content:flex-end;height:85%}
+  .bar{width:100%;background:var(--navy);border-radius:4px 4px 0 0}
+  .bar-val{font-size:10px;color:var(--muted)}
+  .bar-labels{display:flex;gap:10px;margin-top:6px}
+  .bar-labels span{flex:1;text-align:center;font-size:11px;color:var(--muted)}
+  .hrow{display:grid;grid-template-columns:130px 1fr 84px;align-items:center;gap:10px;margin:10px 0;font-size:13px}
+  .hrow span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .track{background:var(--track);border-radius:4px;height:12px;overflow:hidden}
+  .fill{height:100%;background:var(--navy);border-radius:4px}
+  .fill.red{background:var(--red)}
+  .split{display:flex;height:16px;border-radius:6px;overflow:hidden;margin:10px 0}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+  .table-wrap{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:13px;min-width:1050px}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);padding:10px 8px;border-bottom:2px solid var(--line);background:var(--soft)}
+  td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  tr.proj{cursor:pointer} tr.proj:hover{background:var(--soft)}
+  tr.sup td{background:var(--soft);font-size:12px;color:var(--muted);padding:6px 8px}
+  .caret{display:inline-block;width:14px;color:var(--muted)}
+  .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:600;white-space:nowrap}
+  .p-ganho{background:var(--pill-ganho);color:var(--pos)} .p-sem{background:var(--pill-sem);color:var(--pill-sem-fg)}
+  .p-acima{background:var(--pill-acima);color:var(--neg)} .p-pendente{background:var(--pill-pend);color:var(--pill-pend-fg)}
+  .tag{display:inline-block;background:var(--track);color:var(--navy);border-radius:4px;padding:1px 6px;font-size:11px}
+  .flag{display:inline-block;margin-top:4px;font-size:11px;color:var(--amber)}
+  a.tw{color:var(--navy);font-size:11px;text-decoration:none;border-bottom:1px dotted var(--navy)}
+  .tabs{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+  .tab{border:1px solid var(--line);background:var(--card);border-radius:6px;padding:6px 12px;cursor:pointer;font-size:12px;color:var(--text)}
+  .tab.active{background:var(--head-2);color:#fff;border-color:var(--head-2)}
+  .note{font-size:12px;color:var(--muted);line-height:1.6}
+  .note b{color:var(--text)}
+  footer{text-align:center;color:var(--muted);font-size:11px;padding:20px}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">CL</div>
+    <div><small>Escritório China · Purchase</small><h1>Dashboard de Ganhos · Projetos Fechados</h1><div class="upd" id="upd"></div></div>
+  </div>
+  <div class="filters">
+    <select id="fPeriodo"></select>
+    <select id="fSegmento"></select>
+    <select id="fComprador"></select>
+  </div>
+</header>
+
+<main>
+  <div class="section-title">Visão geral</div>
+  <div class="grid kpis" id="kpis"></div>
+
+  <div class="section-title">Ganhos</div>
+  <div class="grid two">
+    <div class="card">
+      <h3>Ganho por mês (USD) <small>· simulação − PI final, só ganhos positivos</small></h3>
+      <div class="bars" id="barsMes"></div>
+      <div class="bar-labels" id="barsMesLbl"></div>
+    </div>
+    <div class="card">
+      <h3>Resultado dos projetos fechados</h3>
+      <div id="splitBox"></div>
+    </div>
+  </div>
+
+  <div class="grid three" style="margin-top:14px">
+    <div class="card"><h3>Ganho por segmento</h3><div id="porSegmento"></div></div>
+    <div class="card"><h3>Ganho por tipo de produto</h3><div id="porTipo"></div></div>
+    <div class="card"><h3>Ganho por comprador</h3><div id="porComprador"></div></div>
+  </div>
+
+  <div class="section-title">Projetos <span style="text-transform:none;letter-spacing:0;font-weight:400">— clique para ver os fornecedores</span></div>
+  <div class="card">
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-f="all">Todos</button>
+      <button class="tab" data-f="ganho">Com ganho</button>
+      <button class="tab" data-f="sem">Sem ganho</button>
+      <button class="tab" data-f="acima">PI acima da simulação</button>
+      <button class="tab" data-f="pendente">PI pendente</button>
+      <button class="tab" data-f="revisar">⚠ Revisar</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>Cliente / Task</th><th>Segmento</th><th>Tipo de produto</th><th>Comprador</th><th>Mês</th>
+          <th class="num">Simulação (USD)</th><th class="num">PI final (USD)</th>
+          <th class="num">Ganho USD</th><th class="num">Ganho %</th><th>Status</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section-title">Regra de cálculo</div>
+  <div class="card note">
+    <b>Valor inicial</b> = VALOR FOB (USD) da simulação de fechamento anexada na task (aba CONVENCIONAL).<br>
+    <b>Valor final</b> = soma das PIs finais anexadas na task (última versão de cada fornecedor).<br>
+    <b>Ganho</b> = inicial − final. Quando a PI está no SharePoint ou em RMB e o comprador informa o ganho no comentário, usamos o valor do comentário.<br>
+    <b>⚠ Revisar</b> = PI acima da simulação, ganho &gt; 35% ou PI parcial — normalmente simulação desatualizada ou PI de só parte dos fornecedores.<br>
+    <b>Fonte</b>: Teamwork › Purchase › Projetos Fechados Purchase. Atualização automática a cada 24h.
+  </div>
+</main>
+<footer id="foot"></footer>
+
+<script id="dados" type="application/json">{"atualizado":"2026-11-12 00:47","fonte":"Teamwork · Purchase › Projetos Fechados Purchase","projetos":[{"id":26535362,"link":"https://project.chinalinktrading.com/app/tasks/26535362","task":"P1 - STONE SOLUCOES LTDA (C B Rios Mesquita)","seg":"Químicos","tipo":"Resina epóxi e diluentes","comp":"Arthur L.","mes":"2026-09","simUSD":40470.76,"fornecedores":[{"nome":"Fornecedor químicos (PI final)","piUSD":40470}],"nota":"","piUSD":40470,"ganho":0,"status":"sem","fonte":"sim-PI","revisar":false},{"id":26092484,"link":"https://project.chinalinktrading.com/app/tasks/26092484","task":"P1 - NOVALUZ SERVIÇOS DE ITABIRA LTDA","seg":"Construção","tipo":"Casas container (16 un.)","comp":"Jonathan C.","mes":"2026-09","simUSD":17280,"fornecedores":[{"nome":"Container Speedy House","piUSD":17360}],"nota":"PI atualizada set/26; preço mantido","piUSD":17360,"ganho":-80,"status":"acima","fonte":"sim-PI","revisar":true},{"id":26677284,"link":"https://project.chinalinktrading.com/app/tasks/26677284","task":"P2 - Silva Gym","seg":"Fitness / Academia","tipo":"Equipamentos de musculação","comp":"Rhaissa L.","mes":"2026-09","simUSD":99440,"fornecedores":[{"nome":"Shandong Luslud Health","piUSD":79552}],"nota":"Simulação com 245 itens x PI com 196: há fornecedor(es) sem PI anexada","piUSD":79552,"ganho":19888,"status":"ganho","fonte":"sim-PI","revisar":true},{"id":26595639,"link":"https://project.chinalinktrading.com/app/tasks/26595639","task":"P1 - M.g.v. Construtora e Incorporadora LTDA","seg":"Fitness / Academia","tipo":"Equipamentos fitness","comp":"Rhaissa L.","mes":"2026-08","simUSD":12342.21,"fornecedores":[{"nome":"BRTW","piUSD":3835},{"nome":"Minolta","piUSD":2801.25}],"nota":"Minolta ainda sem o item X500B","piUSD":6636.25,"ganho":5705.96,"status":"ganho","fonte":"sim-PI","revisar":true},{"id":26031970,"link":"https://project.chinalinktrading.com/app/tasks/26031970","task":"P2 - EHR SOLUTIONS","seg":"Industrial","tipo":"Conectores e componentes","comp":"Jonathan C.","mes":"2026-08","simUSD":15259.3,"fornecedores":[{"nome":"Fornecedor 1 (invoice 巴西)","piUSD":21195},{"nome":"Quick connector","piUSD":172},{"nome":"KJ","piUSD":432}],"nota":"PI acima da simulação — revisar","piUSD":21799,"ganho":-6539.7,"status":"acima","fonte":"sim-PI","revisar":true},{"id":26563625,"link":"https://project.chinalinktrading.com/app/tasks/26563625","task":"P1 - Ultrazinco ind comércio metais ltda","seg":"Máquinas","tipo":"Máquinas industriais (+ moldes por fora)","comp":"Arthur L.","mes":"2026-08","simUSD":13800,"fornecedores":[{"nome":"Xinsheng","piUSD":13800}],"nota":"Moldes 9.450 RMB pagos por fora","piUSD":13800,"ganho":0,"status":"sem","fonte":"sim-PI","revisar":false},{"id":26286127,"link":"https://project.chinalinktrading.com/app/tasks/26286127","task":"P1 - Dega - Logistica e Transporte LTDA","seg":"Autopeças / Industrial","tipo":"Rolamentos","comp":"Jonathan C.","mes":"2026-06","simUSD":28637.56,"fornecedores":[{"nome":"JC (rolamentos)","piUSD":38234.2}],"nota":"Cliente alterou quantidades após a simulação — revisar","piUSD":38234.2,"ganho":-9596.64,"status":"acima","fonte":"sim-PI","revisar":true},{"id":26086551,"link":"https://project.chinalinktrading.com/app/tasks/26086551","task":"P1 - Moisés de Freitas Oliveira","seg":"Industrial","tipo":"Medidores de fluxo e equipamentos","comp":"Victor Augusto S.","mes":"2026-06","simUSD":16335,"fornecedores":[{"nome":"Beijing Hantai (S1)","piUSD":6000},{"nome":"Qingdao Pengrui (S2)","piUSD":1500},{"nome":"Foshan Jinshengchi (S3)","piUSD":8200},{"nome":"Ningbo Jitian (S4)","piUSD":4500}],"nota":"Cliente mudou p/ 40 un.; PI S1 em atualização","piUSD":20200,"ganho":-3865,"status":"acima","fonte":"sim-PI","revisar":true},{"id":26268575,"link":"https://project.chinalinktrading.com/app/tasks/26268575","task":"P1 - MANA ORIENTE ASI PARTS LTDA","seg":"Autopeças / Industrial","tipo":"Autopeças","comp":"Jonathan C.","mes":"2026-05","simUSD":8682,"fornecedores":[{"nome":"Jao (1468 pcs)","piUSD":8682}],"nota":"","piUSD":8682,"ganho":0,"status":"sem","fonte":"sim-PI","revisar":false},{"id":26200754,"link":"https://project.chinalinktrading.com/app/tasks/26200754","task":"P1 - Verdes Mares Comercio de Materiais de Construcao LTDA","seg":"Construção","tipo":"Materiais de construção","comp":"Natalia C.","mes":"2026-05","simUSD":null,"fornecedores":[],"nota":"Ganho informado no comentário da PI (PI no SharePoint/RMB)","piUSD":null,"ganho":354.96,"status":"ganho","fonte":"comentario"},{"id":26011706,"link":"https://project.chinalinktrading.com/app/tasks/26011706","task":"P1 - CAPSOLUTION","seg":"Embalagens","tipo":"Copos descartáveis 3oz/6oz","comp":"Natalia C.","mes":"2026-05","simUSD":12075,"fornecedores":[{"nome":"Anqing Jinye","piUSD":12075}],"nota":"","piUSD":12075,"ganho":0,"status":"sem","fonte":"sim-PI","revisar":false},{"id":26123042,"link":"https://project.chinalinktrading.com/app/tasks/26123042","task":"P2 - Mundo das Capas","seg":"Acessórios / Eletrônicos","tipo":"Capas (glitter e lisas)","comp":"Paulo Cesar N.","mes":"2026-04","simUSD":2800,"fornecedores":[{"nome":"26FX (capas)","piUSD":9870}],"nota":"Simulação ajustada (2.800) bem abaixo da PI — revisar arquivo de fechamento","piUSD":9870,"ganho":-7070,"status":"acima","fonte":"sim-PI","revisar":true},{"id":26109128,"link":"https://project.chinalinktrading.com/app/tasks/26109128","task":"P1 - Plano A Comércio de Produtos Promocionais Ltda","seg":"Brindes","tipo":"Toalhas + box","comp":"—","mes":"2026-04","simUSD":12600,"fornecedores":[{"nome":"Fornecedor toalhas","piUSD":6200}],"nota":"Ganho > 35% — confirmar se a PI cobre todos os itens","piUSD":6200,"ganho":6400,"status":"ganho","fonte":"sim-PI","revisar":true},{"id":26143876,"link":"https://project.chinalinktrading.com/app/tasks/26143876","task":"P1 - Nauticomar Hotel Intermares","seg":"Lazer","tipo":"Parque aquático inflável","comp":"Vicenzo S.","mes":"2026-04","simUSD":20200,"fornecedores":[{"nome":"Lilytoys","piUSD":22220}],"nota":"PI acima da simulação","piUSD":22220,"ganho":-2020,"status":"acima","fonte":"sim-PI","revisar":true},{"id":26120310,"link":"https://project.chinalinktrading.com/app/tasks/26120310","task":"P1/AutoMech - Tecnodiesel Brasil Soares","seg":"Autopeças / Industrial","tipo":"Sensores NOx e peças","comp":"—","mes":"2026-04","simUSD":18360,"fornecedores":[{"nome":"Shanghai Balance (S1)","piUSD":12500},{"nome":"S2","piUSD":4500}],"nota":"Ganho informado no comentário: S1 1.250 + S2 110","piUSD":17000,"ganho":1360,"status":"ganho","fonte":"sim-PI","revisar":false},{"id":26080439,"link":"https://project.chinalinktrading.com/app/tasks/26080439","task":"P1 - SRP Alumínio","seg":"Ferragens","tipo":"Rodízios","comp":"Natalia C.","mes":"2026-04","simUSD":20258,"fornecedores":[{"nome":"Yier HK / rodízios","piUSD":28860}],"nota":"PI revisada com aumento de matéria-prima","piUSD":28860,"ganho":-8602,"status":"acima","fonte":"sim-PI","revisar":true},{"id":26051470,"link":"https://project.chinalinktrading.com/app/tasks/26051470","task":"P1 - D & P Enxovais Comercial LTDA","seg":"Mobilidade elétrica","tipo":"Veículos elétricos (lítio)","comp":"Victor Augusto S.","mes":"2026-04","simUSD":22706.25,"fornecedores":[{"nome":"Linyi Kelansini","piUSD":32345}],"nota":"Comentário: 'PI atualizada com ganho nosso' — revisar escopo","piUSD":32345,"ganho":-9638.75,"status":"acima","fonte":"sim-PI","revisar":true},{"id":26052213,"link":"https://project.chinalinktrading.com/app/tasks/26052213","task":"P1 - Rf Atacado Distribuidor e Industria LTDA","seg":"Atacado / Distribuição","tipo":"Mercadorias diversas","comp":"Victor Augusto S.","mes":"2026-04","simUSD":33411,"fornecedores":[{"nome":"Fornecedor (Nilton Ferraz)","piUSD":33411}],"nota":"","piUSD":33411,"ganho":0,"status":"sem","fonte":"sim-PI","revisar":false},{"id":26013186,"link":"https://project.chinalinktrading.com/app/tasks/26013186","task":"P1 - AGROVESSO","seg":"Agro","tipo":"Tela sombrite","comp":"Apollo D.","mes":"2026-03","simUSD":null,"fornecedores":[],"nota":"Ganho informado no comentário da PI (PI no SharePoint/RMB)","piUSD":null,"ganho":312.97,"status":"ganho","fonte":"comentario"},{"id":26005324,"link":"https://project.chinalinktrading.com/app/tasks/26005324","task":"P1 - Dalia Varejo","seg":"Varejo","tipo":"—","comp":"Natalia C.","mes":"2026-03","simUSD":null,"fornecedores":[],"nota":"Ganho informado no comentário da PI (PI no SharePoint/RMB)","piUSD":null,"ganho":10,"status":"ganho","fonte":"comentario"},{"id":26550837,"link":"https://project.chinalinktrading.com/app/tasks/26550837","task":"Prime Fit LTDA","seg":"Fitness / Academia","tipo":"Equipamentos fitness","comp":"Arthur L.","mes":"2026-08","simUSD":null,"fornecedores":[],"nota":"PI não anexada","piUSD":null,"ganho":null,"status":"pendente","fonte":"-"},{"id":26519559,"link":"https://project.chinalinktrading.com/app/tasks/26519559","task":"P2 - Smart Luizetti","seg":"Impressão 3D","tipo":"Filamentos","comp":"Alan C.","mes":"2026-07","simUSD":null,"fornecedores":[],"nota":"PI no SharePoint","piUSD":null,"ganho":null,"status":"pendente","fonte":"-"},{"id":26401050,"link":"https://project.chinalinktrading.com/app/tasks/26401050","task":"MAXXO COMERCIO E IMPORTACAO LTDA","seg":"Utilidades","tipo":"Carrinho dobrável","comp":"Paulo Cesar N.","mes":"2026-06","simUSD":null,"fornecedores":[],"nota":"PI não anexada","piUSD":null,"ganho":null,"status":"pendente","fonte":"-"},{"id":26401415,"link":"https://project.chinalinktrading.com/app/tasks/26401415","task":"P1 - ANDAIMES PORTO LTDA","seg":"Construção","tipo":"Andaimes","comp":"Camily T.","mes":"2026-06","simUSD":null,"fornecedores":[],"nota":"PI no SharePoint (mesmo preço)","piUSD":null,"ganho":null,"status":"pendente","fonte":"-"},{"id":26098751,"link":"https://project.chinalinktrading.com/app/tasks/26098751","task":"P1 - Sr Com. e Serv. LTDA","seg":"Fitness / Academia","tipo":"Equipamentos (BRTW)","comp":"—","mes":"2026-04","simUSD":37656,"fornecedores":[],"nota":"PI > 10 MB (não lida)","piUSD":null,"ganho":null,"status":"pendente","fonte":"-"},{"id":26083103,"link":"https://project.chinalinktrading.com/app/tasks/26083103","task":"P1 - Aquarius Comercio de Produtos Alimenticios","seg":"Máquinas","tipo":"Colheitadeira (Harvester)","comp":"Jonathan C.","mes":"2026-04","simUSD":28714,"fornecedores":[],"nota":"PI em imagem (sem texto)","piUSD":null,"ganho":null,"status":"pendente","fonte":"-"},{"id":26161029,"link":"https://project.chinalinktrading.com/app/tasks/26161029","task":"P1 - S/A LUCIANO NUNES PINTO","seg":"Máquinas","tipo":"Motor / equipamentos","comp":"Arthur L.","mes":"2026-05","simUSD":null,"fornecedores":[],"nota":"Arquivos > 10 MB","piUSD":null,"ganho":null,"status":"pendente","fonte":"-"},{"id":26268378,"link":"https://project.chinalinktrading.com/app/tasks/26268378","task":"P1 - Sacx Suporte","seg":"Varejo","tipo":"—","comp":"—","mes":"2026-05","simUSD":1500,"fornecedores":[],"nota":"PI ilegível no Teamwork","piUSD":null,"ganho":null,"status":"pendente","fonte":"-"},{"id":26286118,"link":"https://project.chinalinktrading.com/app/tasks/26286118","task":"P1 - Justi Equipamentos","seg":"Máquinas","tipo":"Equipamentos","comp":"Natalia C.","mes":"2026-05","simUSD":null,"fornecedores":[],"nota":"PI não anexada","piUSD":null,"ganho":null,"status":"pendente","fonte":"-"},{"id":26083120,"link":"https://project.chinalinktrading.com/app/tasks/26083120","task":"P1 - MOTORTEC FIRE LTDA","seg":"Máquinas","tipo":"Máquina (3 un.)","comp":"Renato N.","mes":"2026-04","simUSD":null,"fornecedores":[{"nome":"Smile","piUSD":30000}],"nota":"Simulação > 10 MB (não lida)","piUSD":30000,"ganho":null,"status":"pendente","fonte":"-"}]}</script>
+<script>
+const DATA = JSON.parse(document.getElementById("dados").textContent);
+const projetos = DATA.projetos;
+const MES={"01":"Jan","02":"Fev","03":"Mar","04":"Abr","05":"Mai","06":"Jun","07":"Jul","08":"Ago","09":"Set","10":"Out","11":"Nov","12":"Dez"};
+const usd=v=>v==null?"—":"US$ "+Math.round(v).toLocaleString("pt-BR");
+const pct=v=>(isFinite(v)?v.toFixed(1):"0.0")+"%";
+const k=v=>Math.abs(v)>=1000?(v/1000).toFixed(1)+"k":Math.round(v);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mesLbl=m=>MES[m.slice(5)]+"/"+m.slice(2,4);
+projetos.forEach(p=>{p.cliente=p.task.replace(/^P\d+[^-]*-\s*/i,"").replace(/^P\d+\/[^-]*-\s*/i,"");});
+const STATUS={ganho:["Com ganho","p-ganho"],sem:["Sem ganho","p-sem"],acima:["PI acima","p-acima"],pendente:["PI pendente","p-pendente"]};
+
+upd.textContent="Atualizado em "+DATA.atualizado;
+foot.textContent="Fonte: "+DATA.fonte+" · "+projetos.length+" projetos";
+
+const uniq=a=>[...new Set(a)].sort();
+const fill=(el,label,vals,fmt=x=>x)=>{el.innerHTML=`<option value="all">${label}</option>`+vals.map(v=>`<option value="${esc(v)}">${esc(fmt(v))}</option>`).join("");};
+fill(fPeriodo,"Todos os meses",uniq(projetos.map(p=>p.mes)),mesLbl);
+fill(fSegmento,"Todos os segmentos",uniq(projetos.map(p=>p.seg)));
+fill(fComprador,"Todos os compradores",uniq(projetos.map(p=>p.comp)));
+let tabFilter="all"; const abertos=new Set();
+
+const filtrados=()=>projetos.filter(p=>(fPeriodo.value==="all"||p.mes===fPeriodo.value)&&(fSegmento.value==="all"||p.seg===fSegmento.value)&&(fComprador.value==="all"||p.comp===fComprador.value));
+function hbars(el,map,cls=""){
+  const arr=Object.entries(map).filter(a=>a[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,6); const max=Math.max(1,...arr.map(a=>a[1]));
+  el.innerHTML=arr.length?arr.map(([n,v])=>`<div class="hrow"><span title="${esc(n)}">${esc(n)}</span><div class="track"><div class="fill ${cls}" style="width:${v/max*100}%"></div></div><span style="text-align:right">${usd(v)}</span></div>`).join(""):'<p style="color:var(--muted)">Sem ganhos no filtro</p>';
+}
+function render(){
+  const d=filtrados();
+  const calc=d.filter(p=>p.ganho!=null);
+  const com=calc.filter(p=>p.status==="ganho"), sem=calc.filter(p=>p.status==="sem"), acima=calc.filter(p=>p.status==="acima");
+  const pend=d.filter(p=>p.status==="pendente"), rev=d.filter(p=>p.revisar);
+  const ganhoTot=com.reduce((s,p)=>s+p.ganho,0);
+  const ganhoOk=com.filter(p=>!p.revisar).reduce((s,p)=>s+p.ganho,0);
+  const comSim=calc.filter(p=>p.simUSD&&p.piUSD);
+  const totSim=comSim.reduce((s,p)=>s+p.simUSD,0), totPI=comSim.reduce((s,p)=>s+p.piUSD,0);
+
+  const kpis=[
+    ["Ganho total (USD)",usd(ganhoTot),`${usd(ganhoOk)} confirmado · ${usd(ganhoTot-ganhoOk)} a validar`,true],
+    ["Simulado × PI",usd(totSim),`PI final: ${usd(totPI)} (${comSim.length} projetos)`],
+    ["Projetos com ganho",com.length,`<span class="up">${pct(calc.length?com.length/calc.length*100:0)} dos calculados</span>`],
+    ["Sem ganho",sem.length,`fechados no preço da simulação`],
+    ["PI acima da simulação",acima.length,`<span class="down">${usd(acima.reduce((s,p)=>s-p.ganho,0))} acima</span>`],
+    ["PI pendente / ⚠ revisar",pend.length+" / "+rev.length,`sem PI legível · dados divergentes`,true],
+  ];
+  kpisEl.innerHTML=kpis.map(([l,v,s,a])=>`<div class="card kpi ${a?"accent":""}"><div class="label">${l}</div><div class="value">${v}</div><div class="sub">${s}</div></div>`).join("");
+
+  const meses=uniq(projetos.map(p=>p.mes)); const porMes=Object.fromEntries(meses.map(m=>[m,0]));
+  com.forEach(p=>porMes[p.mes]+=p.ganho); const maxM=Math.max(1,...Object.values(porMes));
+  barsMes.innerHTML=meses.map(m=>`<div class="bar-col"><span class="bar-val">${porMes[m]?k(porMes[m]):""}</span><div class="bar-stack"><div class="bar" style="height:${porMes[m]/maxM*100}%"></div></div></div>`).join("");
+  barsMesLbl.innerHTML=meses.map(m=>`<span>${MES[m.slice(5)]}</span>`).join("");
+
+  const t=Math.max(1,calc.length);
+  splitBox.innerHTML=`
+    <div style="font-size:32px;font-weight:700;color:var(--navy)">${com.length}<span style="font-size:16px;color:var(--muted)"> / ${calc.length}</span></div>
+    <div style="color:var(--muted);font-size:12px">projetos com ganho (de ${d.length} no filtro; ${pend.length} sem PI legível)</div>
+    <div class="split"><div style="width:${com.length/t*100}%;background:var(--navy)"></div><div style="width:${sem.length/t*100}%;background:var(--neutral)"></div><div style="width:${acima.length/t*100}%;background:var(--red)"></div></div>
+    <div class="legend"><span><i class="dot" style="background:var(--navy)"></i>Com ganho (${com.length})</span><span><i class="dot" style="background:var(--neutral)"></i>Sem ganho (${sem.length})</span><span><i class="dot" style="background:var(--red)"></i>PI acima (${acima.length})</span></div>`;
+
+  const agg=key=>{const m={}; com.forEach(p=>m[p[key]]=(m[p[key]]||0)+p.ganho); return m;};
+  hbars(porSegmento,agg("seg")); hbars(porTipo,agg("tipo"),"red"); hbars(porComprador,agg("comp"));
+
+  const rows=d.filter(p=>tabFilter==="all"||(tabFilter==="revisar"?p.revisar:p.status===tabFilter));
+  tbody.innerHTML=rows.map(p=>{
+    const open=abertos.has(p.id), gp=p.ganho!=null&&p.simUSD?p.ganho/p.simUSD*100:null;
+    const main=`<tr class="proj" data-id="${p.id}">
+      <td><span class="caret">${p.fornecedores.length?(open?"▾":"▸"):""}</span><b>${esc(p.cliente)}</b><br>
+        <span style="color:var(--muted);margin-left:14px">${esc(p.task)}</span> <a class="tw" href="${p.link}" target="_blank" rel="noopener">abrir task</a>
+        ${p.nota?`<br><span class="flag" style="margin-left:14px">${p.revisar?"⚠ ":""}${esc(p.nota)}</span>`:""}</td>
+      <td><span class="tag">${esc(p.seg)}</span></td><td>${esc(p.tipo)}</td><td>${esc(p.comp)}</td><td>${mesLbl(p.mes)}</td>
+      <td class="num">${usd(p.simUSD)}</td><td class="num">${usd(p.piUSD)}</td>
+      <td class="num ${p.ganho>0?"up":p.ganho<0?"down":""}">${usd(p.ganho)}</td>
+      <td class="num">${gp==null?"—":pct(gp)}</td>
+      <td><span class="pill ${STATUS[p.status][1]}">${STATUS[p.status][0]}</span></td></tr>`;
+    const subs=open?p.fornecedores.map(f=>`<tr class="sup"><td colspan="6" style="padding-left:30px">↳ ${esc(f.nome)}</td><td class="num">${usd(f.piUSD)}</td><td colspan="3"></td></tr>`).join(""):"";
+    return main+subs;
+  }).join("") || '<tr><td colspan="10" style="text-align:center;color:var(--muted)">Nenhum projeto</td></tr>';
+}
+const kpisEl=document.getElementById("kpis");
+document.querySelectorAll("select").forEach(s=>s.addEventListener("change",render));
+tabs.addEventListener("click",e=>{const b=e.target.closest(".tab"); if(!b)return;
+  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active")); b.classList.add("active"); tabFilter=b.dataset.f; render();});
+tbody.addEventListener("click",e=>{if(e.target.closest("a"))return; const r=e.target.closest("tr.proj"); if(!r)return; const id=+r.dataset.id; abertos.has(id)?abertos.delete(id):abertos.add(id); render();});
+render();
+</script>
+</body>
+</html>
