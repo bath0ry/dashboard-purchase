@@ -19,13 +19,14 @@ Registro do saving não-preço no comentário da PI: `Não-preço: pagamento 20/
 - **Ganho** = inicial − final. Se a PI está no SharePoint/RMB e o comprador escreveu o ganho no comentário, usa o valor do comentário.
 - **⚠ Revisar**: PI acima da simulação, ganho > 35% ou PI parcial.
 
-Fonte: Teamwork › projeto **Purchase** › lista **Projetos Fechados Purchase** (tasks nomeadas pelo cliente; anexos nos comentários).
+Fonte: Teamwork › **Sales Support** › listas **Handover - Delivery** (um formulário por projeto fechado) e **Purchase - Ganho**, a partir de 01/07/2026. FOB lido da planilha de simulação anexada na task de handover.
 
 ## Estrutura
 ```
 index.html                 dashboard pronto (arquivo único, abre no navegador / GitHub Pages)
 data/projetos.json         dados extraídos do Teamwork
 src/template.html          front-end (HTML/CSS/JS puro, sem dependências)
+scripts/extract_forms.py   lê os formulários de handover -> data/projetos.json
 scripts/build.py           injeta o JSON no template -> index.html e dist/artifact.html
 scripts/sim_fob.py         lê o VALOR FOB das simulações (.xlsx)
 scripts/pi_total.py        acha o TOTAL das PIs (.xlsx/.xls); PDFs via `pdftotext -layout`
