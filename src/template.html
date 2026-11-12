@@ -112,52 +112,51 @@
       <div><small>Escritório China · Purchase</small><h1>KPIs de Purchase</h1><div class="upd" id="upd"></div></div>
     </div>
     <div class="filters">
-      <label class="sr" hidden for="fPeriodo">Mês</label><select id="fPeriodo"></select>
-      <label class="sr" hidden for="fSegmento">Segmento</label><select id="fSegmento"></select>
-      <label class="sr" hidden for="fComprador">Comprador</label><select id="fComprador"></select>
+      <select id="fPeriodo" aria-label="Mês"></select>
+      <select id="fComprador" aria-label="Comprador"></select>
+      <select id="fComercial" aria-label="Comercial"></select>
+      <select id="fSegmento" aria-label="Segmento"></select>
     </div>
   </div>
 </header>
 
 <main class="gutter">
-  <h2 class="sec">1 · Resultado financeiro <span>simulação de fechamento × PI final · metas da fase piloto</span></h2>
+  <h2 class="sec">1 · Resultado financeiro <span id="escopo"></span></h2>
   <div class="grid kpis" id="kpis"></div>
 
-  <h2 class="sec">Tendência <span>por mês de fechamento</span></h2>
+  <h2 class="sec">Tendência <span>por mês do handover</span></h2>
   <div class="grid two">
     <div class="card">
-      <h3>Saving por mês (USD) <small>· barras = saving, linha = saving %</small></h3>
+      <h3>Saving por mês (USD) <small>· barras = saving, linha = taxa de ganho</small></h3>
       <div id="chartMes"></div>
     </div>
     <div class="card">
-      <h3>Resultado dos projetos fechados</h3>
+      <h3>Projetos fechados no período</h3>
       <div id="splitBox"></div>
     </div>
   </div>
 
   <div class="grid three" style="margin-top:14px">
-    <div class="card"><h3>Saving por segmento</h3><div id="porSegmento"></div></div>
-    <div class="card"><h3>Saving por tipo de produto</h3><div id="porTipo"></div></div>
     <div class="card"><h3>Saving por comprador</h3><div id="porComprador"></div></div>
+    <div class="card"><h3>Taxa de ganho por comprador <small>· mín. 3 projetos</small></h3><div id="taxaComprador"></div></div>
+    <div class="card"><h3>Saving por comercial</h3><div id="porComercial"></div></div>
   </div>
 
-  <h2 class="sec">Projetos <span>clique na linha para ver fornecedores e saving não-preço</span></h2>
+  <h2 class="sec">Projetos fechados <span>formulário de handover · clique para ver detalhes</span></h2>
   <div class="card">
-    <div class="tabs" id="tabs" role="tablist">
+    <div class="tabs" id="tabs">
       <button class="tab active" data-f="all">Todos</button>
       <button class="tab" data-f="ganho">Com ganho</button>
       <button class="tab" data-f="sem">Sem ganho</button>
-      <button class="tab" data-f="acima">PI acima da simulação</button>
-      <button class="tab" data-f="pendente">PI pendente</button>
-      <button class="tab" data-f="revisar">⚠ Revisar</button>
+      <button class="tab" data-f="ganho_sem_valor">⚠ Ganho sem valor</button>
+      <button class="tab" data-f="semfob">Sem FOB lido</button>
       <button class="tab" data-f="semnp">Sem saving não-preço</button>
     </div>
     <div class="table-wrap">
       <table>
         <thead><tr>
-          <th>Cliente / Task</th><th>Segmento</th><th>Tipo de produto</th><th>Comprador</th><th>Mês</th>
-          <th class="num">Simulação FOB</th><th class="num">PI final</th>
-          <th class="num">Saving USD</th><th class="num">Saving %</th><th class="num">Não-preço USD</th><th>Status</th>
+          <th>Cliente / Task</th><th>Comercial</th><th>Comprador</th><th>Data</th><th>Pedido</th><th>Operação</th>
+          <th class="num">FOB simulado</th><th class="num">Saving USD</th><th class="num">Saving %</th><th>Off</th><th class="num">Não-preço</th><th>Status</th>
         </tr></thead>
         <tbody id="tbody"></tbody>
       </table>
@@ -166,13 +165,12 @@
 
   <h2 class="sec">Como cada KPI é calculado</h2>
   <div class="card note">
-    <b>Saving total</b> = Σ (VALOR FOB da simulação − PI final) dos projetos com ganho. Quando a PI está no SharePoint ou em RMB e o comprador informa o ganho no comentário, usamos esse valor.<br>
-    <b>Saving %</b> = saving total ÷ Σ VALOR FOB simulado dos projetos fechados com simulação lida.<br>
-    <b>Taxa de ganho</b> = projetos com ganho ÷ projetos fechados (fechados = simulação e PI lidas, ou ganho informado no comentário; pendentes ficam fora).<br>
-    <b>Ganho médio por projeto</b> = saving total ÷ projetos fechados.<br>
-    <b>Saving não-preço</b> = condição de pagamento melhor, frete interno incluso, amostras e peças grátis, convertidos em USD. Registro no comentário da PI:
-    <code>Não-preço: pagamento 20/80 – US$ 350</code> · tipos: <code>pagamento</code>, <code>frete</code>, <code>amostra</code>, <code>peças</code>, <code>outro</code>.<br>
-    <b>⚠ Revisar</b> = PI acima da simulação, saving &gt; 35% ou PI parcial. Fonte: Teamwork › Purchase › Projetos Fechados Purchase. Atualização diária.
+    <b>Fonte</b>: Teamwork › Sales Support › <b>Handover - Delivery</b> (um formulário por projeto fechado) e <b>Purchase - Ganho</b>, a partir de 01/07/2026. Os campos usados são "Tem ganho?", "Se tiver ganho, quanto?", "Sourcing responsável", "Tem off?" e nº do pedido.<br>
+    <b>Saving total</b> = Σ ganho informado em USD dos projetos com ganho. Se o ganho veio em %, convertemos usando o FOB da simulação.<br>
+    <b>Saving %</b> = saving ÷ Σ VALOR FOB simulado, só nos projetos cuja simulação já foi lida (a cobertura aparece no card). A planilha de simulação anexada na task é lida aos poucos pela rotina diária.<br>
+    <b>Taxa de ganho</b> = projetos com ganho ÷ projetos fechados. <b>Ganho médio por projeto</b> = saving total ÷ projetos fechados.<br>
+    <b>Saving não-preço</b>: registrar no comentário da task <code>Não-preço: pagamento 20/80 – US$ 350</code> (tipos: pagamento, frete, amostra, peças, outro).<br>
+    <b>⚠ Ganho sem valor</b> = formulário marcado "Tem ganho? Sim" sem valor em USD. Corrigir o formulário ou comentar o valor.
   </div>
 </main>
 <footer id="foot"></footer>
@@ -187,116 +185,104 @@ const pct=(v,d=1)=>(isFinite(v)?v.toFixed(d).replace(".",","):"0")+"%";
 const kfmt=v=>Math.abs(v)>=1000?(v/1000).toFixed(1).replace(".",",")+"k":String(Math.round(v));
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const mesLbl=m=>MES[m.slice(5)]+"/"+m.slice(2,4);
-const uniq=a=>[...new Set(a)].sort();
+const dataLbl=d=>d.slice(8,10)+"/"+d.slice(5,7)+"/"+d.slice(2,4);
+const uniq=a=>[...new Set(a)].sort((x,y)=>String(x).localeCompare(String(y),"pt-BR"));
 const npUSD=p=>(p.naoPreco||[]).reduce((s,x)=>s+(+x.usd||0),0);
-const STATUS={ganho:["Com ganho","ok"],sem:["Sem ganho","mid"],acima:["PI acima","bad"],pendente:["PI pendente","wrn"]};
-let projetos=[], tabFilter="all"; const abertos=new Set();
+const STATUS={ganho:["Com ganho","ok"],sem:["Sem ganho","mid"],ganho_sem_valor:["Ganho sem valor","wrn"]};
 const $=id=>document.getElementById(id);
+let projetos=[], tabFilter="all"; const abertos=new Set();
 
 function prep(){
-  projetos=DATA.projetos;
-  projetos.forEach(p=>{p.cliente=p.task.replace(/^P\d+(\/[^-]*)?\s*-\s*/i,"");p.naoPreco=p.naoPreco||[];});
+  projetos=DATA.projetos; projetos.forEach(p=>{p.naoPreco=p.naoPreco||[];p.fornecedores=p.fornecedores||[];});
   $("upd").textContent="Atualizado em "+DATA.atualizado;
-  $("foot").textContent="Fonte: "+DATA.fonte+" · "+projetos.length+" projetos";
+  $("foot").textContent="Fonte: "+DATA.fonte+" · desde "+dataLbl(DATA.desde)+" · "+projetos.length+" projetos";
   const fill=(el,label,vals,fmt=x=>x)=>{const cur=el.value;el.innerHTML=`<option value="all">${label}</option>`+vals.map(v=>`<option value="${esc(v)}">${esc(fmt(v))}</option>`).join("");if([...el.options].some(o=>o.value===cur))el.value=cur;};
   fill($("fPeriodo"),"Todos os meses",uniq(projetos.map(p=>p.mes)),mesLbl);
-  fill($("fSegmento"),"Todos os segmentos",uniq(projetos.map(p=>p.seg)));
   fill($("fComprador"),"Todos os compradores",uniq(projetos.map(p=>p.comp)));
+  fill($("fComercial"),"Todos os comerciais",uniq(projetos.map(p=>p.comercial).filter(Boolean)));
+  fill($("fSegmento"),"Todos os segmentos",uniq(projetos.map(p=>p.seg)));
 }
-const filtrados=()=>projetos.filter(p=>($("fPeriodo").value==="all"||p.mes===$("fPeriodo").value)&&($("fSegmento").value==="all"||p.seg===$("fSegmento").value)&&($("fComprador").value==="all"||p.comp===$("fComprador").value));
+const sel=id=>$(id).value;
+const filtrados=()=>projetos.filter(p=>(sel("fPeriodo")==="all"||p.mes===sel("fPeriodo"))&&(sel("fComprador")==="all"||p.comp===sel("fComprador"))&&(sel("fComercial")==="all"||p.comercial===sel("fComercial"))&&(sel("fSegmento")==="all"||p.seg===sel("fSegmento")));
 
 function stats(list){
-  const fech=list.filter(p=>p.ganho!=null);
-  const com=fech.filter(p=>p.status==="ganho");
-  const saving=com.reduce((s,p)=>s+p.ganho,0);
-  const savingOk=com.filter(p=>!p.revisar).reduce((s,p)=>s+p.ganho,0);
-  const comSim=fech.filter(p=>p.simUSD);
-  const fob=comSim.reduce((s,p)=>s+p.simUSD,0);
-  const np=fech.reduce((s,p)=>s+npUSD(p),0), npReg=fech.filter(p=>p.naoPreco.length).length;
-  return {fech,com,saving,savingOk,fob,savingPct:fob?saving/fob*100:0,taxa:fech.length?com.length/fech.length*100:0,
-    medio:fech.length?saving/fech.length:0,np,npReg,regPct:fech.length?npReg/fech.length*100:0};
+  const com=list.filter(p=>p.temGanho), comValor=list.filter(p=>p.status==="ganho");
+  const saving=comValor.reduce((s,p)=>s+p.ganho,0);
+  const comFob=list.filter(p=>p.simUSD), fob=comFob.reduce((s,p)=>s+p.simUSD,0), savingFob=comFob.reduce((s,p)=>s+(p.ganho||0),0);
+  const npReg=list.filter(p=>p.naoPreco.length).length;
+  return {n:list.length,com,comValor,saving,comFob,fob,savingPct:fob?savingFob/fob*100:null,cobertura:list.length?comFob.length/list.length*100:0,
+    taxa:list.length?com.length/list.length*100:0,medio:list.length?saving/list.length:0,np:list.reduce((s,p)=>s+npUSD(p),0),npReg,regPct:list.length?npReg/list.length*100:0};
 }
-function gauge(v,max,mark){return `<div class="gauge" aria-hidden="true"><i style="width:${Math.min(100,v/max*100)}%"></i><b style="left:${Math.min(100,mark/max*100)}%"></b></div>`;}
-
-function hbars(el,map,cls=""){
-  const arr=Object.entries(map).filter(a=>a[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,6); const max=Math.max(1,...arr.map(a=>a[1]));
-  el.innerHTML=arr.length?arr.map(([n,v])=>`<div class="hrow"><span title="${esc(n)}">${esc(n)}</span><div class="track"><div class="fill ${cls}" style="width:${v/max*100}%"></div></div><span>${usd(v)}</span></div>`).join(""):'<p style="color:var(--muted)">Sem saving no filtro</p>';
+const gauge=(v,max,mark)=>`<div class="gauge" aria-hidden="true"><i style="width:${Math.min(100,v/max*100)}%"></i><b style="left:${Math.min(100,mark/max*100)}%"></b></div>`;
+function hbars(el,arr,fmt=usd,cls=""){
+  arr=arr.filter(a=>a[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,7); const max=Math.max(1e-9,...arr.map(a=>a[1]));
+  el.innerHTML=arr.length?arr.map(([n,v,extra])=>`<div class="hrow"><span title="${esc(n)}">${esc(n)}</span><div class="track"><div class="fill ${cls}" style="width:${v/max*100}%"></div></div><span>${fmt(v)}${extra?` <small style="color:var(--muted)">${extra}</small>`:""}</span></div>`).join(""):'<p style="color:var(--muted)">Sem dados no filtro</p>';
 }
-
 function chartMes(list){
   const meses=uniq(projetos.map(p=>p.mes));
-  const rows=meses.map(m=>{const s=stats(list.filter(p=>p.mes===m));return {m,sv:s.saving,pc:s.savingPct,n:s.fech.length}});
+  const rows=meses.map(m=>{const s=stats(list.filter(p=>p.mes===m));return {m,sv:s.saving,tx:s.taxa,n:s.n,c:s.com.length}});
   const W=640,H=230,L=46,R=40,T=22,B=40,iw=W-L-R,ih=H-T-B;
-  const maxV=Math.max(1000,...rows.map(r=>r.sv)); const step=Math.pow(10,Math.floor(Math.log10(maxV)));
-  const top=Math.ceil(maxV/step)*step; const maxP=Math.max(META.savingPctMax+1,...rows.map(r=>r.pc)); const topP=Math.ceil(maxP/5)*5;
-  const bw=iw/rows.length; const y=v=>T+ih-v/top*ih; const yp=v=>T+ih-v/topP*ih;
+  const maxV=Math.max(1000,...rows.map(r=>r.sv)); const step=Math.pow(10,Math.floor(Math.log10(maxV))); const top=Math.ceil(maxV/step)*step;
+  const y=v=>T+ih-v/top*ih, yp=v=>T+ih-v/100*ih, bw=iw/rows.length;
   let g="";
-  for(let i=0;i<=4;i++){const v=top*i/4;g+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end">${kfmt(v)}</text><text x="${W-R+6}" y="${yp(topP*i/4)+4}">${Math.round(topP*i/4)}%</text>`;}
-  g+=`<rect x="${L}" y="${yp(META.savingPctMax)}" width="${iw}" height="${yp(META.savingPctMin)-yp(META.savingPctMax)}" fill="var(--accent)" opacity=".08"/><text x="${L+4}" y="${yp(META.savingPctMax)-4}" style="fill:var(--accent)">meta 3–5%</text>`;
+  for(let i=0;i<=4;i++){g+=`<line x1="${L}" x2="${W-R}" y1="${y(top*i/4)}" y2="${y(top*i/4)}" stroke="var(--line)"/><text x="${L-6}" y="${y(top*i/4)+4}" text-anchor="end">${kfmt(top*i/4)}</text><text x="${W-R+6}" y="${yp(25*i)+4}">${25*i}%</text>`;}
+  g+=`<line x1="${L}" x2="${W-R}" y1="${yp(META.taxaGanho)}" y2="${yp(META.taxaGanho)}" stroke="var(--accent)" stroke-dasharray="4 4" opacity=".6"/><text x="${L+4}" y="${yp(META.taxaGanho)-5}" style="fill:var(--accent)">meta taxa de ganho 60%</text>`;
   rows.forEach((r,i)=>{const x=L+i*bw+bw*.2,w=bw*.6;
-    g+=`<rect x="${x}" y="${y(r.sv)}" width="${w}" height="${T+ih-y(r.sv)}" rx="3" fill="var(--bar)"><title>${mesLbl(r.m)}: ${usd(r.sv)} · ${pct(r.pc)} · ${r.n} fechados</title></rect>`;
+    g+=`<rect x="${x}" y="${y(r.sv)}" width="${w}" height="${T+ih-y(r.sv)}" rx="3" fill="var(--bar)"><title>${mesLbl(r.m)}: ${usd(r.sv)} · ${r.c} de ${r.n} com ganho</title></rect>`;
     if(r.sv) g+=`<text class="lbl" x="${x+w/2}" y="${y(r.sv)-5}" text-anchor="middle">${kfmt(r.sv)}</text>`;
-    g+=`<text x="${x+w/2}" y="${H-B+16}" text-anchor="middle">${MES[r.m.slice(5)]}</text><text x="${x+w/2}" y="${H-B+30}" text-anchor="middle">${r.n} fech.</text>`;});
-  const pts=rows.map((r,i)=>`${L+i*bw+bw/2},${yp(r.pc)}`).join(" ");
-  g+=`<polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="2"/>`+rows.map((r,i)=>`<circle cx="${L+i*bw+bw/2}" cy="${yp(r.pc)}" r="3.5" fill="var(--accent)"/>`).join("");
-  $("chartMes").innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Saving por mês">${g}</svg>`;
+    g+=`<text x="${x+w/2}" y="${H-B+16}" text-anchor="middle">${MES[r.m.slice(5)]}</text><text x="${x+w/2}" y="${H-B+30}" text-anchor="middle">${r.c}/${r.n}</text>`;});
+  g+=`<polyline points="${rows.map((r,i)=>`${L+i*bw+bw/2},${yp(r.tx)}`).join(" ")}" fill="none" stroke="var(--accent)" stroke-width="2"/>`+rows.map((r,i)=>`<circle cx="${L+i*bw+bw/2}" cy="${yp(r.tx)}" r="3.5" fill="var(--accent)"><title>${pct(r.tx,0)}</title></circle>`).join("");
+  $("chartMes").innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Saving e taxa de ganho por mês">${g}</svg>`;
 }
-
 function render(){
-  const d=filtrados(), s=stats(d);
-  const pend=d.filter(p=>p.status==="pendente"), rev=d.filter(p=>p.revisar);
-  const sem=s.fech.filter(p=>p.status==="sem"), acima=s.fech.filter(p=>p.status==="acima");
-  const metaPct=s.savingPct>=META.savingPctMin?["ok","Na meta"]:["bad","Abaixo da meta"];
-  const metaTx=s.taxa>=META.taxaGanho?["ok","Na meta"]:["bad","Abaixo da meta"];
-  const metaReg=s.regPct>=META.registroNaoPreco?["ok","100% registrado"]:["bad",`${s.npReg} de ${s.fech.length} registrados`];
-  const meses=uniq(d.filter(p=>p.ganho!=null).map(p=>p.mes)); const ult=meses.slice(-2).map(m=>stats(d.filter(p=>p.mes===m)).medio);
-  const tend=ult.length===2?(ult[1]>=ult[0]?`<span class="up">▲ ${usd(ult[1])} no último mês</span>`:`<span class="down">▼ ${usd(ult[1])} no último mês</span>`):"";
+  const d=filtrados(), s=stats(d), semValor=d.filter(p=>p.status==="ganho_sem_valor");
+  $("escopo").textContent=`${s.n} projetos fechados no filtro · metas da fase piloto`;
+  const chip=(ok,a,b)=>`<span class="chip ${ok?"ok":"bad"}">${ok?a:b}</span>`;
+  const meses=uniq(d.map(p=>p.mes)); const ult=meses.slice(-2).map(m=>stats(d.filter(p=>p.mes===m)).medio);
+  const tend=ult.length===2?(ult[1]>=ult[0]?`<span class="up">▲ ${usd(ult[1])} em ${mesLbl(meses.at(-1))}</span>`:`<span class="down">▼ ${usd(ult[1])} em ${mesLbl(meses.at(-1))}</span>`):"&nbsp;";
+  const pctOk=s.savingPct!=null&&s.cobertura>=50;
   const K=[
-    {l:"Saving total",v:usd(s.saving),c:"Σ (FOB simulado − PI) dos projetos com ganho",sub:`${usd(s.savingOk)} confirmado · ${usd(s.saving-s.savingOk)} a validar`,m:`<span class="chip mid">Meta: baseline após o piloto</span>`},
-    {l:"Saving %",v:pct(s.savingPct),c:`saving ÷ ${usd(s.fob)} FOB simulado`,sub:gauge(s.savingPct,Math.max(10,s.savingPct),META.savingPctMin),m:`<span class="chip ${metaPct[0]}">${metaPct[1]}</span> meta 3–5%`},
-    {l:"Taxa de ganho",v:pct(s.taxa,0),c:`${s.com.length} com ganho ÷ ${s.fech.length} fechados`,sub:gauge(s.taxa,100,META.taxaGanho),m:`<span class="chip ${metaTx[0]}">${metaTx[1]}</span> meta ≥ 60%`},
-    {l:"Ganho médio por projeto",v:usd(s.medio),c:"saving total ÷ projetos fechados",sub:tend||"&nbsp;",m:`<span class="chip mid">Acompanhar tendência mensal</span>`},
-    {l:"Saving não-preço",v:usd(s.np),c:"pagamento, frete, amostras e peças em USD",sub:gauge(s.regPct,100,META.registroNaoPreco),m:`<span class="chip ${metaReg[0]}">${metaReg[1]}</span> meta 100%`},
+    {l:"Saving total",v:usd(s.saving),c:"Σ ganho em USD dos projetos com ganho",sub:`${s.comValor.length} projetos com valor${semValor.length?` · <span class="down">${semValor.length} sem valor</span>`:""}`,m:`<span class="chip mid">Meta: baseline após o piloto</span>`},
+    {l:"Saving %",v:s.savingPct==null?"—":pct(s.savingPct),c:`saving ÷ FOB simulado · ${s.comFob.length} de ${s.n} com FOB (${pct(s.cobertura,0)})`,sub:s.savingPct==null?"aguardando leitura das simulações":gauge(s.savingPct,Math.max(10,s.savingPct),META.savingPctMin),
+      m:pctOk?`${chip(s.savingPct>=META.savingPctMin,"Na meta","Abaixo da meta")} meta 3–5%`:`<span class="chip wrn">Em coleta</span> meta 3–5%`},
+    {l:"Taxa de ganho",v:pct(s.taxa,0),c:`${s.com.length} com ganho ÷ ${s.n} fechados`,sub:gauge(s.taxa,100,META.taxaGanho),m:`${chip(s.taxa>=META.taxaGanho,"Na meta","Abaixo da meta")} meta ≥ 60%`},
+    {l:"Ganho médio por projeto",v:usd(s.medio),c:"saving total ÷ projetos fechados",sub:tend,m:`<span class="chip mid">Acompanhar tendência mensal</span>`},
+    {l:"Saving não-preço",v:usd(s.np),c:"pagamento, frete, amostras e peças em USD",sub:gauge(s.regPct,100,META.registroNaoPreco),m:`${chip(s.regPct>=META.registroNaoPreco,"100% registrado",`${s.npReg} de ${s.n} registrados`)} meta 100%`},
   ];
   $("kpis").innerHTML=K.map(k=>`<div class="card kpi"><div class="label">${k.l}</div><div class="value">${k.v}</div><div class="calc">${k.c}</div><div class="sub">${k.sub}</div><div class="meta">${k.m}</div></div>`).join("");
-
   chartMes(d);
-  const t=Math.max(1,s.fech.length);
+  const t=Math.max(1,s.n), sem=d.filter(p=>!p.temGanho).length;
   $("splitBox").innerHTML=`
-    <div style="font-family:var(--display);font-size:40px;line-height:1;color:var(--ink)">${s.com.length}<span style="font-family:var(--body);font-size:16px;color:var(--muted)"> / ${s.fech.length} fechados</span></div>
-    <div style="color:var(--muted);font-size:12px;margin-top:4px">${d.length} no filtro · ${pend.length} com PI pendente · ${rev.length} para revisar</div>
-    <div class="split"><div style="width:${s.com.length/t*100}%;background:var(--bar)"></div><div style="width:${sem.length/t*100}%;background:var(--neutral)"></div><div style="width:${acima.length/t*100}%;background:var(--accent)"></div></div>
-    <div class="legend"><span><i class="dot" style="background:var(--bar)"></i>Com ganho (${s.com.length})</span><span><i class="dot" style="background:var(--neutral)"></i>Sem ganho (${sem.length})</span><span><i class="dot" style="background:var(--accent)"></i>PI acima (${acima.length})</span></div>
-    <div style="margin-top:14px;font-size:12px;color:var(--muted)">PI acima da simulação soma <b class="down">${usd(acima.reduce((x,p)=>x-p.ganho,0))}</b>. Normalmente é simulação desatualizada (cliente mudou quantidade) ou reajuste do fornecedor.</div>`;
+    <div style="font-family:var(--display);font-size:40px;line-height:1;color:var(--ink)">${s.com.length}<span style="font-family:var(--body);font-size:16px;color:var(--muted)"> / ${s.n} com ganho</span></div>
+    <div class="split"><div style="width:${s.comValor.length/t*100}%;background:var(--bar)"></div><div style="width:${semValor.length/t*100}%;background:var(--warn)"></div><div style="width:${sem/t*100}%;background:var(--neutral)"></div></div>
+    <div class="legend"><span><i class="dot" style="background:var(--bar)"></i>Com ganho (${s.comValor.length})</span><span><i class="dot" style="background:var(--warn)"></i>Ganho sem valor (${semValor.length})</span><span><i class="dot" style="background:var(--neutral)"></i>Sem ganho (${sem})</span></div>
+    <div style="margin-top:14px;font-size:12px;color:var(--muted)">Com off: <b>${d.filter(p=>p.temOff).length}</b> · Com certificação: <b>${d.filter(p=>p.certificacao).length}</b> · Fornecedor do cliente: <b>${d.filter(p=>p.comp==="Fornecedor do cliente").length}</b></div>`;
+  const by=(key)=>{const m={};d.forEach(p=>{const k=p[key]||"—";(m[k]=m[k]||{s:0,n:0,c:0});m[k].n++;if(p.temGanho)m[k].c++;if(p.status==="ganho")m[k].s+=p.ganho;});return m;};
+  const bc=by("comp"), bm=by("comercial");
+  hbars($("porComprador"),Object.entries(bc).map(([k,v])=>[k,v.s]));
+  hbars($("taxaComprador"),Object.entries(bc).filter(([k,v])=>v.n>=3&&k!=="—"&&k!=="Fornecedor do cliente").map(([k,v])=>[k,v.c/v.n*100||0.0001,`${v.c}/${v.n}`]),v=>pct(v,0),"red");
+  hbars($("porComercial"),Object.entries(bm).map(([k,v])=>[k,v.s]));
 
-  const agg=key=>{const m={}; s.com.forEach(p=>m[p[key]]=(m[p[key]]||0)+p.ganho); return m;};
-  hbars($("porSegmento"),agg("seg")); hbars($("porTipo"),agg("tipo"),"red"); hbars($("porComprador"),agg("comp"));
-
-  const rows=d.filter(p=>tabFilter==="all"||(tabFilter==="revisar"?p.revisar:tabFilter==="semnp"?(p.ganho!=null&&!p.naoPreco.length):p.status===tabFilter));
+  const rows=d.filter(p=>tabFilter==="all"||(tabFilter==="semfob"?!p.simUSD:tabFilter==="semnp"?!p.naoPreco.length:p.status===tabFilter));
   $("tbody").innerHTML=rows.map(p=>{
-    const open=abertos.has(p.id), gp=p.ganho!=null&&p.simUSD?p.ganho/p.simUSD*100:null, np=npUSD(p);
-    const temSub=p.fornecedores.length||p.naoPreco.length;
+    const open=abertos.has(p.id), gp=p.simUSD&&p.ganho?p.ganho/p.simUSD*100:null;
+    const det=[p.qtdFornecedores&&`Fornecedores: ${esc(p.qtdFornecedores)}`,p.certificacao&&`Certificação: ${esc(p.certificacao)}`,p.chinaMember&&`China Member: ${esc(p.chinaMember)}`,p.beneficio&&`Benefício: ${esc(p.beneficio)}`,p.ganhoTexto&&`Ganho no formulário: "${esc(p.ganhoTexto)}"`,p.purchaseTask&&`<a class="tw" href="${esc(p.purchaseTask)}" target="_blank" rel="noopener">task Purchase - Ganho</a>`].filter(Boolean);
     const main=`<tr class="proj" data-id="${p.id}">
-      <td><span class="caret">${temSub?(open?"▾":"▸"):""}</span><b>${esc(p.cliente)}</b><br>
-        <span style="color:var(--muted);margin-left:14px">${esc(p.task)}</span> <a class="tw" href="${esc(p.link)}" target="_blank" rel="noopener">abrir task</a>
-        ${p.nota?`<br><span class="flag" style="margin-left:14px">${p.revisar?"⚠ ":""}${esc(p.nota)}</span>`:""}</td>
-      <td><span class="tag">${esc(p.seg)}</span></td><td>${esc(p.tipo)}</td><td>${esc(p.comp)}</td><td>${mesLbl(p.mes)}</td>
-      <td class="num">${usd(p.simUSD)}</td><td class="num">${usd(p.piUSD)}</td>
-      <td class="num ${p.ganho>0?"up":p.ganho<0?"down":""}">${usd(p.ganho)}</td>
-      <td class="num">${gp==null?"—":pct(gp)}</td>
-      <td class="num">${p.ganho==null?"—":(p.naoPreco.length?usd(np):'<span class="chip wrn">sem registro</span>')}</td>
+      <td><span class="caret">${open?"▾":"▸"}</span><b>${esc(p.cliente)}</b> <a class="tw" href="${esc(p.link)}" target="_blank" rel="noopener">abrir</a>${p.nota?`<br><span class="flag" style="margin-left:14px">⚠ ${esc(p.nota)}</span>`:""}</td>
+      <td>${esc(p.comercial)}</td><td>${esc(p.comp)}</td><td>${dataLbl(p.data)}</td><td>${esc(p.pedido)}</td><td>${esc(p.operacao)}</td>
+      <td class="num">${usd(p.simUSD)}</td><td class="num ${p.ganho>0?"up":""}">${p.status==="ganho_sem_valor"?"?":usd(p.ganho)}</td>
+      <td class="num">${gp==null?"—":pct(gp)}</td><td>${p.temOff?esc(p.off||"Sim"):"—"}</td>
+      <td class="num">${p.naoPreco.length?usd(npUSD(p)):'<span class="chip wrn">sem registro</span>'}</td>
       <td><span class="chip ${STATUS[p.status][1]}">${STATUS[p.status][0]}</span></td></tr>`;
-    const subs=open?p.fornecedores.map(f=>`<tr class="sup"><td colspan="6" style="padding-left:30px">↳ ${esc(f.nome)}</td><td class="num">${usd(f.piUSD)}</td><td colspan="4"></td></tr>`).join("")
-      +p.naoPreco.map(x=>`<tr class="sup"><td colspan="9" style="padding-left:30px">↳ Não-preço · ${esc(x.tipo)}: ${esc(x.descricao||"")}</td><td class="num">${usd(x.usd)}</td><td></td></tr>`).join(""):"";
-    return main+subs;
-  }).join("") || '<tr><td colspan="11" style="text-align:center;color:var(--muted)">Nenhum projeto neste filtro</td></tr>';
+    const sub=open?`<tr class="sup"><td colspan="12" style="padding-left:30px">${det.join(" · ")||"Sem detalhes adicionais"}${p.naoPreco.map(x=>`<br>Não-preço · ${esc(x.tipo)}: ${esc(x.descricao||"")} ${usd(x.usd)}`).join("")}</td></tr>`:"";
+    return main+sub;
+  }).join("") || '<tr><td colspan="12" style="text-align:center;color:var(--muted)">Nenhum projeto neste filtro</td></tr>';
 }
 document.querySelectorAll("select").forEach(s=>s.addEventListener("change",render));
 $("tabs").addEventListener("click",e=>{const b=e.target.closest(".tab"); if(!b)return;
   document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active")); b.classList.add("active"); tabFilter=b.dataset.f; render();});
 $("tbody").addEventListener("click",e=>{if(e.target.closest("a"))return; const r=e.target.closest("tr.proj"); if(!r)return; const id=+r.dataset.id; abertos.has(id)?abertos.delete(id):abertos.add(id); render();});
 prep(); render();
-// No GitHub Pages, busca o data/projetos.json mais recente (commit diário); sem servidor, usa os dados embutidos.
 if(location.protocol.startsWith("http") && !location.hostname.endsWith("claude.ai")){
   fetch("data/projetos.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.atualizado&&j.atualizado>DATA.atualizado){DATA=j;prep();render();}}).catch(()=>{});
 }
