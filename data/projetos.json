@@ -1,8 +1,45 @@
 {
- "atualizado": "2026-11-13 09:34",
+ "atualizado": "2026-11-13 17:26",
  "desde": "2026-07-01",
  "fonte": "Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
  "projetos": [
+  {
+   "id": 27019099,
+   "link": "https://project.chinalinktrading.com/app/tasks/27019099",
+   "origem": "Handover - Delivery",
+   "task": "GOHARD BR - Walter Eduardo Magalhaes Vieira Rudmer Comercio de Artigos Esportivos LTDA (Thadeu Friederichs)",
+   "cliente": "GOHARD BR - Walter Eduardo Magalhaes Vieira Rudmer Comercio de Artigos Esportivos LTDA",
+   "comercial": "Thadeu Friederichs",
+   "data": "2026-11-13",
+   "mes": "2026-11",
+   "concluida": true,
+   "pedido": "53",
+   "qtdFornecedores": "1",
+   "operacao": "Conta e Ordem",
+   "comp": "—",
+   "temGanho": false,
+   "ganhoTexto": "",
+   "ganhoInformado": null,
+   "ganhoPct": null,
+   "temOff": true,
+   "off": "40% OFF",
+   "certificacao": "",
+   "chinaMember": "BLACK",
+   "beneficio": "",
+   "temSimLink": true,
+   "nInvoices": 1,
+   "fornecedores": [],
+   "nota": "",
+   "seg": "Fitness / Academia",
+   "tipo": "—",
+   "ganhoFonte": "",
+   "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
+   "status": "sem",
+   "revisar": false
+  },
   {
    "id": 27017338,
    "link": "https://project.chinalinktrading.com/app/tasks/27017338",
@@ -36,6 +73,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -72,6 +112,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -108,6 +151,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -146,6 +192,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -183,6 +232,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -219,6 +271,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -256,6 +311,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -291,6 +349,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -328,6 +389,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -363,6 +427,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -375,7 +442,7 @@
    "comercial": "Sally Sepulveda",
    "data": "2026-11-05",
    "mes": "2026-11",
-   "concluida": false,
+   "concluida": true,
    "pedido": "2",
    "qtdFornecedores": "1",
    "operacao": "Direto",
@@ -398,6 +465,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -433,6 +503,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -470,6 +543,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -513,6 +589,9 @@
     "data": "2026-11-09"
    },
    "ganho": 40,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 40,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -548,6 +627,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -582,6 +664,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -616,6 +701,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -650,6 +738,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -684,6 +775,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -719,6 +813,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -753,6 +850,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -788,6 +888,9 @@
    "tipo": "—",
    "ganhoFonte": "formulário",
    "ganho": null,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": null,
+   "fornCliente": false,
    "status": "ganho_sem_valor",
    "revisar": true
   },
@@ -822,6 +925,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -856,6 +962,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -890,6 +999,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -925,6 +1037,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -959,6 +1074,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -976,7 +1094,7 @@
    "qtdFornecedores": "1",
    "operacao": "Direto",
    "comp": "Rhaissa Max",
-   "temGanho": false,
+   "temGanho": true,
    "ganhoTexto": "$300",
    "ganhoInformado": 0,
    "ganhoPct": null,
@@ -991,19 +1109,47 @@
    "valorMercadoriaUSD": 8358.0,
    "incoterm": "EXW",
    "simFile": 7319115,
-   "nota": "Ganho de US$ 300 do formulário cancelado na conversa da task",
+   "nota": "Ganho de US$ 300 usado como colchão (custo LCL na PI)",
    "fornecedores": [],
    "seg": "Fitness / Academia",
    "tipo": "—",
-   "ganhoFonte": "comentário de Vitória Silvestre em 2026-11-06",
+   "ganhoFonte": "comentário de Erika Matos em 2026-11-06",
    "ganhoComentario": {
-    "texto": "Não precisa atualizar a simu porque está correta, só não vai ter o ganho de 300 USD",
-    "link": "https://project.chinalinktrading.com/app/tasks/26931890",
-    "autor": "Vitória Silvestre",
+    "texto": "Projeto seguirá sem ganho e de acordo com a PI abaixo.",
+    "link": "https://project.chinalinktrading.com/app/tasks/26797670",
+    "autor": "Erika Matos",
     "data": "2026-11-06"
    },
-   "ganho": 0.0,
-   "status": "sem",
+   "historicoGanho": [
+    {
+     "data": "2026-10-28",
+     "valor": 300,
+     "autor": "Erika Matos",
+     "texto": "Tem ganho de 300USD",
+     "link": "https://project.chinalinktrading.com/app/tasks/26797670"
+    },
+    {
+     "data": "2026-11-06",
+     "valor": 0,
+     "autor": "Erika Matos / Vitória Silvestre",
+     "texto": "Projeto seguirá sem ganho… só não vai ter o ganho de 300 USD",
+     "link": "https://project.chinalinktrading.com/app/tasks/26931890"
+    }
+   ],
+   "colchao": {
+    "valor": 300,
+    "motivo": "PI do fornecedor trouxe custo LCL de US$ 815 a diluir; o ganho foi retirado",
+    "autor": "Erika Matos",
+    "data": "2026-11-06",
+    "texto": "Projeto seguirá sem ganho e de acordo com a PI abaixo. Sem mudanças na simulação.",
+    "link": "https://project.chinalinktrading.com/app/tasks/26797670"
+   },
+   "ganhoInicial": 300,
+   "ganho": 0,
+   "colchaoUSD": 300.0,
+   "ganhoBruto": 300,
+   "fornCliente": false,
+   "status": "consumido",
    "revisar": false
   },
   {
@@ -1037,6 +1183,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1071,6 +1220,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -1105,6 +1257,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1139,6 +1294,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1174,6 +1332,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1186,7 +1347,7 @@
    "comercial": "Graziele Galdino",
    "data": "2026-10-20",
    "mes": "2026-10",
-   "concluida": true,
+   "concluida": false,
    "pedido": "1",
    "qtdFornecedores": "1",
    "operacao": "Direto",
@@ -1209,6 +1370,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1228,7 +1392,7 @@
    "comp": "Victor Augusto",
    "temGanho": true,
    "ganhoTexto": "USD 3.410",
-   "ganhoInformado": 3410.0,
+   "ganhoInformado": 3050,
    "ganhoPct": null,
    "temOff": true,
    "off": "30%",
@@ -1242,8 +1406,42 @@
    "nota": "",
    "seg": "Autopeças / Motos",
    "tipo": "—",
-   "ganhoFonte": "formulário",
-   "ganho": 3410.0,
+   "ganhoFonte": "comentário de Victor Augusto em 2026-11-11",
+   "ganhoComentario": {
+    "texto": "Vamos utilizar o ganho desse projeto para pagar essa comissão no balance, um montante de 360 USD a mais",
+    "link": "https://project.chinalinktrading.com/app/tasks/26742137",
+    "autor": "Victor Augusto",
+    "data": "2026-11-11"
+   },
+   "historicoGanho": [
+    {
+     "data": "2026-10-20",
+     "valor": 3410,
+     "autor": "Victor Augusto",
+     "texto": "Gentileza notar ganho: USD 3.410",
+     "link": "https://project.chinalinktrading.com/app/tasks/26773032"
+    },
+    {
+     "data": "2026-11-11",
+     "valor": 3050,
+     "autor": "Victor Augusto",
+     "texto": "360 USD do ganho usados para pagar comissão de 3% do agente de sourcing externo",
+     "link": "https://project.chinalinktrading.com/app/tasks/26742137"
+    }
+   ],
+   "colchao": {
+    "valor": 360,
+    "motivo": "Comissão de 3% do agente de sourcing externo não incluída na cotação",
+    "autor": "Victor Augusto",
+    "data": "2026-11-11",
+    "texto": "Por uma falha de comunicação, o agente não incluiu a comissão de 3% na cotação… vamos utilizar o ganho desse projeto para pagar essa comissão no balance, um montante de 360 USD a mais",
+    "link": "https://project.chinalinktrading.com/app/tasks/26742137"
+   },
+   "ganhoInicial": 3410,
+   "ganho": 3050,
+   "colchaoUSD": 360.0,
+   "ganhoBruto": 3410,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -1278,6 +1476,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1313,6 +1514,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1347,6 +1551,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1382,6 +1589,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1394,7 +1604,7 @@
    "comercial": "Nivia",
    "data": "2026-10-08",
    "mes": "2026-10",
-   "concluida": true,
+   "concluida": false,
    "pedido": "1",
    "qtdFornecedores": "4",
    "operacao": "Direto",
@@ -1416,6 +1626,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1450,6 +1663,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1484,6 +1700,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1519,6 +1738,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1554,6 +1776,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1588,6 +1813,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1622,6 +1850,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1656,6 +1887,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1691,6 +1925,9 @@
    "tipo": "—",
    "ganhoFonte": "formulário",
    "ganho": 370.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 370.0,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -1725,6 +1962,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1759,6 +1999,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1793,6 +2036,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -1828,6 +2074,9 @@
    "tipo": "—",
    "ganhoFonte": "formulário",
    "ganho": 13110.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 13110.0,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -1862,6 +2111,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1897,6 +2149,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -1931,6 +2186,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -1966,6 +2224,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -2000,6 +2261,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2034,6 +2298,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2068,6 +2335,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2102,6 +2372,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2136,6 +2409,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2170,6 +2446,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2204,6 +2483,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2238,6 +2520,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2257,7 +2542,7 @@
    "comp": "Lucas Miguel",
    "temGanho": true,
    "ganhoTexto": "",
-   "ganhoInformado": 300,
+   "ganhoInformado": 0,
    "ganhoPct": null,
    "temOff": true,
    "off": "50%",
@@ -2267,19 +2552,47 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26765211",
-   "nota": "Ganho de US$ 300 na personalização da gift box; confirmar valor final",
+   "nota": "Budget de US$ 300 da gift box consumido",
    "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
-   "ganhoFonte": "comentário de Bruna Zambao em 2026-09-16",
+   "ganhoFonte": "comentário de Juan / Sabrina Rocha em 2026-10-14",
    "ganhoComentario": {
-    "texto": "Personalização da caixa custa US$ 200 e o cliente pagará US$ 500 (pode mudar se o preço da caixa mudar)",
-    "link": "https://project.chinalinktrading.com/app/tasks/26765213",
-    "autor": "Bruna Zambao",
-    "data": "2026-09-16"
+    "texto": "Tem ganho no pedido mesmo? … Não tem ganho no pedido!!",
+    "link": "https://project.chinalinktrading.com/app/tasks/26642462",
+    "autor": "Juan / Sabrina Rocha",
+    "data": "2026-10-14"
    },
-   "ganho": 300,
-   "status": "ganho",
+   "historicoGanho": [
+    {
+     "data": "2026-09-16",
+     "valor": 300,
+     "autor": "Bruna Zambao",
+     "texto": "Gift box: custo US$ 200, vendido por US$ 500; os US$ 300 ficam como budget caso o preço da caixa mude",
+     "link": "https://project.chinalinktrading.com/app/tasks/26642462"
+    },
+    {
+     "data": "2026-10-14",
+     "valor": 0,
+     "autor": "Juan",
+     "texto": "Não tem ganho no pedido!!",
+     "link": "https://project.chinalinktrading.com/app/tasks/26642462"
+    }
+   ],
+   "colchao": {
+    "valor": 300,
+    "motivo": "Budget da gift box (personalização) consumido; ganho não se confirmou na PI/simulação final",
+    "autor": "Juan",
+    "data": "2026-10-14",
+    "texto": "Não tem ganho no pedido!!",
+    "link": "https://project.chinalinktrading.com/app/tasks/26642462"
+   },
+   "ganhoInicial": 300,
+   "ganho": 0,
+   "colchaoUSD": 300.0,
+   "ganhoBruto": 300,
+   "fornCliente": false,
+   "status": "consumido",
    "revisar": false
   },
   {
@@ -2313,6 +2626,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -2348,6 +2664,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2382,6 +2701,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -2417,6 +2739,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2452,6 +2777,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2486,6 +2814,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2520,6 +2851,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2558,6 +2892,9 @@
    "tipo": "—",
    "ganhoFonte": "formulário",
    "ganho": 1069.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 1069.0,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -2592,6 +2929,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2627,6 +2967,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2661,6 +3004,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2702,6 +3048,9 @@
     "data": "2026-09-10"
    },
    "ganho": 135,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 135,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -2736,6 +3085,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2771,6 +3123,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2805,6 +3160,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2840,6 +3198,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2875,6 +3236,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2910,6 +3274,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -2944,6 +3311,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -2978,6 +3348,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3013,6 +3386,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3048,6 +3424,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3082,6 +3461,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3116,6 +3498,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3151,6 +3536,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3186,6 +3574,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3226,7 +3617,27 @@
     "autor": "Rhaissa Leite",
     "data": "2026-08-26"
    },
+   "historicoGanho": [
+    {
+     "data": "2026-08-24",
+     "valor": 155.6,
+     "autor": "Rhaissa Leite",
+     "texto": "Total de ganho: 155,6USD",
+     "link": "https://project.chinalinktrading.com/app/tasks/26657425"
+    },
+    {
+     "data": "2026-08-26",
+     "valor": 211.03,
+     "autor": "Rhaissa Leite",
+     "texto": "Após correção com a fornecedora, o ganho atual é de 211,03",
+     "link": "https://project.chinalinktrading.com/app/tasks/26657425"
+    }
+   ],
+   "ganhoInicial": 155.6,
    "ganho": 211.03,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 155.6,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -3261,6 +3672,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3295,6 +3709,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3329,6 +3746,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3363,6 +3783,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3397,6 +3820,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3431,6 +3857,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3466,6 +3895,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3501,6 +3933,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3535,6 +3970,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3569,6 +4007,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3604,6 +4045,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3623,7 +4067,7 @@
    "comp": "Arthur Leite",
    "temGanho": true,
    "ganhoTexto": "",
-   "ganhoInformado": 655.42,
+   "ganhoInformado": 635.6,
    "ganhoPct": null,
    "temOff": false,
    "off": "",
@@ -3637,14 +4081,42 @@
    "nota": "",
    "seg": "Fitness / Academia",
    "tipo": "—",
-   "ganhoFonte": "comentário de Arthur Leite em 2026-08-18",
+   "ganhoFonte": "comentário de Erika Matos em 2026-10-22",
    "ganhoComentario": {
-    "texto": "Ganho de 655,42USD",
-    "link": "https://project.chinalinktrading.com/app/tasks/26611823",
-    "autor": "Arthur Leite",
-    "data": "2026-08-18"
+    "texto": "Bom dia ganho de 635,6USD",
+    "link": "https://project.chinalinktrading.com/app/tasks/26283114",
+    "autor": "Erika Matos",
+    "data": "2026-10-22"
    },
-   "ganho": 655.42,
+   "historicoGanho": [
+    {
+     "data": "2026-08-18",
+     "valor": 655.42,
+     "autor": "Arthur Leite",
+     "texto": "Ganho de 655,42USD",
+     "link": "https://project.chinalinktrading.com/app/tasks/26611823"
+    },
+    {
+     "data": "2026-10-22",
+     "valor": 635.6,
+     "autor": "Erika Matos",
+     "texto": "ganho de 635,6USD (após PI atualizada em 30/09)",
+     "link": "https://project.chinalinktrading.com/app/tasks/26283114"
+    }
+   ],
+   "colchao": {
+    "valor": 19.82,
+    "motivo": "PI do fornecedor atualizada após o handover; ganho recalculado",
+    "autor": "Erika Matos",
+    "data": "2026-10-22",
+    "texto": "Bom dia ganho de 635,6USD",
+    "link": "https://project.chinalinktrading.com/app/tasks/26283114"
+   },
+   "ganhoInicial": 655.42,
+   "ganho": 635.6,
+   "colchaoUSD": 19.82,
+   "ganhoBruto": 655.42,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -3679,6 +4151,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3713,6 +4188,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3748,6 +4226,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3783,6 +4264,9 @@
    "tipo": "—",
    "ganhoFonte": "formulário",
    "ganho": 250.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 250.0,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -3818,6 +4302,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3852,6 +4339,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3886,6 +4376,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3921,6 +4414,9 @@
    "tipo": "—",
    "ganhoFonte": "formulário",
    "ganho": 1000.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 1000.0,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -3955,6 +4451,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -3990,6 +4489,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4024,6 +4526,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4058,6 +4563,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4077,7 +4585,7 @@
    "comp": "Paulo Cesar",
    "temGanho": true,
    "ganhoTexto": "$ 680,00",
-   "ganhoInformado": 680.0,
+   "ganhoInformado": 0,
    "ganhoPct": null,
    "temOff": true,
    "off": "30%",
@@ -4091,9 +4599,43 @@
    "nota": "",
    "seg": "A classificar",
    "tipo": "—",
-   "ganhoFonte": "formulário",
-   "ganho": 680.0,
-   "status": "ganho",
+   "ganhoFonte": "comentário de Sabrina Rocha em 2026-09-21",
+   "ganhoComentario": {
+    "texto": "Vamos seguir sem ganho mesmo, pois o fornecedor mudou o valor por conta do incoterm.",
+    "link": "https://project.chinalinktrading.com/app/tasks/25837192",
+    "autor": "Sabrina Rocha",
+    "data": "2026-09-21"
+   },
+   "historicoGanho": [
+    {
+     "data": "2026-08-04",
+     "valor": 680,
+     "autor": "Erika Matos",
+     "texto": "Pedido com 680 USD de ganho e 30% de extra.",
+     "link": "https://project.chinalinktrading.com/app/tasks/25837192"
+    },
+    {
+     "data": "2026-09-21",
+     "valor": 0,
+     "autor": "Sabrina Rocha",
+     "texto": "Vamos seguir sem ganho… fornecedor mudou o valor por conta do incoterm.",
+     "link": "https://project.chinalinktrading.com/app/tasks/25837192"
+    }
+   ],
+   "colchao": {
+    "valor": 680,
+    "motivo": "Fornecedor mudou o preço por causa do incoterm",
+    "autor": "Sabrina Rocha",
+    "data": "2026-09-21",
+    "texto": "Vamos seguir sem ganho mesmo, pois o fornecedor mudou o valor por conta do incoterm.",
+    "link": "https://project.chinalinktrading.com/app/tasks/25837192"
+   },
+   "ganhoInicial": 680,
+   "ganho": 0,
+   "colchaoUSD": 680.0,
+   "ganhoBruto": 680,
+   "fornCliente": false,
+   "status": "consumido",
    "revisar": false
   },
   {
@@ -4128,6 +4670,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4163,6 +4708,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4204,6 +4752,9 @@
     "data": "2026-08-13"
    },
    "ganho": null,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": null,
+   "fornCliente": false,
    "status": "ganho_sem_valor",
    "revisar": true
   },
@@ -4238,6 +4789,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4273,6 +4827,9 @@
    "tipo": "—",
    "ganhoFonte": "formulário",
    "ganho": 120.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 120.0,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -4308,6 +4865,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4343,6 +4903,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4377,6 +4940,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4411,6 +4977,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4445,6 +5014,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4479,6 +5051,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4513,6 +5088,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4554,6 +5132,9 @@
     "data": "2026-08-04"
    },
    "ganho": null,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": null,
+   "fornCliente": false,
    "status": "ganho_sem_valor",
    "revisar": true
   },
@@ -4588,6 +5169,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4623,6 +5207,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4657,6 +5244,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -4692,6 +5282,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4726,6 +5319,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4760,6 +5356,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4795,6 +5394,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4829,6 +5431,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4863,6 +5468,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -4882,7 +5490,7 @@
    "comp": "Alan Castellano",
    "temGanho": true,
    "ganhoTexto": "$956,43",
-   "ganhoInformado": 956.43,
+   "ganhoInformado": 0,
    "ganhoPct": null,
    "temOff": false,
    "off": "",
@@ -4896,9 +5504,43 @@
    "nota": "",
    "seg": "Varejo / Atacado",
    "tipo": "—",
-   "ganhoFonte": "formulário",
-   "ganho": 956.43,
-   "status": "ganho",
+   "ganhoFonte": "comentário de Nívia em 2026-11-04",
+   "ganhoComentario": {
+    "texto": "Segue em anexo simulação atualizada SEM GANHO!",
+    "link": "https://project.chinalinktrading.com/app/tasks/26265064",
+    "autor": "Nívia",
+    "data": "2026-11-04"
+   },
+   "historicoGanho": [
+    {
+     "data": "2026-07-21",
+     "valor": 956.43,
+     "autor": "formulário",
+     "texto": "$956,43",
+     "link": "https://project.chinalinktrading.com/app/tasks/26508924"
+    },
+    {
+     "data": "2026-11-04",
+     "valor": 0,
+     "autor": "Nívia",
+     "texto": "simulação atualizada SEM GANHO!",
+     "link": "https://project.chinalinktrading.com/app/tasks/26265064"
+    }
+   ],
+   "colchao": {
+    "valor": 956.43,
+    "motivo": "Ganho retirado na simulação atualizada (motivo não descrito na task)",
+    "autor": "Nívia",
+    "data": "2026-11-04",
+    "texto": "Segue em anexo simulação atualizada SEM GANHO!",
+    "link": "https://project.chinalinktrading.com/app/tasks/26265064"
+   },
+   "ganhoInicial": 956.43,
+   "ganho": 0,
+   "colchaoUSD": 956.43,
+   "ganhoBruto": 956.43,
+   "fornCliente": false,
+   "status": "consumido",
    "revisar": false
   },
   {
@@ -4933,6 +5575,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -4967,6 +5612,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5001,6 +5649,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -5036,6 +5687,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5070,6 +5724,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5105,6 +5762,9 @@
    "tipo": "—",
    "ganhoFonte": "formulário",
    "ganho": 320.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 320.0,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -5140,6 +5800,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5174,6 +5837,9 @@
    "tipo": "—",
    "ganhoFonte": "formulário",
    "ganho": null,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": null,
+   "fornCliente": false,
    "status": "ganho_sem_valor",
    "revisar": true
   },
@@ -5208,6 +5874,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5242,6 +5911,9 @@
    "tipo": "—",
    "ganhoFonte": "formulário",
    "ganho": 2030.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 2030.0,
+   "fornCliente": false,
    "status": "ganho",
    "revisar": false
   },
@@ -5276,6 +5948,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -5310,6 +5985,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5344,6 +6022,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -5378,6 +6059,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": true,
    "status": "sem",
    "revisar": false
   },
@@ -5413,6 +6097,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5448,6 +6135,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5482,6 +6172,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5516,6 +6209,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5551,6 +6247,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5585,6 +6284,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5619,6 +6321,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5653,6 +6358,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5687,6 +6395,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5722,6 +6433,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   },
@@ -5756,6 +6470,9 @@
    "tipo": "—",
    "ganhoFonte": "",
    "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
    "status": "sem",
    "revisar": false
   }
