@@ -152,12 +152,23 @@ def main():
             p["ganhoFonte"] = f"comentário de {c.get('autor','?')} em {c.get('data','?')}"
             p["ganhoComentario"] = dict(texto=c.get("texto", ""), link=c.get("link", ""), autor=c.get("autor", ""), data=c.get("data", ""))
             if c.get("nota"): p["nota"] = c["nota"]
+            if c.get("historico"): p["historicoGanho"] = c["historico"]
+            if c.get("colchao"): p["colchao"] = c["colchao"]
+            if c.get("ganhoInicialUSD") is not None: p["ganhoInicial"] = c["ganhoInicialUSD"]
         g = p["ganhoInformado"]
         if g is None and p["ganhoPct"] and p.get("valorMercadoriaUSD"): g = round(p["valorMercadoriaUSD"] * p["ganhoPct"] / 100, 2)
         if g is None and p["temGanho"] and p.get("valorMercadoriaUSD") and p.get("piUSD"): g = round(p["valorMercadoriaUSD"] - p["piUSD"], 2)
         p["ganho"] = g if p["temGanho"] else 0.0
+        # colchão: parte (ou todo) do ganho negociado que foi usada depois para cobrir problemas do projeto
+        p["colchaoUSD"] = round(float((p.get("colchao") or {}).get("valor") or 0), 2)
+        p["ganhoBruto"] = p.get("ganhoInicial") if p.get("ganhoInicial") is not None else (p["ganho"] if p["ganho"] is not None else None)
+        if p["ganhoBruto"] is not None and p["ganho"] is not None and p["colchaoUSD"]:
+            p["ganhoBruto"] = round(max(p["ganhoBruto"], p["ganho"] + p["colchaoUSD"]), 2)
+        p["fornCliente"] = p["comp"] == "Fornecedor do cliente"
         if p["temGanho"] and g is None:
             p["status"] = "ganho_sem_valor"; p["nota"] = p["nota"] or f"Ganho informado como '{p['ganhoTexto'] or 'Sim'}' sem valor em USD"
+        elif p["temGanho"] and (p["ganho"] or 0) <= 0 and p["colchaoUSD"] > 0:
+            p["status"] = "consumido"  # houve ganho negociado, mas foi todo usado como colchão
         else:
             p["status"] = "ganho" if p["temGanho"] and (p["ganho"] or 0) > 0 else "sem"
         p["revisar"] = p["status"] == "ganho_sem_valor" or bool(p.get("valorMercadoriaUSD") and p["ganho"] and p["ganho"] / p["valorMercadoriaUSD"] > 0.35)
@@ -176,7 +187,7 @@ def main():
                    fonte="Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
                    projetos=lista), open(out_path, "w"), ensure_ascii=False, indent=1)
     com = [p for p in lista if p["status"] == "ganho"]
-    print(f"{len(lista)} projetos | com ganho {len(com)} | US$ {sum(p['ganho'] for p in com):,.2f} | sem valor {sum(p['status']=='ganho_sem_valor' for p in lista)}")
+    print(f"{len(lista)} projetos | com ganho {len(com)} | US$ {sum(p['ganho'] for p in com):,.2f} | sem valor {sum(p['status']=='ganho_sem_valor' for p in lista)} | colchão US$ {sum(p['colchaoUSD'] for p in lista):,.2f} em {sum(1 for p in lista if p['colchaoUSD'])} projetos")
 
 if __name__ == "__main__":
     main()
