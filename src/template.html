@@ -68,7 +68,8 @@
   .gauge b{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--accent)}
   .up{color:var(--pos)} .down{color:var(--neg)}
   .two{grid-template-columns:3fr 2fr} .three{grid-template-columns:repeat(3,1fr)}
-  @media(max-width:900px){.two,.three{grid-template-columns:1fr}}
+  .two.colch{grid-template-columns:2fr 3fr}
+  @media(max-width:900px){.two,.three,.two.colch{grid-template-columns:1fr}}
   .card h3{margin:0 0 12px;font-size:14px;color:var(--ink);font-weight:700}
   .card h3 small{font-weight:500;color:var(--muted);font-size:11px}
   .chart{width:100%;height:auto;display:block}
@@ -142,12 +143,19 @@
     <div class="card"><h3>Saving por comercial</h3><div id="porComercial"></div></div>
   </div>
 
-  <h2 class="sec">Projetos fechados <span>formulário de handover · clique para ver detalhes</span></h2>
+  <h2 class="sec">2 · Colchão de ganho <span>ganho negociado que depois foi usado para cobrir problemas do projeto</span></h2>
+  <div class="grid two colch">
+    <div class="card" id="colchaoResumo"></div>
+    <div class="card"><h3>Motivos e projetos</h3><div id="colchaoLista"></div></div>
+  </div>
+
+  <h2 class="sec">Projetos fechados <span>formulário de handover + conversas das tasks · clique para ver detalhes</span></h2>
   <div class="card">
     <div class="tabs" id="tabs">
       <button class="tab active" data-f="all">Todos</button>
       <button class="tab" data-f="ganho">Com ganho</button>
       <button class="tab" data-f="sem">Sem ganho</button>
+      <button class="tab" data-f="colchao">Usou colchão</button>
       <button class="tab" data-f="ganho_sem_valor">⚠ Ganho sem valor</button>
       <button class="tab" data-f="semfob">Sem valor da mercadoria</button>
     </div>
@@ -155,7 +163,7 @@
       <table>
         <thead><tr>
           <th>Cliente / Task</th><th>Comercial</th><th>Comprador</th><th>Data</th><th>Pedido</th><th>Operação</th>
-          <th class="num">Mercadoria (USD)</th><th>Incoterm</th><th class="num">Saving USD</th><th class="num">Saving %</th><th>Off</th><th>Status</th>
+          <th class="num">Mercadoria (USD)</th><th>Incoterm</th><th class="num">Saving USD</th><th class="num">Saving %</th><th class="num">Colchão</th><th>Status</th>
         </tr></thead>
         <tbody id="tbody"></tbody>
       </table>
@@ -164,10 +172,11 @@
 
   <h2 class="sec">Como cada KPI é calculado</h2>
   <div class="card note">
-    <b>Fonte</b>: Teamwork › Sales Support › <b>Handover - Delivery</b> (um formulário por projeto fechado) e <b>Purchase - Ganho</b>, a partir de 01/07/2026. Os campos usados são "Tem ganho?", "Se tiver ganho, quanto?", "Sourcing responsável", "Tem off?" e nº do pedido.<br>
-    <b>Saving total</b> = Σ ganho informado em USD dos projetos com ganho. Se o ganho veio em %, convertemos usando o valor da mercadoria.<br>
+    <b>Fonte</b>: Teamwork › Sales Support › <b>Handover - Delivery</b> (um formulário por projeto fechado) e <b>Purchase - Ganho</b>, a partir de 01/07/2026. Os campos usados são "Tem ganho?", "Se tiver ganho, quanto?", "Sourcing responsável" e nº do pedido. Ganho em % é convertido em USD pelo valor da mercadoria.<br>
     <b>Saving %</b> = saving ÷ Σ valor da mercadoria em USD fechado com o cliente, só nos projetos cuja simulação já foi lida (a cobertura aparece no card). O valor é a soma da coluna "VALOR MERCADORIA (DÓLAR)" da simulação, na aba do cenário fechado (Direto → Convencional, Conta e Ordem, Compra e Venda), em qualquer incoterm (FOB, EXW…). A rotina diária lê as simulações aos poucos.<br>
-    <b>Taxa de ganho</b> = projetos com ganho ÷ projetos fechados. <b>Ganho médio por projeto</b> = saving total ÷ projetos fechados.<br>
+    <b>Ganho nas conversas</b>: além dos formulários, lemos o histórico das tasks (handover, Purchase - Ganho, sourcing task e projeto de importação do cliente). O último valor dito na conversa prevalece.<br>
+    <b>Saving total</b> é o ganho <b>líquido</b>: ganho negociado − colchão. <b>Colchão</b> = parte do ganho que, depois do handover, foi usada para cobrir problemas do projeto (mudança de preço do fornecedor, custo não previsto, comissão etc.).<br>
+    <b>Taxa de ganho</b> = projetos com ganho negociado ÷ projetos elegíveis. Projetos com <b>fornecedor do cliente</b> ficam fora da conta, porque neles não há ganho possível. <b>Ganho médio por projeto</b> = saving líquido ÷ projetos com ganho (só os que de fato tiveram ganho).<br>
     <b>⚠ Ganho sem valor</b> = formulário marcado "Tem ganho? Sim" sem valor em USD. Corrigir o formulário ou comentar o valor.
   </div>
 </main>
@@ -185,7 +194,7 @@ const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&g
 const mesLbl=m=>MES[m.slice(5)]+"/"+m.slice(2,4);
 const dataLbl=d=>d.slice(8,10)+"/"+d.slice(5,7)+"/"+d.slice(2,4);
 const uniq=a=>[...new Set(a)].sort((x,y)=>String(x).localeCompare(String(y),"pt-BR"));
-const STATUS={ganho:["Com ganho","ok"],sem:["Sem ganho","mid"],ganho_sem_valor:["Ganho sem valor","wrn"]};
+const STATUS={ganho:["Com ganho","ok"],sem:["Sem ganho","mid"],ganho_sem_valor:["Ganho sem valor","wrn"],consumido:["Ganho consumido","bad"]};
 const $=id=>document.getElementById(id);
 let projetos=[], tabFilter="all"; const abertos=new Set();
 
@@ -203,11 +212,11 @@ const sel=id=>$(id).value;
 const filtrados=()=>projetos.filter(p=>(sel("fPeriodo")==="all"||p.mes===sel("fPeriodo"))&&(sel("fComprador")==="all"||p.comp===sel("fComprador"))&&(sel("fComercial")==="all"||p.comercial===sel("fComercial"))&&(sel("fSegmento")==="all"||p.seg===sel("fSegmento")));
 
 function stats(list){
-  const com=list.filter(p=>p.temGanho), comValor=list.filter(p=>p.status==="ganho");
-  const saving=comValor.reduce((s,p)=>s+p.ganho,0);
+  const elig=list.filter(p=>!p.fornCliente), com=elig.filter(p=>p.temGanho), comValor=list.filter(p=>p.status==="ganho");
+  const saving=comValor.reduce((s,p)=>s+p.ganho,0), colchao=list.reduce((s,p)=>s+(p.colchaoUSD||0),0), comColchao=list.filter(p=>p.colchaoUSD>0);
   const comFob=list.filter(p=>p.valorMercadoriaUSD), fob=comFob.reduce((s,p)=>s+p.valorMercadoriaUSD,0), savingFob=comFob.reduce((s,p)=>s+(p.ganho||0),0);
-  return {n:list.length,com,comValor,saving,comFob,fob,savingPct:fob?savingFob/fob*100:null,cobertura:list.length?comFob.length/list.length*100:0,
-    taxa:list.length?com.length/list.length*100:0,medio:list.length?saving/list.length:0};
+  return {n:list.length,elig,com,comValor,saving,colchao,comColchao,bruto:saving+colchao,comFob,fob,savingPct:fob?savingFob/fob*100:null,cobertura:list.length?comFob.length/list.length*100:0,
+    taxa:elig.length?com.length/elig.length*100:0,medio:comValor.length?saving/comValor.length:0};
 }
 const gauge=(v,max,mark)=>`<div class="gauge" aria-hidden="true"><i style="width:${Math.min(100,v/max*100)}%"></i><b style="left:${Math.min(100,mark/max*100)}%"></b></div>`;
 function hbars(el,arr,fmt=usd,cls=""){
@@ -238,35 +247,41 @@ function render(){
   const tend=ult.length===2?(ult[1]>=ult[0]?`<span class="up">▲ ${usd(ult[1])} em ${mesLbl(meses.at(-1))}</span>`:`<span class="down">▼ ${usd(ult[1])} em ${mesLbl(meses.at(-1))}</span>`):"&nbsp;";
   const pctOk=s.savingPct!=null&&s.cobertura>=50;
   const K=[
-    {l:"Saving total",v:usd(s.saving),c:"Σ ganho em USD dos projetos com ganho",sub:`${s.comValor.length} projetos com valor${semValor.length?` · <span class="down">${semValor.length} sem valor</span>`:""}`,m:`<span class="chip mid">Meta: baseline após o piloto</span>`},
+    {l:"Saving total (líquido)",v:usd(s.saving),c:s.colchao?`${usd(s.bruto)} negociado − ${usd(s.colchao)} de colchão`:"Σ ganho em USD dos projetos com ganho",sub:`${s.comValor.length} projetos com valor${semValor.length?` · <span class="down">${semValor.length} sem valor</span>`:""}`,m:`<span class="chip mid">Meta: baseline após o piloto</span>`},
     {l:"Saving %",v:s.savingPct==null?"—":pct(s.savingPct),c:`saving ÷ valor da mercadoria · ${s.comFob.length} de ${s.n} lidos (${pct(s.cobertura,0)})`,sub:s.savingPct==null?"aguardando leitura das simulações":gauge(s.savingPct,Math.max(10,s.savingPct),META.savingPctMin),
       m:pctOk?`${chip(s.savingPct>=META.savingPctMin,"Na meta","Abaixo da meta")} meta 3–5%`:`<span class="chip wrn">Em coleta</span> meta 3–5%`},
-    {l:"Taxa de ganho",v:pct(s.taxa,0),c:`${s.com.length} com ganho ÷ ${s.n} fechados`,sub:gauge(s.taxa,100,META.taxaGanho),m:`${chip(s.taxa>=META.taxaGanho,"Na meta","Abaixo da meta")} meta ≥ 60%`},
-    {l:"Ganho médio por projeto",v:usd(s.medio),c:"saving total ÷ projetos fechados",sub:tend,m:`<span class="chip mid">Acompanhar tendência mensal</span>`},
+    {l:"Taxa de ganho",v:pct(s.taxa,0),c:`${s.com.length} com ganho ÷ ${s.elig.length} elegíveis${s.n-s.elig.length?` (${s.n-s.elig.length} fornecedor do cliente fora)`:""}`,sub:gauge(s.taxa,100,META.taxaGanho),m:`${chip(s.taxa>=META.taxaGanho,"Na meta","Abaixo da meta")} meta ≥ 60%`},
+    {l:"Ganho médio por projeto",v:usd(s.medio),c:`saving líquido ÷ ${s.comValor.length} projetos com ganho`,sub:tend,m:`<span class="chip mid">Acompanhar tendência mensal</span>`},
   ];
   $("kpis").innerHTML=K.map(k=>`<div class="card kpi"><div class="label">${k.l}</div><div class="value">${k.v}</div><div class="calc">${k.c}</div><div class="sub">${k.sub}</div><div class="meta">${k.m}</div></div>`).join("");
   chartMes(d);
-  const t=Math.max(1,s.n), sem=d.filter(p=>!p.temGanho).length;
+  const t=Math.max(1,s.n), cons=d.filter(p=>p.status==="consumido"), forn=d.filter(p=>p.fornCliente&&!p.temGanho), sem=d.filter(p=>!p.temGanho&&!p.fornCliente).length;
   $("splitBox").innerHTML=`
-    <div style="font-family:var(--display);font-size:40px;line-height:1;color:var(--ink)">${s.com.length}<span style="font-family:var(--body);font-size:16px;color:var(--muted)"> / ${s.n} com ganho</span></div>
-    <div class="split"><div style="width:${s.comValor.length/t*100}%;background:var(--bar)"></div><div style="width:${semValor.length/t*100}%;background:var(--warn)"></div><div style="width:${sem/t*100}%;background:var(--neutral)"></div></div>
-    <div class="legend"><span><i class="dot" style="background:var(--bar)"></i>Com ganho (${s.comValor.length})</span><span><i class="dot" style="background:var(--warn)"></i>Ganho sem valor (${semValor.length})</span><span><i class="dot" style="background:var(--neutral)"></i>Sem ganho (${sem})</span></div>
-    <div style="margin-top:14px;font-size:12px;color:var(--muted)">Com off: <b>${d.filter(p=>p.temOff).length}</b> · Com certificação: <b>${d.filter(p=>p.certificacao).length}</b> · Fornecedor do cliente: <b>${d.filter(p=>p.comp==="Fornecedor do cliente").length}</b></div>`;
-  const by=(key)=>{const m={};d.forEach(p=>{const k=p[key]||"—";(m[k]=m[k]||{s:0,n:0,c:0});m[k].n++;if(p.temGanho)m[k].c++;if(p.status==="ganho")m[k].s+=p.ganho;});return m;};
+    <div style="font-family:var(--display);font-size:40px;line-height:1;color:var(--ink)">${s.com.length}<span style="font-family:var(--body);font-size:16px;color:var(--muted)"> / ${s.elig.length} elegíveis com ganho negociado</span></div>
+    <div class="split"><div style="width:${s.comValor.length/t*100}%;background:var(--bar)"></div><div style="width:${cons.length/t*100}%;background:var(--accent)"></div><div style="width:${semValor.length/t*100}%;background:var(--warn)"></div><div style="width:${sem/t*100}%;background:var(--neutral)"></div><div style="width:${forn.length/t*100}%;background:var(--line)"></div></div>
+    <div class="legend"><span><i class="dot" style="background:var(--bar)"></i>Com ganho (${s.comValor.length})</span><span><i class="dot" style="background:var(--accent)"></i>Ganho consumido como colchão (${cons.length})</span><span><i class="dot" style="background:var(--warn)"></i>Ganho sem valor (${semValor.length})</span><span><i class="dot" style="background:var(--neutral)"></i>Sem ganho (${sem})</span><span><i class="dot" style="background:var(--line)"></i>Fornecedor do cliente (${forn.length}) · sem ganho possível</span></div>`;
+  // colchão
+  $("colchaoResumo").innerHTML=`<h3>Ganho usado como colchão</h3>
+    <div style="font-family:var(--display);font-size:40px;line-height:1;color:var(--accent)">${usd(s.colchao)}</div>
+    <div class="calc" style="margin-top:6px">${s.comColchao.length} projetos · ${s.bruto?pct(s.colchao/s.bruto*100):"0%"} do ganho negociado (${usd(s.bruto)})</div>
+    <div class="split" style="margin-top:12px"><div style="width:${s.bruto?s.saving/s.bruto*100:0}%;background:var(--bar)"></div><div style="width:${s.bruto?s.colchao/s.bruto*100:0}%;background:var(--accent)"></div></div>
+    <div class="legend"><span><i class="dot" style="background:var(--bar)"></i>Ganho líquido ${usd(s.saving)}</span><span><i class="dot" style="background:var(--accent)"></i>Colchão ${usd(s.colchao)}</span></div>`;
+  $("colchaoLista").innerHTML=s.comColchao.length?`<div class="table-wrap"><table style="min-width:0"><thead><tr><th>Projeto</th><th class="num">Negociado</th><th class="num">Colchão</th><th class="num">Ficou</th></tr></thead><tbody>${s.comColchao.sort((a,b)=>b.colchaoUSD-a.colchaoUSD).map(p=>`<tr><td style="white-space:normal;min-width:0;width:100%"><b>${esc(p.cliente)}</b><br><span style="font-size:12px">${esc(p.colchao.motivo)}</span><br><small style="color:var(--muted)">${esc(p.colchao.autor)} · ${dataLbl(p.colchao.data)} · <a class="tw" href="${esc(p.colchao.link)}" target="_blank" rel="noopener">ver conversa</a></small></td><td class="num">${usd(p.ganhoBruto)}</td><td class="num down">−${usd(p.colchaoUSD)}</td><td class="num">${usd(p.ganho)}</td></tr>`).join("")}</tbody></table></div>`:'<p style="color:var(--muted)">Nenhum ganho usado como colchão no filtro</p>';
+  const by=(key)=>{const m={};d.forEach(p=>{const k=p[key]||"—";(m[k]=m[k]||{s:0,n:0,c:0});m[k].n++;if(p.temGanho&&!p.fornCliente)m[k].c++;if(p.fornCliente)m[k].n--;if(p.status==="ganho")m[k].s+=p.ganho;});return m;};
   const bc=by("comp"), bm=by("comercial");
   hbars($("porComprador"),Object.entries(bc).map(([k,v])=>[k,v.s]));
   hbars($("taxaComprador"),Object.entries(bc).filter(([k,v])=>v.n>=3&&k!=="—"&&k!=="Fornecedor do cliente").map(([k,v])=>[k,v.c/v.n*100||0.0001,`${v.c}/${v.n}`]),v=>pct(v,0),"red");
   hbars($("porComercial"),Object.entries(bm).map(([k,v])=>[k,v.s]));
 
-  const rows=d.filter(p=>tabFilter==="all"||(tabFilter==="semfob"?!p.valorMercadoriaUSD:p.status===tabFilter));
+  const rows=d.filter(p=>tabFilter==="all"||(tabFilter==="semfob"?!p.valorMercadoriaUSD:tabFilter==="colchao"?p.colchaoUSD>0:tabFilter==="sem"?["sem","consumido"].includes(p.status):p.status===tabFilter));
   $("tbody").innerHTML=rows.map(p=>{
     const open=abertos.has(p.id), gp=p.valorMercadoriaUSD&&p.ganho?p.ganho/p.valorMercadoriaUSD*100:null;
-    const det=[p.qtdFornecedores&&`Fornecedores: ${esc(p.qtdFornecedores)}`,p.certificacao&&`Certificação: ${esc(p.certificacao)}`,p.chinaMember&&`China Member: ${esc(p.chinaMember)}`,p.beneficio&&`Benefício: ${esc(p.beneficio)}`,p.ganhoTexto&&`Ganho no formulário: "${esc(p.ganhoTexto)}"`,p.purchaseTask&&`<a class="tw" href="${esc(p.purchaseTask)}" target="_blank" rel="noopener">task Purchase - Ganho</a>`].filter(Boolean);
+    const det=[p.qtdFornecedores&&`Fornecedores: ${esc(p.qtdFornecedores)}`,p.certificacao&&`Certificação: ${esc(p.certificacao)}`,p.chinaMember&&`China Member: ${esc(p.chinaMember)}`,p.beneficio&&`Benefício: ${esc(p.beneficio)}`,p.ganhoTexto&&`Ganho no formulário: "${esc(p.ganhoTexto)}"`,p.ganhoComentario&&!p.historicoGanho&&`Ganho na conversa (${esc(p.ganhoComentario.autor)}, ${esc(p.ganhoComentario.data)}): "${esc(p.ganhoComentario.texto)}"`,p.historicoGanho&&`<b>Histórico do ganho</b>: `+p.historicoGanho.map(h=>`${dataLbl(h.data)} ${usd(h.valor)} (${esc(h.autor)}: "${esc(h.texto)}" <a class="tw" href="${esc(h.link)}" target="_blank" rel="noopener">ver</a>)`).join(" → "),p.colchao&&`<b>Colchão</b>: −${usd(p.colchaoUSD)} · ${esc(p.colchao.motivo)}`,p.fornCliente&&`Fornecedor do cliente: não há ganho possível`,p.temOff&&`Off: ${esc(p.off||"Sim")}`,p.purchaseTask&&`<a class="tw" href="${esc(p.purchaseTask)}" target="_blank" rel="noopener">task Purchase - Ganho</a>`].filter(Boolean);
     const main=`<tr class="proj" data-id="${p.id}">
       <td><span class="caret">${open?"▾":"▸"}</span><b>${esc(p.cliente)}</b> <a class="tw" href="${esc(p.link)}" target="_blank" rel="noopener">abrir</a>${p.nota?`<br><span class="flag" style="margin-left:14px">⚠ ${esc(p.nota)}</span>`:""}</td>
       <td>${esc(p.comercial)}</td><td>${esc(p.comp)}</td><td>${dataLbl(p.data)}</td><td>${esc(p.pedido)}</td><td>${esc(p.operacao)}</td>
-      <td class="num">${usd(p.valorMercadoriaUSD)}</td><td>${esc(p.incoterm||"—")}</td><td class="num ${p.ganho>0?"up":""}">${p.status==="ganho_sem_valor"?"?":usd(p.ganho)}</td>
-      <td class="num">${gp==null?"—":pct(gp)}</td><td>${p.temOff?esc(p.off||"Sim"):"—"}</td>
+      <td class="num">${usd(p.valorMercadoriaUSD)}</td><td>${esc(p.incoterm||"—")}</td><td class="num ${p.ganho>0?"up":""}">${p.status==="ganho_sem_valor"?"?":usd(p.ganho)}${p.colchaoUSD?`<br><small style="color:var(--muted)">de ${usd(p.ganhoBruto)}</small>`:""}</td>
+      <td class="num">${gp==null?"—":pct(gp)}</td><td class="num ${p.colchaoUSD?"down":""}">${p.colchaoUSD?"−"+usd(p.colchaoUSD):"—"}</td>
       <td><span class="chip ${STATUS[p.status][1]}">${STATUS[p.status][0]}</span></td></tr>`;
     const sub=open?`<tr class="sup"><td colspan="12" style="padding-left:30px">${det.join(" · ")||"Sem detalhes adicionais"}</td></tr>`:"";
     return main+sub;
