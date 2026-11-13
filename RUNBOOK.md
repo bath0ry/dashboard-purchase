@@ -56,9 +56,10 @@ Os links Wufoo (chinalinktrading.wufoo.com/cabinet/...) não abrem pela nuvem. A
 - Saving não-preço: **fora do painel por enquanto** (decisão do usuário).
 - Fonte do ganho, em ordem de prioridade: conversa da task (ganhos_comentarios.json) > formulário Purchase - Ganho > formulário de Handover.
 - Saving total = ganho LÍQUIDO (negociado − colchão). Status `consumido` = ganho negociado todo usado como colchão.
-- Taxa de ganho = projetos com ganho negociado ÷ projetos elegíveis (exclui projetos de "Fornecedor do cliente" SEM ganho; se houver ganho com fornecedor do cliente, ele conta normalmente — não é regra que não haja).
+- Taxa de ganho = projetos com ganho negociado ÷ projetos fechados (todos; fornecedor do cliente não tem tratamento especial no painel).
 - Ganho médio = saving líquido ÷ projetos com ganho líquido > 0 (não divide pelos fechados).
-- Off e certificação não aparecem como contagem no painel (não impedem ganho); fornecedor do cliente sim.
+- Off, certificação e fornecedor do cliente não aparecem como contagem no painel.
+- Nomenclatura no painel: "Ganho abatido" (nunca "colchão"); status de ganho todo abatido = "Ganho abatido". O campo interno continua `colchao` no JSON.
 - Comprador = "Sourcing responsável" (nomes padronizados no script).
 
 ## 4. Commit diário no GitHub (Claude in Chrome, usuário já logado como bath0ry)
