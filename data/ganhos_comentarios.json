@@ -133,7 +133,7 @@
    "texto": "Projeto seguirá sem ganho e de acordo com a PI abaixo. Sem mudanças na simulação.",
    "link": "https://project.chinalinktrading.com/app/tasks/26797670"
   },
-  "nota": "Ganho de US$ 300 usado como colchão (custo LCL na PI)"
+  "nota": "Ganho de US$ 300 abatido (custo LCL na PI)"
  },
  "26562821": {
   "ganhoUSD": null,
@@ -217,10 +217,10 @@
  },
  "26912918": {
   "ganhoInicialUSD": 3410,
-  "ganhoUSD": 3050,
-  "autor": "Victor Augusto",
-  "data": "2026-11-11",
-  "texto": "Vamos utilizar o ganho desse projeto para pagar essa comissão no balance, um montante de 360 USD a mais",
+  "ganhoUSD": 3410,
+  "autor": "Sabrina Rocha",
+  "data": "2026-11-17",
+  "texto": "Segue PI atualizada sem off. Ganho de 3410,00USD",
   "link": "https://project.chinalinktrading.com/app/tasks/26742137",
   "historico": [
    {
@@ -236,15 +236,22 @@
     "autor": "Victor Augusto",
     "texto": "360 USD do ganho usados para pagar comissão de 3% do agente de sourcing externo",
     "link": "https://project.chinalinktrading.com/app/tasks/26742137"
+   },
+   {
+    "data": "2026-11-11",
+    "valor": 3410,
+    "autor": "Erika Matos",
+    "texto": "Ganho de 3410,00USD e 30% EXTRA (após o aviso da comissão)",
+    "link": "https://project.chinalinktrading.com/app/tasks/26742137"
+   },
+   {
+    "data": "2026-11-17",
+    "valor": 3410,
+    "autor": "Sabrina Rocha",
+    "texto": "Segue PI atualizada sem off. Ganho de 3410,00USD",
+    "link": "https://project.chinalinktrading.com/app/tasks/26742137"
    }
   ],
-  "colchao": {
-   "valor": 360,
-   "motivo": "Comissão de 3% do agente de sourcing externo não incluída na cotação",
-   "autor": "Victor Augusto",
-   "data": "2026-11-11",
-   "texto": "Por uma falha de comunicação, o agente não incluiu a comissão de 3% na cotação… vamos utilizar o ganho desse projeto para pagar essa comissão no balance, um montante de 360 USD a mais",
-   "link": "https://project.chinalinktrading.com/app/tasks/26742137"
-  }
+  "nota": "Ganho reconfirmado em US$ 3.410 em 17/11 (PI sem off); a comissão de 3% do agente (US$ 360) citada em 11/11 não aparece mais abatida — conferir"
  }
 }
