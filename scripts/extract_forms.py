@@ -59,7 +59,7 @@ ALIAS = [  # nome do "Sourcing responsável" no formulário -> nome padronizado
     (r'^victor( augusto)?( silva)?$', "Victor Augusto"), (r'^arthur leite|^arthur l\.?$', "Arthur Leite"),
     (r'^arthur lima', "Arthur Lima"), (r'^al+an( castellano)?$', "Alan Castellano"),
     (r'^jonathan', "Jonathan Corrêa"), (r'^nat[aá]lia', "Natália"), (r'^rha[ií]ssa', "Rhaissa Max"),
-    (r'^paulo', "Paulo Cesar"), (r'^isabel+e', "Isabelle Barroso"), (r'^mis+a(e|i)l', "Misaell Lopes"),
+    (r'^paulo', "Paulo Cesar Gomes"), (r'^isabel+e', "Isabelle Barroso"), (r'^mis+a(e|i)l', "Misaell Lopes"),
     (r'fornecedor|supplier|^eu$|^nenhum', "Fornecedor do cliente"), (r'^camily', "Camily"), (r'^cliente', "Fornecedor do cliente"), (r'^vit[oó]ria', "Vitória"),
 ]
 def comprador(txt):
@@ -103,8 +103,21 @@ def parse(t, origem):
 def achar_coment(p, coment):
     return coment.get(str(p["id"])) or (coment.get(p.get("purchaseTask", "").rsplit("/", 1)[-1]) if p.get("purchaseTask") else None)
 
+# Comprador (regra do usuário, 17/11/2026): todo projeto fechado a partir de COMPRADOR_DESDE é do Paulo Cesar Gomes;
+# antes disso vale o "Sourcing responsável" do formulário, com as correções de COMPRADOR_FIXO (id da task de handover).
+COMPRADOR_PADRAO = "Paulo Cesar Gomes"
+COMPRADOR_DESDE = "2026-11-17"
+COMPRADOR_FIXO = {26994694: "Paulo Cesar Gomes"}  # Piemonte Lopes P1: ganho negociado e PI anexada pelo Paulo
+
+def aplicar_comprador(p):
+    if p.get("comp") == "Paulo Cesar": p["comp"] = COMPRADOR_PADRAO
+    novo = COMPRADOR_FIXO.get(p["id"]) or (COMPRADOR_PADRAO if p["data"] >= COMPRADOR_DESDE else None)
+    if novo and p.get("comp") != novo:
+        p.setdefault("sourcing", p.get("comp", "—")); p["comp"] = novo
+
 def finalizar(p, ext, coment):
     """Aplica valor da mercadoria, ganho das conversas/arquivos, abatimento e status a um projeto."""
+    aplicar_comprador(p)
     if ext.get("simUSD") and not ext.get("valorMercadoriaUSD"): ext["valorMercadoriaUSD"] = ext["simUSD"]  # formato antigo
     for f in ("valorMercadoriaUSD", "incoterm", "piUSD", "fornecedores", "simFile", "simTentado", "nota"):
         if f in ext and ext[f] not in (None, "", []): p[f] = ext[f]
@@ -131,9 +144,8 @@ def finalizar(p, ext, coment):
     p["ganho"] = g if p["temGanho"] else 0.0
     # colchão: parte (ou todo) do ganho negociado que foi usada depois para cobrir problemas do projeto
     p["colchaoUSD"] = round(float((p.get("colchao") or {}).get("valor") or 0), 2)
-    p["ganhoBruto"] = p.get("ganhoInicial") if p.get("ganhoInicial") is not None else (p["ganho"] if p["ganho"] is not None else None)
-    if p["ganhoBruto"] is not None and p["ganho"] is not None and p["colchaoUSD"]:
-        p["ganhoBruto"] = round(max(p["ganhoBruto"], p["ganho"] + p["colchaoUSD"]), 2)
+    # ganho negociado (bruto) = o que sobrou + o que foi abatido depois; se o ganho só aumentou, vale o valor atual
+    p["ganhoBruto"] = round(p["ganho"] + p["colchaoUSD"], 2) if p["ganho"] is not None else p.get("ganhoInicial")
     p["fornCliente"] = p["comp"] == "Fornecedor do cliente"
     if p["temGanho"] and g is None:
         p["status"] = "ganho_sem_valor"; p["nota"] = p["nota"] or f"Ganho informado como '{p['ganhoTexto'] or 'Sim'}' sem valor em USD"
