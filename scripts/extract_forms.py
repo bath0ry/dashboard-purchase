@@ -5,6 +5,7 @@ Complemento:     Sales Support (414644) › "Purchase - Ganho" (1639147) — mes
 Corte: tasks criadas a partir de 2026-07-01.
 
 Uso: python3 scripts/extract_forms.py handover.json ganho.json [data/projetos.json] [fob.json] [data/ganhos_comentarios.json]
+     python3 scripts/extract_forms.py --reaplicar data/projetos.json data/fob.json data/ganhos_comentarios.json
   handover.json / ganho.json = saída de twprojects-list_tasks (fields id,name,createdAt,status,description)
   data/projetos.json existente (opcional) = preserva FOB/PI/não-preço/segmento já levantados
   fob.json (opcional) = {task_id: {"valorMercadoriaUSD":..., "incoterm":..., "piUSD":..., "fornecedores":[...], "simFile":..., "seg":..., "tipo":...}}
@@ -99,7 +100,63 @@ def parse(t, origem):
         temSimLink=campo(d, "Link da planilha de simulação:").startswith("http"), nInvoices=sum(x.startswith("http") for x in invoices),
     )
 
+def achar_coment(p, coment):
+    return coment.get(str(p["id"])) or (coment.get(p.get("purchaseTask", "").rsplit("/", 1)[-1]) if p.get("purchaseTask") else None)
+
+def finalizar(p, ext, coment):
+    """Aplica valor da mercadoria, ganho das conversas/arquivos, abatimento e status a um projeto."""
+    if ext.get("simUSD") and not ext.get("valorMercadoriaUSD"): ext["valorMercadoriaUSD"] = ext["simUSD"]  # formato antigo
+    for f in ("valorMercadoriaUSD", "incoterm", "piUSD", "fornecedores", "simFile", "simTentado", "nota"):
+        if f in ext and ext[f] not in (None, "", []): p[f] = ext[f]
+    p.pop("simUSD", None); p.pop("naoPreco", None)
+    p.setdefault("fornecedores", []); p.setdefault("nota", "")
+    p["seg"] = ext.get("seg") or segmento(p["cliente"])
+    p["tipo"] = ext.get("tipo") or "—"
+    # ganho: valor informado no formulário; se só veio %, converte com o FOB; se não informado, usa simulação − PI
+    p["ganhoFonte"] = "formulário" if p["temGanho"] else ""
+    c = achar_coment(p, coment)
+    if c:  # a conversa da task é mais recente que o formulário e prevalece
+        p["temGanho"] = bool(c.get("temGanho", True))
+        p["ganhoInformado"] = c.get("ganhoUSD"); p["ganhoPct"] = c.get("ganhoPct", p["ganhoPct"] if c.get("ganhoUSD") is None else None)
+        p["ganhoFonte"] = c.get("fonte") or f"comentário de {c.get('autor','?')} em {c.get('data','?')}"
+        if c.get("calculo"): p["ganhoCalculo"] = c["calculo"]  # conta feita a partir dos arquivos (simulação/PI CLT × PI do fornecedor)
+        p["ganhoComentario"] = dict(texto=c.get("texto", ""), link=c.get("link", ""), autor=c.get("autor", ""), data=c.get("data", ""))
+        if c.get("nota"): p["nota"] = c["nota"]
+        if c.get("historico"): p["historicoGanho"] = c["historico"]
+        if c.get("colchao"): p["colchao"] = c["colchao"]
+        if c.get("ganhoInicialUSD") is not None: p["ganhoInicial"] = c["ganhoInicialUSD"]
+    g = p["ganhoInformado"]
+    if g is None and p["ganhoPct"] and p.get("valorMercadoriaUSD"): g = round(p["valorMercadoriaUSD"] * p["ganhoPct"] / 100, 2)
+    if g is None and p["temGanho"] and p.get("valorMercadoriaUSD") and p.get("piUSD"): g = round(p["valorMercadoriaUSD"] - p["piUSD"], 2)
+    p["ganho"] = g if p["temGanho"] else 0.0
+    # colchão: parte (ou todo) do ganho negociado que foi usada depois para cobrir problemas do projeto
+    p["colchaoUSD"] = round(float((p.get("colchao") or {}).get("valor") or 0), 2)
+    p["ganhoBruto"] = p.get("ganhoInicial") if p.get("ganhoInicial") is not None else (p["ganho"] if p["ganho"] is not None else None)
+    if p["ganhoBruto"] is not None and p["ganho"] is not None and p["colchaoUSD"]:
+        p["ganhoBruto"] = round(max(p["ganhoBruto"], p["ganho"] + p["colchaoUSD"]), 2)
+    p["fornCliente"] = p["comp"] == "Fornecedor do cliente"
+    if p["temGanho"] and g is None:
+        p["status"] = "ganho_sem_valor"; p["nota"] = p["nota"] or f"Ganho informado como '{p['ganhoTexto'] or 'Sim'}' sem valor em USD"
+    elif p["temGanho"] and (p["ganho"] or 0) <= 0 and p["colchaoUSD"] > 0:
+        p["status"] = "consumido"  # houve ganho negociado, mas foi todo usado como colchão
+    else:
+        p["status"] = "ganho" if p["temGanho"] and (p["ganho"] or 0) > 0 else "sem"
+    p["revisar"] = p["status"] == "ganho_sem_valor" or bool(p.get("valorMercadoriaUSD") and p["ganho"] and p["ganho"] / p["valorMercadoriaUSD"] > 0.35)
+    return p
+
+def reaplicar(proj_path, fob_path, coment_path):
+    """Reaplica fob.json e ganhos_comentarios.json sobre o projetos.json existente (sem baixar o Teamwork de novo)."""
+    d = json.load(open(proj_path)); fob = json.load(open(fob_path)); coment = json.load(open(coment_path))
+    for p in d["projetos"]:
+        finalizar(p, dict(fob.get(str(p["id"]), {})), coment)
+    d["atualizado"] = datetime.datetime.now(zoneinfo.ZoneInfo("America/Sao_Paulo")).strftime("%Y-%m-%d %H:%M")
+    json.dump(d, open(proj_path, "w"), ensure_ascii=False, indent=1)
+    com = [p for p in d["projetos"] if p["status"] == "ganho"]
+    print(f"{len(d['projetos'])} projetos | com ganho {len(com)} | US$ {sum(p['ganho'] for p in com):,.2f} | sem valor {sum(p['status']=='ganho_sem_valor' for p in d['projetos'])} | abatido US$ {sum(p['colchaoUSD'] for p in d['projetos']):,.2f}")
+
 def main():
+    if sys.argv[1] == "--reaplicar":  # python3 scripts/extract_forms.py --reaplicar data/projetos.json data/fob.json data/ganhos_comentarios.json
+        return reaplicar(*sys.argv[2:5])
     hand = json.load(open(sys.argv[1]))["tasks"]
     ganho = json.load(open(sys.argv[2]))["tasks"] if len(sys.argv) > 2 else []
     out_path = pathlib.Path(sys.argv[3]) if len(sys.argv) > 3 else pathlib.Path("data/projetos.json")
@@ -136,42 +193,7 @@ def main():
     lista = []
     for p in projetos.values():
         ext = {**antigo.get(str(p["id"]), {}), **fob.get(str(p["id"]), {})}
-        if ext.get("simUSD") and not ext.get("valorMercadoriaUSD"): ext["valorMercadoriaUSD"] = ext["simUSD"]  # formato antigo
-        for f in ("valorMercadoriaUSD", "incoterm", "piUSD", "fornecedores", "simFile", "simTentado", "nota"):
-            if f in ext and ext[f] not in (None, "", []): p[f] = ext[f]
-        p.pop("simUSD", None); p.pop("naoPreco", None)
-        p.setdefault("fornecedores", []); p.setdefault("nota", "")
-        p["seg"] = ext.get("seg") or segmento(p["cliente"])
-        p["tipo"] = ext.get("tipo") or "—"
-        # ganho: valor informado no formulário; se só veio %, converte com o FOB; se não informado, usa simulação − PI
-        p["ganhoFonte"] = "formulário" if p["temGanho"] else ""
-        c = coment.get(str(p["id"])) or (coment.get(p.get("purchaseTask", "").rsplit("/", 1)[-1]) if p.get("purchaseTask") else None)
-        if c:  # a conversa da task é mais recente que o formulário e prevalece
-            p["temGanho"] = bool(c.get("temGanho", True))
-            p["ganhoInformado"] = c.get("ganhoUSD"); p["ganhoPct"] = c.get("ganhoPct", p["ganhoPct"] if c.get("ganhoUSD") is None else None)
-            p["ganhoFonte"] = f"comentário de {c.get('autor','?')} em {c.get('data','?')}"
-            p["ganhoComentario"] = dict(texto=c.get("texto", ""), link=c.get("link", ""), autor=c.get("autor", ""), data=c.get("data", ""))
-            if c.get("nota"): p["nota"] = c["nota"]
-            if c.get("historico"): p["historicoGanho"] = c["historico"]
-            if c.get("colchao"): p["colchao"] = c["colchao"]
-            if c.get("ganhoInicialUSD") is not None: p["ganhoInicial"] = c["ganhoInicialUSD"]
-        g = p["ganhoInformado"]
-        if g is None and p["ganhoPct"] and p.get("valorMercadoriaUSD"): g = round(p["valorMercadoriaUSD"] * p["ganhoPct"] / 100, 2)
-        if g is None and p["temGanho"] and p.get("valorMercadoriaUSD") and p.get("piUSD"): g = round(p["valorMercadoriaUSD"] - p["piUSD"], 2)
-        p["ganho"] = g if p["temGanho"] else 0.0
-        # colchão: parte (ou todo) do ganho negociado que foi usada depois para cobrir problemas do projeto
-        p["colchaoUSD"] = round(float((p.get("colchao") or {}).get("valor") or 0), 2)
-        p["ganhoBruto"] = p.get("ganhoInicial") if p.get("ganhoInicial") is not None else (p["ganho"] if p["ganho"] is not None else None)
-        if p["ganhoBruto"] is not None and p["ganho"] is not None and p["colchaoUSD"]:
-            p["ganhoBruto"] = round(max(p["ganhoBruto"], p["ganho"] + p["colchaoUSD"]), 2)
-        p["fornCliente"] = p["comp"] == "Fornecedor do cliente"
-        if p["temGanho"] and g is None:
-            p["status"] = "ganho_sem_valor"; p["nota"] = p["nota"] or f"Ganho informado como '{p['ganhoTexto'] or 'Sim'}' sem valor em USD"
-        elif p["temGanho"] and (p["ganho"] or 0) <= 0 and p["colchaoUSD"] > 0:
-            p["status"] = "consumido"  # houve ganho negociado, mas foi todo usado como colchão
-        else:
-            p["status"] = "ganho" if p["temGanho"] and (p["ganho"] or 0) > 0 else "sem"
-        p["revisar"] = p["status"] == "ganho_sem_valor" or bool(p.get("valorMercadoriaUSD") and p["ganho"] and p["ganho"] / p["valorMercadoriaUSD"] > 0.35)
+        finalizar(p, ext, coment)
         lista.append(p)
     import collections  # unifica grafias do mesmo nome (com/sem acento)
     for campo_nome in ("comercial", "comp"):
