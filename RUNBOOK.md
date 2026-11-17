@@ -65,11 +65,14 @@ Os links Wufoo (chinalinktrading.wufoo.com/cabinet/...) não abrem pela nuvem. A
 - Fonte do ganho, em ordem de prioridade: conversa da task (ganhos_comentarios.json) > formulário Purchase - Ganho > formulário de Handover.
 - Saving total = ganho LÍQUIDO (negociado − colchão). Status `consumido` = ganho negociado todo usado como colchão.
 - Taxa de ganho = projetos com ganho negociado ÷ projetos fechados (todos; fornecedor do cliente não tem tratamento especial no painel).
-- Ganho médio = saving líquido ÷ projetos com ganho líquido > 0 (não divide pelos fechados).
-- **Meta de ganho = média dos 3 meses anteriores** ao mês de referência (mês do filtro; sem filtro, o mês atual), com os mesmos filtros de comprador/comercial/segmento. Vale para o saving do mês e para o ganho médio por projeto. Gráfico mensal mostra a meta como traço tracejado sobre a barra (só nos meses com 3 meses anteriores). Meta da taxa de ganho continua 60%; Saving % continua 3–5%. O cálculo é do template (nada a fazer na rotina além de manter os dados).
+- Ganho médio = ganho negociado (bruto) ÷ projetos com ganho negociado (não divide pelos fechados); o líquido aparece ao lado.
+- **Meta mensal = média do GANHO NEGOCIADO (BRUTO) dos 3 meses anteriores** ao mês da aba (aba "Todos os meses" → mês vigente), com os filtros de comprador/comercial/segmento. Bruto = ganho atual + ganho abatido (o comprador negociou aquele valor; o que aconteceu depois no projeto não tira mérito). Vale também para o ganho médio por projeto. Saving líquido (negociado − abatido) aparece em card separado, só informativo. Meta da taxa de ganho continua 60%; Saving % = ganho negociado ÷ valor da mercadoria, meta 3–5%. Cálculo feito no template.
+- **Abas de mês**: o painel cria uma aba por mês, de jul/26 até o mês vigente (mês de `atualizado`). Na virada do mês a aba nova aparece sozinha e o painel abre nela. Nada a fazer na rotina além de atualizar os dados no dia 1º.
+- **Comprador**: a partir de 17/11/2026 todo projeto fechado é do **Paulo Cesar Gomes** (regra no extract_forms.py: COMPRADOR_DESDE/COMPRADOR_FIXO). Antes disso vale o "Sourcing responsável" do formulário, com correções em COMPRADOR_FIXO (ex.: Piemonte 26994694 → Paulo). O nome original fica em `sourcing` e aparece nos detalhes. Se o usuário apontar outro projeto negociado por ele antes de 17/11, incluir o id em COMPRADOR_FIXO.
+- Gráfico "taxa de ganho por comprador" foi **removido** (decisão do usuário: todos os projetos fechados vão para ele). Ficam "ganho negociado por comprador" e "por comercial" (bruto, com o líquido ao lado).
 - Off, certificação e fornecedor do cliente não aparecem como contagem no painel.
 - Nomenclatura no painel: "Ganho abatido" (nunca "colchão"); status de ganho todo abatido = "Ganho abatido". O campo interno continua `colchao` no JSON.
-- Comprador = "Sourcing responsável" (nomes padronizados no script).
+- Comprador: ver regra acima (Paulo Cesar Gomes desde 17/11/2026; antes, "Sourcing responsável" padronizado no script).
 
 ## 4. Commit diário no GitHub (Claude in Chrome, usuário já logado como bath0ry)
 1. `tabs_context_mcp(createIfEmpty=true)`; navegar para https://github.com/bath0ry/dashboard-purchase/upload/master/data
