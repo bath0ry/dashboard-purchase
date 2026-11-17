@@ -41,6 +41,14 @@ Os links Wufoo (chinalinktrading.wufoo.com/cabinet/...) não abrem pela nuvem. A
    - **Colchão**: se depois do ganho negociado parte ou todo o valor foi abatido/usado para cobrir um problema (fornecedor mudou preço, custo não previsto, comissão, frete, reembolso, "seguir sem ganho"...), gravar `colchao: {valor, motivo, autor, data, texto, link}` e `ganhoUSD` = o que sobrou. Ganho que AUMENTOU não é colchão (só histórico).
    - Gravar em `data/ganhos_comentarios.json`: `{"<id handover>": {"ganhoInicialUSD": 680, "ganhoUSD": 0, "autor","data","texto","link","nota", "historico":[{data,valor,autor,texto,link}], "colchao":{valor,motivo,autor,data,texto,link}}}` e rodar o passo 3 de novo.
    - As tasks de Purchase › Projetos Fechados costumam vir sem comentários pela API (acesso restrito); se vierem, aplicar a mesma regra.
+4c. **Validar o ganho nos ARQUIVOS** (regra do usuário, 17/11). Vale para todo `ganho_sem_valor` e para todo projeto com abatimento/ajuste de PI:
+   - Ler a descrição da task (formulário), os comentários e os anexos das tasks de Handover, Purchase - Ganho, SOURCING TASK e Purchase › Projetos Fechados (e do projeto "Importação - Pn - CLIENTE").
+   - Achar os arquivos com `twprojects-list_files(search_term="<cliente>", uploaded_after=...)`: simulação final (xlsx), **PI CLT** enviada ao cliente (`pi_clt...xlsx`), **PI do fornecedor** (pdf/xlsx), PO e RESUMO FINANCEIRO. Baixar com `twprojects-download_file` (o arquivo é salvo em disco; > 10 MB é recusado → usar a PI CLT, que tem os mesmos preços da simulação).
+   - Ganho = Σ (preço ao cliente − preço do fornecedor) × qtd, item a item (simulação/PI CLT × PI do fornecedor). Ignorar bank fee e taxas FOB que não estão nos dois lados. Se a quantidade diverge entre PI e simulação, calcular sobre a quantidade da simulação e anotar na `nota`.
+   - Abatimento pelos arquivos: comparar a PI anterior com a PI final; se o preço do fornecedor subiu (ou houve erro de cotação) e o ganho caiu, gravar `colchao` com o item e o valor.
+   - Gravar em `ganhos_comentarios.json` com `"fonte": "PI CLT × PI do fornecedor (arquivos)"` e `"calculo": "<conta item a item, curta>"` (aparece nos detalhes do projeto como "Conta nos arquivos").
+   - Sem simulação/PI para comparar → manter `ganho_sem_valor` com `nota` explicando e citar no resumo final.
+   - Para reaplicar só o JSON de ganhos/fob sem baixar o Teamwork de novo: `python3 scripts/extract_forms.py --reaplicar data/projetos.json data/fob.json data/ganhos_comentarios.json`.
 5. `python3 scripts/build.py` → index.html e dist/artifact.html.
 6. Publicar dist/artifact.html no Artifact (url acima). `project_write` de projetos.json e fob.json.
 
@@ -58,6 +66,7 @@ Os links Wufoo (chinalinktrading.wufoo.com/cabinet/...) não abrem pela nuvem. A
 - Saving total = ganho LÍQUIDO (negociado − colchão). Status `consumido` = ganho negociado todo usado como colchão.
 - Taxa de ganho = projetos com ganho negociado ÷ projetos fechados (todos; fornecedor do cliente não tem tratamento especial no painel).
 - Ganho médio = saving líquido ÷ projetos com ganho líquido > 0 (não divide pelos fechados).
+- **Meta de ganho = média dos 3 meses anteriores** ao mês de referência (mês do filtro; sem filtro, o mês atual), com os mesmos filtros de comprador/comercial/segmento. Vale para o saving do mês e para o ganho médio por projeto. Gráfico mensal mostra a meta como traço tracejado sobre a barra (só nos meses com 3 meses anteriores). Meta da taxa de ganho continua 60%; Saving % continua 3–5%. O cálculo é do template (nada a fazer na rotina além de manter os dados).
 - Off, certificação e fornecedor do cliente não aparecem como contagem no painel.
 - Nomenclatura no painel: "Ganho abatido" (nunca "colchão"); status de ganho todo abatido = "Ganho abatido". O campo interno continua `colchao` no JSON.
 - Comprador = "Sourcing responsável" (nomes padronizados no script).
