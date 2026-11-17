@@ -4,7 +4,8 @@
   "autor": "Jonathan Corrêa",
   "data": "2026-09-10",
   "texto": "Foi 1% de ganho 135 dolares",
-  "link": "https://project.chinalinktrading.com/app/tasks/26741932"
+  "link": "https://project.chinalinktrading.com/app/tasks/26741932",
+  "nota": "Ganho de 1% confirmado em US$ 135 na conversa"
  },
  "26611823": {
   "ganhoUSD": 635.6,
@@ -127,29 +128,34 @@
   ],
   "colchao": {
    "valor": 300,
-   "motivo": "PI do fornecedor trouxe custo LCL de US$ 815 a diluir; o ganho foi retirado",
+   "motivo": "Na PI final (06/11) o fornecedor subiu a bicicleta EB8800 de US$ 590 para US$ 890 (+US$ 300); o ganho foi zerado",
    "autor": "Erika Matos",
    "data": "2026-11-06",
    "texto": "Projeto seguirá sem ganho e de acordo com a PI abaixo. Sem mudanças na simulação.",
    "link": "https://project.chinalinktrading.com/app/tasks/26797670"
   },
-  "nota": "Ganho de US$ 300 abatido (custo LCL na PI)"
+  "nota": "Ganho de US$ 300 abatido (fornecedor subiu o preço da bicicleta na PI final)",
+  "calculo": "PI do fornecedor de 28/10: US$ 13.630 × simulação US$ 13.930 (100%) = US$ 300 de ganho. PI final de 06/11: US$ 13.930 = simulação, sem ganho."
  },
  "26562821": {
-  "ganhoUSD": null,
+  "ganhoUSD": 838.55,
+  "fonte": "PI CLT × PI do fornecedor (arquivos)",
   "autor": "Thiago Masaki",
   "data": "2026-08-13",
   "texto": "A diferença no valor se trata de um ganho de produto",
   "link": "https://project.chinalinktrading.com/app/tasks/26562821",
-  "nota": "Ganho de produto citado sem valor; calcular simulação − PI"
+  "calculo": "PI CLT: 2.705 escoras × US$ 9,98 = US$ 26.995,90. PI do fornecedor (Guangzhou AJ, 11/08): 2.705 × US$ 9,67 = US$ 26.157,35. Ganho de produto = US$ 838,55 (US$ 0,31 por peça). As taxas locais FOB de US$ 1.640 da PI do fornecedor ficam fora da conta.",
+  "nota": "Ganho de produto calculado pelos arquivos"
  },
  "26536292": {
-  "ganhoUSD": null,
+  "ganhoUSD": 1122.0,
+  "fonte": "Simulação × PIs dos fornecedores (arquivos)",
   "autor": "Jonathan Corrêa",
   "data": "2026-08-04",
-  "texto": "Atenção ao ganho de produto nas 3 PIs (projeto pausado)",
+  "texto": "Em anexo a PI dos 3 fornecedores da simulação, por favor atenção ao ganho de produto nas 3 PIs.",
   "link": "https://project.chinalinktrading.com/app/tasks/26536292",
-  "nota": "Ganho de produto citado nas 3 PIs, sem valor; projeto pausado"
+  "calculo": "Iluminação (Jiang): simulação US$ 17.450,80 × PI US$ 17.047,00 = US$ 403,80. Sonofletores (Lingyin): 504 × (US$ 12,60 − 12,00) = US$ 302,40. Painel sanduíche (Hengshui): 630 m × (US$ 12,66 − 12,00) = US$ 415,80. Total US$ 1.122,00.",
+  "nota": "Ganho calculado pelos arquivos. A PI do painel ainda está com 876 m² (simulação 630) e o projeto foi pausado em 05/08: confirmar"
  },
  "26569847": {
   "ganhoInicialUSD": 680,
@@ -253,5 +259,58 @@
    }
   ],
   "nota": "Ganho reconfirmado em US$ 3.410 em 17/11 (PI sem off); a comissão de 3% do agente (US$ 360) citada em 11/11 não aparece mais abatida — conferir"
+ },
+ "26994694": {
+  "ganhoInicialUSD": 100,
+  "ganhoUSD": 0,
+  "fonte": "PI do fornecedor × simulação (arquivos da task)",
+  "autor": "Paulo Cesar",
+  "data": "2026-11-16",
+  "texto": "Na simulação está por 4.019,85USD. Com minha PI negociada chegamos no valor de 4.033,85USD. Fica pendente uma diferença de 14USD para o cliente.",
+  "link": "https://project.chinalinktrading.com/app/tasks/26994694",
+  "calculo": "Irrigação: aspersor RL5100 negociado de US$ 3,00 para US$ 2,90 × 1.000 un = US$ 100 de ganho. Caixa de válvula 12\" estava a US$ 3,50 na simulação e o fornecedor cobra US$ 7,30 × 30 un = US$ 114 a mais. O ganho cobriu o erro e restam US$ 14 para o cliente (simulação final US$ 19.533,85).",
+  "historico": [
+   {
+    "data": "2026-11-16",
+    "valor": 100,
+    "autor": "Paulo Cesar",
+    "texto": "PI negociada: aspersor de US$ 3,00 para US$ 2,90 (1.000 un)",
+    "link": "https://project.chinalinktrading.com/app/tasks/26994694"
+   },
+   {
+    "data": "2026-11-16",
+    "valor": 0,
+    "autor": "Paulo Cesar",
+    "texto": "Ganho usado para cobrir o erro de cotação da caixa de válvula; diferença de US$ 14 fica para o cliente",
+    "link": "https://project.chinalinktrading.com/app/tasks/26994694"
+   }
+  ],
+  "colchao": {
+   "valor": 100,
+   "motivo": "Erro de cotação: caixa de válvula 12\" a US$ 3,50 na simulação, fornecedor cobra US$ 7,30 (+US$ 114). O ganho do aspersor cobriu o erro",
+   "autor": "Paulo Cesar",
+   "data": "2026-11-16",
+   "texto": "Com minha PI negociada chegamos no valor de 4.033,85USD. Fica pendente uma diferença de 14USD para o cliente.",
+   "link": "https://project.chinalinktrading.com/app/tasks/26994694"
+  },
+  "nota": "Ganho de US$ 100 abatido por erro de cotação. Conferir escavadeira: PI US$ 14.500 (com caixa de madeira) × US$ 13.800 na simulação"
+ },
+ "26940821": {
+  "ganhoUSD": 858.36,
+  "fonte": "PI CLT × PI do fornecedor (arquivos)",
+  "autor": "Cálculo nos arquivos",
+  "data": "2026-11-09",
+  "texto": "Formulário: Tem ganho? Sim (sem valor). Valor calculado comparando a PI CLT enviada ao cliente com a PI do fornecedor.",
+  "link": "https://project.chinalinktrading.com/app/tasks/26940821",
+  "calculo": "PI CLT ao cliente US$ 23.113,16 (sem bank fee) − PI do fornecedor Haining Longtime 26A11NJR01 US$ 22.254,80 = US$ 858,36. A maior parte vem do painel ripado (US$ 2,10 ao cliente × US$ 1,63 do fornecedor, 4.000 pç).",
+  "nota": "Ganho calculado pelos arquivos (formulário sem valor)"
+ },
+ "26475342": {
+  "ganhoUSD": null,
+  "autor": "Sally Sepulveda",
+  "data": "2026-07-18",
+  "texto": "Não temos a simulação, seria como o do cliente peletize.",
+  "link": "https://project.chinalinktrading.com/app/tasks/26475342",
+  "nota": "Sem simulação para comparar: o cliente trouxe o projeto pronto (só apoio no embarque). Confirmar se houve ganho"
  }
 }
