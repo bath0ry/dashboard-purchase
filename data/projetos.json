@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-19 14:33",
+ "atualizado": "2026-11-19 15:30",
  "desde": "2026-07-01",
  "fonte": "Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
  "projetos": [
@@ -3566,7 +3566,10 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "valorMercadoriaUSD": 27157.68,
+   "incoterm": "EXW",
+   "simFile": 7290086
   },
   {
    "id": 26726119,
@@ -3595,7 +3598,7 @@
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26726118",
    "fornecedores": [],
-   "nota": "",
+   "nota": "projeto cancelado pelo cliente (06/10), sem simulação nos comentários",
    "seg": "Têxtil / Vestuário",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3604,7 +3607,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "simTentado": "2026-11-19"
   },
   {
    "id": 26722771,
@@ -3632,7 +3636,7 @@
    "temSimLink": true,
    "nInvoices": 1,
    "fornecedores": [],
-   "nota": "",
+   "nota": "task sem comentários",
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3641,7 +3645,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "simTentado": "2026-11-19"
   },
   {
    "id": 26719993,
