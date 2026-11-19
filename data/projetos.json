@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-19 12:29",
+ "atualizado": "2026-11-19 13:31",
  "desde": "2026-07-01",
  "fonte": "Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
  "projetos": [
@@ -3275,7 +3275,7 @@
    "temSimLink": true,
    "nInvoices": 1,
    "fornecedores": [],
-   "nota": "",
+   "nota": "sem anexos nos comentários",
    "seg": "Autopeças / Motos",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3284,7 +3284,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "simTentado": "2026-11-19"
   },
   {
    "id": 26748186,
@@ -3353,7 +3354,7 @@
    "temSimLink": true,
    "nInvoices": 1,
    "fornecedores": [],
-   "nota": "",
+   "nota": "só PI do fornecedor em PDF nos comentários",
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3362,7 +3363,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "simTentado": "2026-11-19"
   },
   {
    "id": 26745442,
@@ -3400,7 +3402,10 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "valorMercadoriaUSD": 8550.0,
+   "incoterm": "FOB",
+   "simFile": 7292598
   },
   {
    "id": 26743306,
