@@ -1,8 +1,47 @@
 {
- "atualizado": "2026-11-23 08:31",
+ "atualizado": "2026-11-23 10:30",
  "desde": "2026-07-01",
  "fonte": "Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
  "projetos": [
+  {
+   "id": 27050563,
+   "link": "https://project.chinalinktrading.com/app/tasks/27050563",
+   "origem": "Handover - Delivery",
+   "task": "LIDYANE (Antonio Rosa)",
+   "cliente": "LIDYANE",
+   "comercial": "Antonio Rosa",
+   "data": "2026-11-23",
+   "mes": "2026-11",
+   "concluida": false,
+   "pedido": "1",
+   "qtdFornecedores": "1",
+   "operacao": "Direto",
+   "comp": "Paulo Cesar Gomes",
+   "temGanho": false,
+   "ganhoTexto": "",
+   "ganhoInformado": null,
+   "ganhoPct": null,
+   "temOff": false,
+   "off": "",
+   "certificacao": "",
+   "chinaMember": "",
+   "beneficio": "",
+   "temSimLink": true,
+   "nInvoices": 1,
+   "sourcing": "Rhaissa Max",
+   "fornecedores": [],
+   "nota": "task sem comentários",
+   "seg": "A classificar",
+   "tipo": "—",
+   "ganhoFonte": "",
+   "ganho": 0.0,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 0.0,
+   "fornCliente": false,
+   "status": "sem",
+   "revisar": false,
+   "simTentado": "2026-11-23"
+  },
   {
    "id": 27041356,
    "link": "https://project.chinalinktrading.com/app/tasks/27041356",
@@ -922,8 +961,8 @@
    "valorMercadoriaUSD": 20289.3,
    "incoterm": "FOB",
    "simFile": 7319927,
-   "fornecedores": [],
    "nota": "Ganho subiu de US$ 40 para US$ 200 com a PI atualizada de 19/11 (SOURCING TASK › Purchase/Projeto Fechado). PI de 17 MB não foi baixada para conferência item a item",
+   "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "comentário de Paulo Cesar em 2026-11-19",
@@ -933,13 +972,6 @@
     "autor": "Paulo Cesar",
     "data": "2026-11-19"
    },
-   "ganho": 200,
-   "colchaoUSD": 0.0,
-   "ganhoBruto": 200.0,
-   "fornCliente": false,
-   "status": "ganho",
-   "revisar": false,
-   "ganhoInicial": 40,
    "historicoGanho": [
     {
      "data": "2026-11-09",
@@ -955,7 +987,14 @@
      "texto": "PI atualizada (BRTW20261023CXN) após nova simulação de 17/11. Ganho: 200USD",
      "link": "https://project.chinalinktrading.com/app/tasks/26613060"
     }
-   ]
+   ],
+   "ganhoInicial": 40,
+   "ganho": 200,
+   "colchaoUSD": 0.0,
+   "ganhoBruto": 200.0,
+   "fornCliente": false,
+   "status": "ganho",
+   "revisar": false
   },
   {
    "id": 26985980,
@@ -2581,6 +2620,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26781595",
+   "valorMercadoriaUSD": 17892.0,
+   "incoterm": "FOB",
+   "simFile": 7292361,
    "fornecedores": [],
    "nota": "",
    "seg": "Varejo / Atacado",
@@ -2591,10 +2633,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 17892.0,
-   "incoterm": "FOB",
-   "simFile": 7292361
+   "revisar": false
   },
   {
    "id": 26781069,
@@ -2621,6 +2660,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
+   "valorMercadoriaUSD": 29274.6,
+   "incoterm": "FOB",
+   "simFile": 7292110,
    "fornecedores": [],
    "nota": "",
    "seg": "Autopeças / Motos",
@@ -2631,10 +2673,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 29274.6,
-   "incoterm": "FOB",
-   "simFile": 7292110
+   "revisar": false
   },
   {
    "id": 26779108,
@@ -2662,6 +2701,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26779107",
+   "valorMercadoriaUSD": 31727.0,
+   "incoterm": "FOB",
+   "simFile": 7292882,
    "fornecedores": [],
    "nota": "",
    "seg": "Elétrico / Energia",
@@ -2672,10 +2714,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 31727.0,
-   "incoterm": "FOB",
-   "simFile": 7292882
+   "revisar": false
   },
   {
    "id": 26778279,
@@ -2702,8 +2741,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "task sem comentários",
+   "fornecedores": [],
    "seg": "Construção / Ferragens",
    "tipo": "—",
    "ganhoFonte": "",
@@ -2712,8 +2752,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26774359,
@@ -2740,6 +2779,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
+   "valorMercadoriaUSD": 36631.68,
+   "incoterm": "FOB",
+   "simFile": 7290125,
    "fornecedores": [],
    "nota": "",
    "seg": "A classificar",
@@ -2750,10 +2792,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 36631.68,
-   "incoterm": "FOB",
-   "simFile": 7290125
+   "revisar": false
   },
   {
    "id": 26773497,
@@ -2780,8 +2819,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "só PI do fornecedor (.xls) nos comentários",
+   "fornecedores": [],
    "seg": "Varejo / Atacado",
    "tipo": "—",
    "ganhoFonte": "",
@@ -2790,8 +2830,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26773486,
@@ -2818,8 +2857,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "task sem comentários",
+   "fornecedores": [],
    "seg": "Varejo / Atacado",
    "tipo": "—",
    "ganhoFonte": "",
@@ -2828,8 +2868,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26773477,
@@ -2856,8 +2895,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "task sem comentários",
+   "fornecedores": [],
    "seg": "Varejo / Atacado",
    "tipo": "—",
    "ganhoFonte": "",
@@ -2866,8 +2906,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26773176,
@@ -2894,8 +2933,9 @@
    "beneficio": "",
    "temSimLink": false,
    "nInvoices": 0,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "só PI/PL do fornecedor nos comentários",
+   "fornecedores": [],
    "seg": "Varejo / Atacado",
    "tipo": "—",
    "ganhoFonte": "",
@@ -2904,8 +2944,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26768833,
@@ -2932,8 +2971,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "sem anexos nos comentários",
+   "fornecedores": [],
    "seg": "Elétrico / Energia",
    "tipo": "—",
    "ganhoFonte": "",
@@ -2942,8 +2982,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26765476,
@@ -2970,8 +3009,9 @@
    "beneficio": "",
    "temSimLink": false,
    "nInvoices": 0,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "task sem comentários",
+   "fornecedores": [],
    "seg": "Varejo / Atacado",
    "tipo": "—",
    "ganhoFonte": "",
@@ -2980,8 +3020,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26765213,
@@ -3009,6 +3048,7 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26765211",
+   "simTentado": "2026-11-19",
    "nota": "Budget de US$ 300 da gift box consumido",
    "fornecedores": [],
    "seg": "A classificar",
@@ -3050,8 +3090,7 @@
    "ganhoBruto": 300.0,
    "fornCliente": false,
    "status": "consumido",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26765029,
@@ -3078,6 +3117,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
+   "valorMercadoriaUSD": 40105.0,
+   "incoterm": "EXW",
+   "simFile": 7288369,
    "fornecedores": [],
    "nota": "",
    "seg": "A classificar",
@@ -3088,10 +3130,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 40105.0,
-   "incoterm": "EXW",
-   "simFile": 7288369
+   "revisar": false
   },
   {
    "id": 26764872,
@@ -3119,6 +3158,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26764871",
+   "valorMercadoriaUSD": 12342.21,
+   "incoterm": "EXW",
+   "simFile": 7293120,
    "fornecedores": [],
    "nota": "",
    "seg": "A classificar",
@@ -3129,10 +3171,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 12342.21,
-   "incoterm": "EXW",
-   "simFile": 7293120
+   "revisar": false
   },
   {
    "id": 26753438,
@@ -3159,8 +3198,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "xlsx nos comentários são PI/invoice do fornecedor, sem simulação",
+   "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3169,8 +3209,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26752724,
@@ -3198,8 +3237,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26752723",
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "xlsx nos comentários sem nome de simulação (LOJAS REAL -roupas 1 / PI do fornecedor)",
+   "fornecedores": [],
    "seg": "Varejo / Atacado",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3208,8 +3248,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26752193,
@@ -3237,8 +3276,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26752192",
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "task sem anexos nos comentários",
+   "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3247,8 +3287,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26752011,
@@ -3275,8 +3314,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "só cotação do fornecedor em PDF nos comentários",
+   "fornecedores": [],
    "seg": "Construção / Ferragens",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3285,8 +3325,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26751757,
@@ -3313,8 +3352,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "sem anexos nos comentários",
+   "fornecedores": [],
    "seg": "Autopeças / Motos",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3323,8 +3363,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26748186,
@@ -3392,8 +3431,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "só PI do fornecedor em PDF nos comentários",
+   "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3402,8 +3442,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26745442,
@@ -3431,6 +3470,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26745441",
+   "valorMercadoriaUSD": 8550.0,
+   "incoterm": "FOB",
+   "simFile": 7292598,
    "fornecedores": [],
    "nota": "",
    "seg": "Fitness / Academia",
@@ -3441,10 +3483,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 8550.0,
-   "incoterm": "FOB",
-   "simFile": 7292598
+   "revisar": false
   },
   {
    "id": 26743306,
@@ -3471,6 +3510,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
+   "valorMercadoriaUSD": 21350.0,
+   "incoterm": "EXW",
+   "simFile": 7308038,
    "fornecedores": [],
    "nota": "",
    "seg": "Varejo / Atacado",
@@ -3481,10 +3523,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 21350.0,
-   "incoterm": "EXW",
-   "simFile": 7308038
+   "revisar": false
   },
   {
    "id": 26741932,
@@ -3512,6 +3551,7 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26741931",
+   "simTentado": "2026-11-19",
    "nota": "Ganho de 1% confirmado em US$ 135 na conversa",
    "fornecedores": [],
    "seg": "A classificar",
@@ -3528,8 +3568,7 @@
    "ganhoBruto": 135.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26735661,
@@ -3556,6 +3595,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
+   "valorMercadoriaUSD": 27157.68,
+   "incoterm": "EXW",
+   "simFile": 7290086,
    "fornecedores": [],
    "nota": "",
    "seg": "Autopeças / Motos",
@@ -3566,10 +3608,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 27157.68,
-   "incoterm": "EXW",
-   "simFile": 7290086
+   "revisar": false
   },
   {
    "id": 26726119,
@@ -3597,8 +3636,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26726118",
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "projeto cancelado pelo cliente (06/10), sem simulação nos comentários",
+   "fornecedores": [],
    "seg": "Têxtil / Vestuário",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3607,8 +3647,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26722771,
@@ -3635,8 +3674,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "task sem comentários",
+   "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3645,8 +3685,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26719993,
@@ -3674,8 +3713,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26719992",
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "task sem anexos",
+   "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3684,8 +3724,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26718325,
@@ -3713,8 +3752,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26718324",
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "task sem anexos",
+   "fornecedores": [],
    "seg": "Varejo / Atacado",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3723,8 +3763,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26714560,
@@ -3752,8 +3791,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26714559",
-   "fornecedores": [],
+   "simTentado": "2026-11-19",
    "nota": "task sem anexos",
+   "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3762,8 +3802,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-19"
+   "revisar": false
   },
   {
    "id": 26710063,
@@ -3790,6 +3829,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
+   "valorMercadoriaUSD": 51975.0,
+   "incoterm": "EXW",
+   "simFile": 7281931,
    "fornecedores": [],
    "nota": "",
    "seg": "Autopeças / Motos",
@@ -3800,10 +3842,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 51975.0,
-   "incoterm": "EXW",
-   "simFile": 7281931
+   "revisar": false
   },
   {
    "id": 26709736,
@@ -3830,8 +3869,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-23",
    "nota": "task sem anexos nos comentários",
+   "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3840,8 +3880,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-23"
+   "revisar": false
   },
   {
    "id": 26699783,
@@ -3869,8 +3908,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26699782",
-   "fornecedores": [],
+   "simTentado": "2026-11-23",
    "nota": "task sem anexos nos comentários",
+   "fornecedores": [],
    "seg": "Saúde / Veterinária",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3879,8 +3919,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-23"
+   "revisar": false
   },
   {
    "id": 26690610,
@@ -3908,8 +3947,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26690609",
-   "fornecedores": [],
+   "simTentado": "2026-11-23",
    "nota": "task sem anexos nos comentários",
+   "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3918,8 +3958,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-23"
+   "revisar": false
   },
   {
    "id": 26674573,
@@ -3946,8 +3985,9 @@
    "beneficio": "TTD-409 APLICADO PELA PROCESS",
    "temSimLink": true,
    "nInvoices": 1,
-   "fornecedores": [],
+   "simTentado": "2026-11-23",
    "nota": "task sem anexos nos comentários",
+   "fornecedores": [],
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -3956,8 +3996,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "simTentado": "2026-11-23"
+   "revisar": false
   },
   {
    "id": 26674389,
@@ -3984,6 +4023,9 @@
    "beneficio": "",
    "temSimLink": true,
    "nInvoices": 1,
+   "valorMercadoriaUSD": 59871.86,
+   "incoterm": "FOB",
+   "simFile": 7290234,
    "fornecedores": [],
    "nota": "",
    "seg": "Fitness / Academia",
@@ -3994,10 +4036,7 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false,
-   "valorMercadoriaUSD": 59871.86,
-   "incoterm": "FOB",
-   "simFile": 7290234
+   "revisar": false
   },
   {
    "id": 26670863,
@@ -4025,6 +4064,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26670862",
+   "valorMercadoriaUSD": 28749.0,
+   "incoterm": "EXW",
+   "simFile": 7280679,
    "fornecedores": [],
    "nota": "",
    "seg": "A classificar",
@@ -4063,8 +4105,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26669481",
+   "simTentado": "2026-11-23",
+   "nota": "task sem anexos nos comentários",
    "fornecedores": [],
-   "nota": "",
    "seg": "Fitness / Academia",
    "tipo": "—",
    "ganhoFonte": "",
@@ -4101,6 +4144,9 @@
    "temSimLink": true,
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26657423",
+   "valorMercadoriaUSD": 7906.35,
+   "incoterm": "EXW",
+   "simFile": 7276830,
    "fornecedores": [],
    "nota": "",
    "seg": "Construção / Ferragens",
@@ -4135,13 +4181,6 @@
      "link": "https://project.chinalinktrading.com/app/tasks/26595441"
     }
    ],
-   "ganhoInicial": 155.6,
-   "ganho": 161,
-   "colchaoUSD": 50.03,
-   "ganhoBruto": 211.03,
-   "fornCliente": false,
-   "status": "ganho",
-   "revisar": false,
    "colchao": {
     "valor": 50.03,
     "motivo": "Personalização da Minolta paga com o ganho (alinhado com o comercial Antonio Rosa); ganho caiu de US$ 211,03 para US$ 161",
@@ -4149,7 +4188,14 @@
     "data": "2026-11-18",
     "texto": "Bom dia, retiraremos do ganho 50USD (personalização da Minolta). Alinhamos com o Antonio Rosa. Ganho ficou 161 USD",
     "link": "https://project.chinalinktrading.com/app/tasks/26595441"
-   }
+   },
+   "ganhoInicial": 155.6,
+   "ganho": 161,
+   "colchaoUSD": 50.03,
+   "ganhoBruto": 211.03,
+   "fornCliente": false,
+   "status": "ganho",
+   "revisar": false
   },
   {
    "id": 26656026,
@@ -4177,7 +4223,7 @@
    "temSimLink": true,
    "nInvoices": 1,
    "fornecedores": [],
-   "nota": "",
+   "nota": "task sem anexos nos comentários",
    "seg": "Casa / Móveis",
    "tipo": "—",
    "ganhoFonte": "",
@@ -4186,7 +4232,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "simTentado": "2026-11-23"
   },
   {
    "id": 26647635,
@@ -4214,7 +4261,7 @@
    "temSimLink": true,
    "nInvoices": 1,
    "fornecedores": [],
-   "nota": "",
+   "nota": "task sem anexos nos comentários",
    "seg": "Fitness / Academia",
    "tipo": "—",
    "ganhoFonte": "",
@@ -4223,7 +4270,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "simTentado": "2026-11-23"
   },
   {
    "id": 26644289,
