@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-23 10:30",
+ "atualizado": "2026-11-23 11:30",
  "desde": "2026-07-01",
  "fonte": "Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
  "projetos": [
@@ -4299,7 +4299,7 @@
    "temSimLink": true,
    "nInvoices": 1,
    "fornecedores": [],
-   "nota": "",
+   "nota": "só PIs/PO dos fornecedores nos comentários, sem simulação",
    "seg": "Varejo / Atacado",
    "tipo": "—",
    "ganhoFonte": "",
@@ -4308,7 +4308,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "simTentado": "2026-11-23"
   },
   {
    "id": 26641590,
@@ -4345,7 +4346,10 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "valorMercadoriaUSD": 42106.0,
+   "incoterm": "EXW",
+   "simFile": 7273405
   },
   {
    "id": 26641126,
@@ -4373,7 +4377,7 @@
    "temSimLink": true,
    "nInvoices": 1,
    "fornecedores": [],
-   "nota": "",
+   "nota": "task sem anexos nos comentários",
    "seg": "Saúde / Veterinária",
    "tipo": "—",
    "ganhoFonte": "",
@@ -4382,7 +4386,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "simTentado": "2026-11-23"
   },
   {
    "id": 26635256,
