@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-23 11:30",
+ "atualizado": "2026-11-23 13:31",
  "desde": "2026-07-01",
  "fonte": "Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
  "projetos": [
@@ -40,7 +40,8 @@
    "fornCliente": false,
    "status": "sem",
    "revisar": false,
-   "simTentado": "2026-11-23"
+   "simTentado": "2026-11-23",
+   "naoPreco": []
   },
   {
    "id": 27041356,
@@ -79,7 +80,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27033090,
@@ -119,7 +121,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27026520,
@@ -157,7 +160,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27026516,
@@ -195,7 +199,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27025330,
@@ -233,7 +238,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27025253,
@@ -272,7 +278,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27023780,
@@ -310,7 +317,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27023212,
@@ -351,7 +359,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27019099,
@@ -389,7 +398,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27017338,
@@ -428,7 +438,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27010980,
@@ -467,7 +478,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 27006582,
@@ -506,7 +518,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26994849,
@@ -547,7 +560,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26994694,
@@ -620,7 +634,8 @@
    "ganhoBruto": 100.0,
    "fornCliente": false,
    "status": "consumido",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26994351,
@@ -659,7 +674,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26990751,
@@ -699,7 +715,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26990350,
@@ -737,7 +754,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26989380,
@@ -777,7 +795,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26989110,
@@ -815,7 +834,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26988675,
@@ -853,7 +873,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26988264,
@@ -891,7 +912,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26987314,
@@ -931,7 +953,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26987151,
@@ -994,7 +1017,8 @@
    "ganhoBruto": 200.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26985980,
@@ -1032,7 +1056,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26984639,
@@ -1072,7 +1097,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26982789,
@@ -1112,7 +1138,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26955134,
@@ -1150,7 +1177,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26952716,
@@ -1188,7 +1216,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26950455,
@@ -1227,7 +1256,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26949553,
@@ -1265,7 +1295,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26940821,
@@ -1314,7 +1345,8 @@
    "ganhoBruto": 858.36,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26940363,
@@ -1354,7 +1386,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26936136,
@@ -1394,7 +1427,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26934520,
@@ -1432,7 +1466,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26934207,
@@ -1473,7 +1508,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26932828,
@@ -1513,7 +1549,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26931890,
@@ -1586,7 +1623,8 @@
    "ganhoBruto": 300.0,
    "fornCliente": false,
    "status": "consumido",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26927170,
@@ -1626,7 +1664,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26917318,
@@ -1664,7 +1703,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26917132,
@@ -1702,7 +1742,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26917068,
@@ -1740,7 +1781,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26915793,
@@ -1779,7 +1821,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26915454,
@@ -1820,7 +1863,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26912918,
@@ -1896,7 +1940,8 @@
    "ganhoBruto": 3410.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26912801,
@@ -1936,7 +1981,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26893312,
@@ -1977,7 +2023,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26888973,
@@ -2015,7 +2062,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26869901,
@@ -2054,7 +2102,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26867805,
@@ -2094,7 +2143,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26867314,
@@ -2132,7 +2182,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26860600,
@@ -2170,7 +2221,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26860103,
@@ -2209,7 +2261,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26839971,
@@ -2248,7 +2301,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26829956,
@@ -2286,7 +2340,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26829650,
@@ -2324,7 +2379,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26825511,
@@ -2362,7 +2418,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26825345,
@@ -2401,7 +2458,8 @@
    "ganhoBruto": 370.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26819739,
@@ -2439,7 +2497,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26812951,
@@ -2477,7 +2536,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26808887,
@@ -2515,7 +2575,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26798671,
@@ -2554,7 +2615,8 @@
    "ganhoBruto": 13110.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26792456,
@@ -2592,7 +2654,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26781596,
@@ -2633,7 +2696,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26781069,
@@ -2673,7 +2737,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26779108,
@@ -2714,7 +2779,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26778279,
@@ -2752,7 +2818,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26774359,
@@ -2792,7 +2859,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26773497,
@@ -2830,7 +2898,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26773486,
@@ -2868,7 +2937,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26773477,
@@ -2906,7 +2976,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26773176,
@@ -2944,7 +3015,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26768833,
@@ -2982,7 +3054,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26765476,
@@ -3020,7 +3093,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26765213,
@@ -3090,7 +3164,8 @@
    "ganhoBruto": 300.0,
    "fornCliente": false,
    "status": "consumido",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26765029,
@@ -3130,7 +3205,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26764872,
@@ -3171,7 +3247,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26753438,
@@ -3209,7 +3286,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26752724,
@@ -3248,7 +3326,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26752193,
@@ -3287,7 +3366,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26752011,
@@ -3325,7 +3405,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26751757,
@@ -3363,7 +3444,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26748186,
@@ -3404,7 +3486,8 @@
    "ganhoBruto": 1069.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26745625,
@@ -3442,7 +3525,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26745442,
@@ -3483,7 +3567,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26743306,
@@ -3523,7 +3608,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26741932,
@@ -3568,7 +3654,8 @@
    "ganhoBruto": 135.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26735661,
@@ -3608,7 +3695,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26726119,
@@ -3647,7 +3735,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26722771,
@@ -3685,7 +3774,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26719993,
@@ -3724,7 +3814,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26718325,
@@ -3763,7 +3854,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26714560,
@@ -3802,7 +3894,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26710063,
@@ -3842,7 +3935,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26709736,
@@ -3880,7 +3974,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26699783,
@@ -3919,7 +4014,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26690610,
@@ -3958,7 +4054,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26674573,
@@ -3996,7 +4093,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26674389,
@@ -4036,7 +4134,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26670863,
@@ -4077,7 +4176,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26669482,
@@ -4116,7 +4216,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26657425,
@@ -4195,7 +4296,8 @@
    "ganhoBruto": 211.03,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26656026,
@@ -4233,7 +4335,8 @@
    "fornCliente": false,
    "status": "sem",
    "revisar": false,
-   "simTentado": "2026-11-23"
+   "simTentado": "2026-11-23",
+   "naoPreco": []
   },
   {
    "id": 26647635,
@@ -4271,7 +4374,8 @@
    "fornCliente": false,
    "status": "sem",
    "revisar": false,
-   "simTentado": "2026-11-23"
+   "simTentado": "2026-11-23",
+   "naoPreco": []
   },
   {
    "id": 26644289,
@@ -4309,7 +4413,8 @@
    "fornCliente": false,
    "status": "sem",
    "revisar": false,
-   "simTentado": "2026-11-23"
+   "simTentado": "2026-11-23",
+   "naoPreco": []
   },
   {
    "id": 26641590,
@@ -4349,7 +4454,8 @@
    "revisar": false,
    "valorMercadoriaUSD": 42106.0,
    "incoterm": "EXW",
-   "simFile": 7273405
+   "simFile": 7273405,
+   "naoPreco": []
   },
   {
    "id": 26641126,
@@ -4387,7 +4493,8 @@
    "fornCliente": false,
    "status": "sem",
    "revisar": false,
-   "simTentado": "2026-11-23"
+   "simTentado": "2026-11-23",
+   "naoPreco": []
   },
   {
    "id": 26635256,
@@ -4424,7 +4531,11 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": [],
+   "valorMercadoriaUSD": 33751.2,
+   "incoterm": "FOB",
+   "simFile": 7272696
   },
   {
    "id": 26633330,
@@ -4453,7 +4564,7 @@
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26633327",
    "fornecedores": [],
-   "nota": "",
+   "nota": "planilha 'SIMULAÇÃO - JP VISTORIA - P1 atualizada' traz 'JEFF MOTOS LTDA' no campo cliente: conferir",
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -4462,7 +4573,11 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": [],
+   "valorMercadoriaUSD": 26650.0,
+   "incoterm": "EXW",
+   "simFile": 7272695
   },
   {
    "id": 26625284,
@@ -4491,7 +4606,7 @@
    "nInvoices": 0,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26625282",
    "fornecedores": [],
-   "nota": "",
+   "nota": "só certificados ISO, TTD e vídeo nos comentários, sem simulação",
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -4500,7 +4615,9 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": [],
+   "simTentado": "2026-11-23"
   },
   {
    "id": 26622839,
@@ -4537,7 +4654,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26621599,
@@ -4574,7 +4692,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26614096,
@@ -4612,7 +4731,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26611823,
@@ -4681,7 +4801,8 @@
    "ganhoBruto": 655.42,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26608570,
@@ -4718,7 +4839,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26606440,
@@ -4755,7 +4877,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26606012,
@@ -4793,7 +4916,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26602214,
@@ -4831,7 +4955,8 @@
    "ganhoBruto": 250.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26591960,
@@ -4869,7 +4994,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26591757,
@@ -4906,7 +5032,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26591756,
@@ -4943,7 +5070,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26587950,
@@ -4981,7 +5109,8 @@
    "ganhoBruto": 1000.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26585198,
@@ -5018,7 +5147,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26585099,
@@ -5056,7 +5186,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26576505,
@@ -5093,7 +5224,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26574272,
@@ -5130,7 +5262,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26569847,
@@ -5199,7 +5332,8 @@
    "ganhoBruto": 680.0,
    "fornCliente": false,
    "status": "consumido",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26569204,
@@ -5237,7 +5371,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26569154,
@@ -5275,7 +5410,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26562821,
@@ -5323,7 +5459,8 @@
    "ganhoBruto": 838.55,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26562808,
@@ -5360,7 +5497,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26562801,
@@ -5398,7 +5536,8 @@
    "ganhoBruto": 120.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26560517,
@@ -5436,7 +5575,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26549935,
@@ -5474,7 +5614,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26548753,
@@ -5511,7 +5652,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26548555,
@@ -5548,7 +5690,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26548266,
@@ -5585,7 +5728,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26545988,
@@ -5622,7 +5766,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26539885,
@@ -5659,7 +5804,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26536292,
@@ -5707,7 +5853,8 @@
    "ganhoBruto": 1122.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26535218,
@@ -5744,7 +5891,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26534176,
@@ -5782,7 +5930,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26532618,
@@ -5819,7 +5968,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26529631,
@@ -5857,7 +6007,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26529628,
@@ -5894,7 +6045,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26529623,
@@ -5931,7 +6083,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26527534,
@@ -5969,7 +6122,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26516565,
@@ -6006,7 +6160,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26510789,
@@ -6043,7 +6198,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26508924,
@@ -6112,7 +6268,8 @@
    "ganhoBruto": 956.43,
    "fornCliente": false,
    "status": "consumido",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26502811,
@@ -6150,7 +6307,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26498288,
@@ -6187,7 +6345,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26491506,
@@ -6224,7 +6383,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26490172,
@@ -6262,7 +6422,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26489857,
@@ -6299,7 +6460,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26481642,
@@ -6337,7 +6499,8 @@
    "ganhoBruto": 320.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26477717,
@@ -6375,7 +6538,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26475342,
@@ -6441,7 +6605,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26472268,
@@ -6478,7 +6643,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26472197,
@@ -6515,7 +6681,8 @@
    "ganhoBruto": 2030.0,
    "fornCliente": false,
    "status": "ganho",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26472076,
@@ -6552,7 +6719,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26472065,
@@ -6589,7 +6757,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26466210,
@@ -6626,7 +6795,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26463194,
@@ -6663,7 +6833,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": true,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26454692,
@@ -6701,7 +6872,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26454440,
@@ -6739,7 +6911,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26454179,
@@ -6776,7 +6949,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26454044,
@@ -6813,7 +6987,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26453764,
@@ -6851,7 +7026,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26451071,
@@ -6888,7 +7064,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26448167,
@@ -6925,7 +7102,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26441597,
@@ -6962,7 +7140,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26441413,
@@ -6999,7 +7178,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26441229,
@@ -7037,7 +7217,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   },
   {
    "id": 26435808,
@@ -7074,7 +7255,8 @@
    "ganhoBruto": 0.0,
    "fornCliente": false,
    "status": "sem",
-   "revisar": false
+   "revisar": false,
+   "naoPreco": []
   }
  ]
 }
