@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projetos em Andamento</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+  /* Layout: faixa azul China Link no topo; três raias (PI → Contrato → Finalizados) lado a lado no desktop, empilhadas no celular. */
+  :root{
+    --brand:#001489; --brand-2:#0A1F9E; --red:#E10600; --band-sub:#B9C3F2;
+    --bg:#F3F5FA; --lane:#E9EDF7; --card:#FFFFFF; --text:#0B1030; --muted:#56608A; --line:#D7DDEE;
+    --ink:#001489; --pi:#A15C00; --pi-bg:#FFF1D9; --ct:#001489; --ct-bg:#E3E8FB; --fn:#12805C; --fn-bg:#DFF3EA;
+    --drop:#C9D3F5;
+    --display:"Anton","Impact","Arial Narrow",sans-serif; --body:"Montserrat","Segoe UI",Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+    --brand:#000F66; --brand-2:#0A1F9E; --bg:#030824; --lane:#0A1240; --card:#111C55; --text:#EEF1FF; --muted:#A3ACD6; --line:#1F2E70;
+    --ink:#C9D2FF; --pi:#F3B04B; --pi-bg:#40300E; --ct:#AFC0FF; --ct-bg:#18245E; --fn:#43D19A; --fn-bg:#0E3A2D; --drop:#22337F; color-scheme:dark } }
+  :root[data-theme="dark"]{
+    --brand:#000F66; --brand-2:#0A1F9E; --bg:#030824; --lane:#0A1240; --card:#111C55; --text:#EEF1FF; --muted:#A3ACD6; --line:#1F2E70;
+    --ink:#C9D2FF; --pi:#F3B04B; --pi-bg:#40300E; --ct:#AFC0FF; --ct-bg:#18245E; --fn:#43D19A; --fn-bg:#0E3A2D; --drop:#22337F; color-scheme:dark }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:14px;line-height:1.4}
+  .g{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  header{background:var(--brand);color:#fff;border-bottom:4px solid var(--red)}
+  .hd{max-width:1400px;margin:0 auto;padding-block:14px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+  .hd small{display:block;color:var(--band-sub);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+  h1{font-family:var(--display);font-weight:400;font-size:28px;margin:0;text-transform:uppercase;line-height:1.05}
+  .tools{display:flex;gap:8px;flex-wrap:wrap}
+  input,textarea,select{font-family:var(--body);font-size:13px}
+  #busca{background:var(--brand-2);border:1px solid #2A3DB0;color:#fff;border-radius:8px;padding:8px 10px;min-width:200px}
+  #busca::placeholder{color:var(--band-sub)}
+  .btn{font-family:var(--body);font-weight:600;font-size:13px;border-radius:8px;padding:8px 12px;cursor:pointer;border:1px solid transparent}
+  .btn.light{background:#fff;color:#001489}
+  .btn.ghost{background:transparent;border-color:var(--line);color:var(--text)}
+  .btn.primary{background:var(--brand);color:#fff}
+  .btn:focus-visible,.card:focus-visible,a:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+  main{max-width:1400px;margin:0 auto;padding-block:18px 40px}
+  .status{font-size:12px;color:var(--muted);margin-bottom:10px;min-height:16px}
+  .board{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+  @media(max-width:860px){.board{grid-template-columns:1fr}}
+  .lane{background:var(--lane);border-radius:12px;padding:12px;min-width:0;display:flex;flex-direction:column;gap:10px;min-height:160px;transition:background .15s}
+  .lane.over{background:var(--drop)}
+  .lane h2{margin:0;display:flex;align-items:center;gap:8px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--ink)}
+  .lane h2 .n{margin-left:auto;font-variant-numeric:tabular-nums;border-radius:999px;padding:1px 9px;font-size:12px}
+  .lane[data-col=pi] .n{background:var(--pi-bg);color:var(--pi)} .lane[data-col=contrato] .n{background:var(--ct-bg);color:var(--ct)} .lane[data-col=finalizado] .n{background:var(--fn-bg);color:var(--fn)}
+  .lane .hint{font-size:11px;color:var(--muted);margin-top:-4px}
+  .list{display:flex;flex-direction:column;gap:8px;min-height:40px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:grab;display:flex;flex-direction:column;gap:4px;min-width:0}
+  .card.dragging{opacity:.45}
+  .card .cli{font-weight:700;font-size:13px;overflow-wrap:anywhere}
+  .card .prod{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+  .card .meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:11px;color:var(--muted);margin-top:2px}
+  .card .tag{background:var(--lane);border-radius:4px;padding:1px 6px;font-weight:600;color:var(--ink)}
+  .card a{color:var(--ink);text-decoration:none;border-bottom:1px dotted currentColor}
+  .card .nota{font-size:12px;background:var(--lane);border-radius:6px;padding:5px 7px;white-space:pre-wrap;overflow-wrap:anywhere}
+  .card .acts{display:flex;gap:6px;margin-top:4px;flex-wrap:wrap}
+  .mini{font-family:var(--body);font-size:11px;font-weight:600;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:6px;padding:3px 7px;cursor:pointer}
+  .mini.del{color:var(--red)}
+  .edit textarea{width:100%;min-height:56px;border:1px solid var(--line);border-radius:6px;padding:6px;background:var(--card);color:var(--text);resize:vertical}
+  .empty{font-size:12px;color:var(--muted);text-align:center;padding:14px 6px;border:1px dashed var(--line);border-radius:8px}
+  dialog{border:none;border-radius:12px;padding:0;background:var(--card);color:var(--text);width:min(440px,calc(100vw - 32px))}
+  dialog::backdrop{background:rgba(0,10,60,.45)}
+  .dlg{padding:18px;display:flex;flex-direction:column;gap:10px}
+  .dlg h3{margin:0;font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:20px;color:var(--ink)}
+  .dlg label{font-size:12px;font-weight:600;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+  .dlg input,.dlg select,.dlg textarea{border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--bg);color:var(--text)}
+  .dlg .row{display:flex;gap:8px;justify-content:flex-end}
+  @media (prefers-reduced-motion: reduce){.lane{transition:none}}
+</style>
+
+</head>
+<body>
+<header class="g">
+  <div class="hd">
+    <div><small>China Link · Purchase · Paulo Gomes</small><h1>Projetos em andamento</h1></div>
+    <div class="tools">
+      <a class="btn light" href="index.html" style="text-decoration:none">← KPIs de Purchase</a>
+      <input id="busca" type="search" placeholder="Buscar cliente, produto ou comercial" aria-label="Buscar">
+      <button class="btn light" id="novo" type="button">+ Adicionar projeto</button>
+      <button class="btn light" id="tok" type="button">Conectar GitHub</button>
+    </div>
+  </div>
+</header>
+
+<main class="g">
+  <div class="status" id="status" role="status">Carregando projetos…</div>
+  <div class="board" id="board">
+    <section class="lane" data-col="pi" aria-label="Pegando PI">
+      <h2>Pegando PI <span class="n" id="n-pi">0</span></h2>
+      <div class="hint">SOURCING TASK › Purchase/Projeto Fechado. Feche a task ao enviar a PI do fornecedor.</div>
+      <div class="list" id="l-pi"></div>
+    </section>
+    <section class="lane" data-col="contrato" aria-label="Contrato">
+      <h2>Contrato <span class="n" id="n-contrato">0</span></h2>
+      <div class="hint">PI do fornecedor enviada. Falta enviar o contrato ao fornecedor.</div>
+      <div class="list" id="l-contrato"></div>
+    </section>
+    <section class="lane" data-col="finalizado" aria-label="Finalizados">
+      <h2>Finalizados <span class="n" id="n-finalizado">0</span></h2>
+      <div class="hint">Contrato enviado ao fornecedor.</div>
+      <div class="list" id="l-finalizado"></div>
+    </section>
+  </div>
+</main>
+
+<dialog id="dlgTok">
+  <form class="dlg" id="formTok" method="dialog">
+    <h3>Conectar ao GitHub</h3>
+    <p style="margin:0;font-size:12px;color:var(--muted)">Para salvar as mudanças, cole um token pessoal do GitHub com permissão de escrita em <b>Contents</b> no repositório bath0ry/dashboard-purchase (GitHub › Settings › Developer settings › Fine-grained tokens). O token fica guardado só neste navegador.</p>
+    <label>Token<input id="f-tok" type="password" autocomplete="off" required></label>
+    <div class="row"><button class="btn ghost" type="button" id="sairTok">Desconectar</button><button class="btn ghost" type="button" id="cancTok">Cancelar</button><button class="btn primary" type="submit">Salvar token</button></div>
+  </form>
+</dialog>
+
+<dialog id="dlg">
+  <form class="dlg" id="form" method="dialog">
+    <h3>Adicionar projeto</h3>
+    <label>Cliente<input id="f-cli" required></label>
+    <label>Produto<input id="f-prod"></label>
+    <label>Comercial<input id="f-com"></label>
+    <label>Link da task (Teamwork)<input id="f-link" type="url" placeholder="https://project.chinalinktrading.com/app/tasks/…"></label>
+    <label>Etapa<select id="f-col"><option value="pi">Pegando PI</option><option value="contrato">Contrato</option><option value="finalizado">Finalizados</option></select></label>
+    <div class="row"><button class="btn ghost" type="button" id="cancelar">Cancelar</button><button class="btn primary" type="submit">Adicionar</button></div>
+  </form>
+</dialog>
+
+<script>
+const REPO="bath0ry/dashboard-purchase", BRANCH="master", PATH="data/quadro.json";
+const API=`https://api.github.com/repos/${REPO}/contents/${PATH}`;
+const COLS=["pi","contrato","finalizado"];
+const NOMES={pi:"Pegando PI",contrato:"Contrato",finalizado:"Finalizados"};
+let cards={}, sha=null, filtro="", editando=null, confirmar=null, rascunho=null, fila=Promise.resolve();
+const $=id=>document.getElementById(id);
+const st=t=>{$("status").textContent=t;};
+const getTok=()=>{try{return localStorage.getItem("gh_token_quadro")||"";}catch(e){return "";}};
+const setTok=v=>{try{v?localStorage.setItem("gh_token_quadro",v):localStorage.removeItem("gh_token_quadro");}catch(e){}};
+const podeEscrever=()=>!!getTok();
+function el(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
+function hoje(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
+function dataBR(s){return s&&s.length>=10?s.slice(8,10)+"/"+s.slice(5,7):"";}
+const b64e=s=>btoa(unescape(encodeURIComponent(s)));
+const b64d=s=>decodeURIComponent(escape(atob(s.replace(/\n/g,""))));
+
+async function ler(){
+  const tok=getTok();
+  if(tok){
+    const r=await fetch(API+"?ref="+BRANCH+"&t="+Date.now(),{headers:{Authorization:"Bearer "+tok,Accept:"application/vnd.github+json"},cache:"no-store"});
+    if(r.status===401||r.status===403){st("Token do GitHub inválido ou sem permissão. Clique em “Conectar GitHub”.");throw new Error("auth");}
+    if(!r.ok) throw new Error("http "+r.status);
+    const j=await r.json(); sha=j.sha; return JSON.parse(b64d(j.content));
+  }
+  const r=await fetch("data/quadro.json?t="+Date.now(),{cache:"no-store"});
+  if(!r.ok) throw new Error("http "+r.status);
+  return r.json();
+}
+
+// aplica uma mudança e grava no repositório; em conflito, relê e reaplica
+function gravar(mudar,msg){
+  mudar(cards); render();
+  if(!podeEscrever()){st("Mudança só nesta tela: conecte o GitHub para salvar.");return;}
+  fila=fila.then(async()=>{
+    for(let tent=0;tent<3;tent++){
+      try{
+        if(tent>0){const d=await ler(); cards=d.cards||{}; mudar(cards); render();}
+        const corpo=JSON.stringify({atualizado:new Date().toISOString().slice(0,16).replace("T"," "),cards},null,1);
+        const r=await fetch(API,{method:"PUT",headers:{Authorization:"Bearer "+getTok(),Accept:"application/vnd.github+json"},
+          body:JSON.stringify({message:"Quadro: "+msg,content:b64e(corpo),sha,branch:BRANCH})});
+        if(r.status===409||r.status===422){continue;}
+        if(!r.ok){st("Não foi possível salvar no GitHub ("+r.status+"). Verifique o token.");return;}
+        const j=await r.json(); sha=j.content.sha; st(contagem()+" · salvo no GitHub"); return;
+      }catch(e){ if(e.message==="auth") return; }
+    }
+    st("Outra pessoa salvou ao mesmo tempo. Recarregue a página e tente de novo.");
+  });
+}
+const contagem=()=>Object.keys(cards).length+" projetos";
+
+function render(){
+  const ta=editando&&document.getElementById("nota-"+editando); rascunho=ta?ta.value:null;
+  const q=filtro.trim().toLowerCase();
+  for(const c of COLS){
+    const list=$("l-"+c); list.replaceChildren();
+    const itens=Object.entries(cards).filter(([,v])=>v.coluna===c)
+      .filter(([,v])=>!q||[v.cliente,v.produto,v.comercial,v.nota].join(" ").toLowerCase().includes(q))
+      .sort((a,b)=>(a[1].ordem??0)-(b[1].ordem??0));
+    $("n-"+c).textContent=Object.values(cards).filter(v=>v.coluna===c).length;
+    if(!itens.length) list.append(el("div","empty",q?"Nada encontrado nesta etapa":"Arraste um projeto para cá"));
+    for(const [id,v] of itens) list.append(cardEl(id,v));
+  }
+  $("tok").textContent=podeEscrever()?"GitHub conectado":"Conectar GitHub";
+}
+function cardEl(id,v){
+  const c=el("article","card"); c.draggable=true; c.tabIndex=0; c.dataset.id=id;
+  c.append(el("div","cli",v.cliente||"Sem nome"));
+  if(v.produto) c.append(el("div","prod",v.produto));
+  const m=el("div","meta");
+  if(v.comercial) m.append(el("span","tag",v.comercial));
+  if(v.desde) m.append(el("span",null,(v.coluna==="pi"?"atualizada ":"desde ")+dataBR(v.desde)));
+  if(v.link&&/^https:\/\//.test(v.link)){const a=el("a",null,"abrir task");a.href=v.link;a.target="_blank";a.rel="noopener";m.append(a);}
+  c.append(m);
+  if(editando===id){
+    const w=el("div","edit"); const t=document.createElement("textarea"); t.id="nota-"+id; t.value=rascunho!=null?rascunho:(v.nota||""); t.setAttribute("aria-label","Nota");
+    const a=el("div","acts"); const s=el("button","mini","Salvar"); const x=el("button","mini","Cancelar"); s.type=x.type="button";
+    s.onclick=()=>{const txt=t.value.trim(); editando=null; gravar(cs=>{if(cs[id])cs[id].nota=txt;},"nota em "+(v.cliente||id));};
+    x.onclick=()=>{editando=null;render();};
+    a.append(s,x); w.append(t,a); c.append(w); setTimeout(()=>t.focus(),0);
+  } else if(v.nota) c.append(el("div","nota",v.nota));
+  if(editando!==id){
+    const a=el("div","acts"); const i=COLS.indexOf(v.coluna);
+    if(i>0){const b=el("button","mini","← "+NOMES[COLS[i-1]]);b.type="button";b.onclick=()=>mover(id,COLS[i-1]);a.append(b);}
+    if(i<2){const b=el("button","mini",NOMES[COLS[i+1]]+" →");b.type="button";b.onclick=()=>mover(id,COLS[i+1]);a.append(b);}
+    const n=el("button","mini",v.nota?"Editar nota":"Nota");n.type="button";n.onclick=()=>{editando=id;render();};a.append(n);
+    const d=el("button","mini del",confirmar===id?"Confirmar remoção":"Remover");d.type="button";
+    d.onclick=()=>{if(confirmar===id){confirmar=null;gravar(cs=>{delete cs[id];},"remove "+(v.cliente||id));}else{confirmar=id;render();setTimeout(()=>{if(confirmar===id){confirmar=null;render();}},4000);}};
+    a.append(d); c.append(a);
+  }
+  c.addEventListener("dragstart",e=>{e.dataTransfer.setData("text/plain",id);e.dataTransfer.effectAllowed="move";c.classList.add("dragging");});
+  c.addEventListener("dragend",()=>c.classList.remove("dragging"));
+  return c;
+}
+function mover(id,col){
+  gravar(cs=>{ if(!cs[id])return; const fim=Math.max(-1,...Object.values(cs).filter(v=>v.coluna===col).map(v=>v.ordem??0))+1;
+    if(cs[id].coluna!==col) cs[id].desde=hoje(); cs[id].coluna=col; cs[id].ordem=fim; }, (cards[id]?.cliente||id)+" → "+NOMES[col]);
+}
+function posicaoDrop(list,y){
+  for(const e of list.querySelectorAll(".card:not(.dragging)")){const r=e.getBoundingClientRect(); if(y<r.top+r.height/2) return e.dataset.id;}
+  return null;
+}
+document.querySelectorAll(".lane").forEach(l=>{
+  const col=l.dataset.col, list=l.querySelector(".list");
+  l.addEventListener("dragover",e=>{e.preventDefault();l.classList.add("over");});
+  l.addEventListener("dragleave",e=>{if(!l.contains(e.relatedTarget))l.classList.remove("over");});
+  l.addEventListener("drop",e=>{
+    e.preventDefault(); l.classList.remove("over");
+    const id=e.dataTransfer.getData("text/plain"); if(!cards[id]) return;
+    const antes=posicaoDrop(list,e.clientY);
+    gravar(cs=>{ if(!cs[id])return;
+      const ordem=Object.entries(cs).filter(([k,v])=>v.coluna===col&&k!==id).sort((a,b)=>(a[1].ordem??0)-(b[1].ordem??0)).map(([k])=>k);
+      const pos=antes?ordem.indexOf(antes):-1; ordem.splice(pos<0?ordem.length:pos,0,id);
+      if(cs[id].coluna!==col) cs[id].desde=hoje(); cs[id].coluna=col;
+      ordem.forEach((k,i)=>{cs[k].ordem=i;}); }, (cards[id].cliente||id)+" → "+NOMES[col]);
+  });
+});
+$("busca").addEventListener("input",e=>{filtro=e.target.value;render();});
+$("novo").addEventListener("click",()=>{$("form").reset();$("dlg").showModal();});
+$("cancelar").addEventListener("click",()=>$("dlg").close());
+$("form").addEventListener("submit",e=>{
+  e.preventDefault(); const col=$("f-col").value;
+  const v={cliente:$("f-cli").value.trim(),produto:$("f-prod").value.trim(),comercial:$("f-com").value.trim(),link:$("f-link").value.trim(),coluna:col,nota:"",origem:"manual",desde:hoje()};
+  if(!v.cliente) return; $("dlg").close();
+  const m=v.link.match(/tasks\/(\d+)/); const id=m?m[1]:"m"+Date.now();
+  gravar(cs=>{v.ordem=Math.max(-1,...Object.values(cs).filter(x=>x.coluna===col).map(x=>x.ordem??0))+1; cs[id]=v;},"adiciona "+v.cliente);
+});
+$("tok").addEventListener("click",()=>{$("f-tok").value="";$("dlgTok").showModal();});
+$("cancTok").addEventListener("click",()=>$("dlgTok").close());
+$("sairTok").addEventListener("click",()=>{setTok("");$("dlgTok").close();render();st("GitHub desconectado. O quadro fica só para leitura.");});
+$("formTok").addEventListener("submit",async e=>{e.preventDefault();setTok($("f-tok").value.trim());$("dlgTok").close();await carregar();});
+
+async function carregar(){
+  try{ const d=await ler(); cards=d.cards||{}; render();
+    st(contagem()+(podeEscrever()?" · arraste os blocos entre as etapas ou use os botões ← →":" · conecte o GitHub para salvar as mudanças"));
+  }catch(e){ if(e.message!=="auth") st("Não consegui carregar o quadro agora. Recarregue a página."); }
+}
+render(); carregar();
+</script>
+</body>
+</html>
