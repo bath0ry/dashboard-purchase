@@ -1,0 +1,269 @@
+{
+ "atualizado": "2026-11-24 11:52",
+ "cards": {
+  "25665636": {
+   "cliente": "MARAGATA",
+   "coluna": "finalizado",
+   "comercial": "Matthew Nogueira",
+   "desde": "2026-11-24",
+   "link": "https://project.chinalinktrading.com/app/tasks/25665636",
+   "nota": "",
+   "ordem": 0,
+   "origem": "teamwork",
+   "produto": "CHAPÉUS E VESTUÁRIO"
+  },
+  "25835697": {
+   "cliente": "My Fit Mood LTDA",
+   "coluna": "finalizado",
+   "comercial": "Matheus Gomes",
+   "desde": "2026-11-24",
+   "link": "https://project.chinalinktrading.com/app/tasks/25835697",
+   "nota": "Task fechada em 17/11",
+   "ordem": 1,
+   "origem": "teamwork",
+   "produto": "Roupa Fitness"
+  },
+  "26311060": {
+   "cliente": "Meu Filtro W.s.o. do Amaral Ind.e Com de Purificadores de Agua",
+   "coluna": "pi",
+   "comercial": "Sally Sepulveda",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/26311060",
+   "nota": "",
+   "ordem": 1,
+   "origem": "teamwork",
+   "produto": "Bomba Dosadora Eletromagnética  e tanques"
+  },
+  "26424572": {
+   "cliente": "RJ Instalações Comerciais LTDA",
+   "coluna": "contrato",
+   "comercial": "Laís Lira",
+   "desde": "2026-11-18",
+   "link": "https://project.chinalinktrading.com/app/tasks/26424572",
+   "nota": "Task fechada em 18/11",
+   "ordem": 1,
+   "origem": "teamwork",
+   "produto": "Chuveiro filtrado de 6 polegadas com filtro iônico"
+  },
+  "26454767": {
+   "cliente": "Água Boa da Amazônia fabricação de águas envasadas Ltda",
+   "coluna": "pi",
+   "comercial": "Laís Lira",
+   "desde": "2026-11-22",
+   "link": "https://project.chinalinktrading.com/app/tasks/26454767",
+   "nota": "",
+   "ordem": 2,
+   "origem": "teamwork",
+   "produto": "Máquina de produção de tampa de garrafa de plástico."
+  },
+  "26490333": {
+   "cliente": "TICHU TECH LTDA",
+   "coluna": "pi",
+   "comercial": "Victor Gustavo",
+   "desde": "2026-11-22",
+   "link": "https://project.chinalinktrading.com/app/tasks/26490333",
+   "nota": "",
+   "ordem": 3,
+   "origem": "teamwork",
+   "produto": "Vasos sanitários"
+  },
+  "26566127": {
+   "cliente": "NEVERTON RODRIGUES DA SILVA - AUTO ELETRICA LTDA",
+   "coluna": "pi",
+   "comercial": "Luiz Gustavo",
+   "desde": "2026-11-22",
+   "link": "https://project.chinalinktrading.com/app/tasks/26566127",
+   "nota": "",
+   "ordem": 4,
+   "origem": "teamwork",
+   "produto": "Autopeças Elétricas e Eletrônicas"
+  },
+  "26593035": {
+   "cliente": "FLOR COMERCIO E IMPORTACAO LTDA",
+   "coluna": "contrato",
+   "comercial": "Gabrielly Bispo",
+   "desde": "2026-11-19",
+   "link": "https://project.chinalinktrading.com/app/tasks/26593035",
+   "nota": "Task fechada em 19/11",
+   "ordem": 2,
+   "origem": "teamwork",
+   "produto": "Papelaria e festa"
+  },
+  "26608292": {
+   "cliente": "SJ BUSINESS LTDA",
+   "coluna": "contrato",
+   "comercial": "Matthew Nogueira",
+   "desde": "2026-11-17",
+   "link": "https://project.chinalinktrading.com/app/tasks/26608292",
+   "nota": "Task fechada em 17/11",
+   "ordem": 3,
+   "origem": "teamwork",
+   "produto": "Vestuário, tecidos, joias e acessórios"
+  },
+  "26608494": {
+   "cliente": "MEGA TUBARAO JATAI LTDA",
+   "coluna": "pi",
+   "comercial": "Gustavo Merighi",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/26608494",
+   "nota": "",
+   "ordem": 5,
+   "origem": "teamwork",
+   "produto": "SÓ BOBOJACO"
+  },
+  "26613060": {
+   "cliente": "Ferreira e Azevedo",
+   "coluna": "contrato",
+   "comercial": "Antonio Rosa",
+   "desde": "2026-11-19",
+   "link": "https://project.chinalinktrading.com/app/tasks/26613060",
+   "nota": "Task fechada em 19/11",
+   "ordem": 4,
+   "origem": "teamwork",
+   "produto": "academia"
+  },
+  "26615173": {
+   "cliente": "COMAGRO PECAS E SERVICOS LTDA",
+   "coluna": "pi",
+   "comercial": "Gabriel Silva",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/26615173",
+   "nota": "",
+   "ordem": 6,
+   "origem": "teamwork",
+   "produto": "Autopeças e Acessórios"
+  },
+  "26633061": {
+   "cliente": "DUPANDA ATACADO E VAREJO LTDA",
+   "coluna": "pi",
+   "comercial": "Graziele Galdino",
+   "desde": "2026-11-22",
+   "link": "https://project.chinalinktrading.com/app/tasks/26633061",
+   "nota": "",
+   "ordem": 7,
+   "origem": "teamwork",
+   "produto": "fumigador"
+  },
+  "26684289": {
+   "cliente": "CONTRISUL COMERCIO DE MAQUINAS E UTILIDADES PARA GASTRONOMIA LTDA",
+   "coluna": "pi",
+   "comercial": "Matthew Nogueira",
+   "desde": "2026-11-19",
+   "link": "https://project.chinalinktrading.com/app/tasks/26684289",
+   "nota": "",
+   "ordem": 8,
+   "origem": "teamwork",
+   "produto": "Serra de Fita Corta Carne Meatkutter Premium MKP 16 x 0,46 Milímetros e Dentição de 6 - MKP16X6/SK-4"
+  },
+  "26718618": {
+   "cliente": "TFT BRINQUEDOS, PAPELARIA E ESCRITORIO LTDA",
+   "coluna": "pi",
+   "comercial": "Gabriel Silva",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/26718618",
+   "nota": "",
+   "ordem": 9,
+   "origem": "teamwork",
+   "produto": "Cadeiras"
+  },
+  "26759875": {
+   "cliente": "SPR ALIMENTOS SABOR GOURMET LTDA",
+   "coluna": "pi",
+   "comercial": "Laís Lira",
+   "desde": "2026-11-22",
+   "link": "https://project.chinalinktrading.com/app/tasks/26759875",
+   "nota": "",
+   "ordem": 10,
+   "origem": "teamwork",
+   "produto": "Container"
+  },
+  "26787365": {
+   "cliente": "Lidyane Mores Fisioterapia Especializada",
+   "coluna": "contrato",
+   "comercial": "Antonio Rosa",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/26787365",
+   "nota": "Task fechada em 23/11",
+   "ordem": 5,
+   "origem": "teamwork",
+   "produto": "Esportes"
+  },
+  "26810958": {
+   "cliente": "CAESA COMERCIO EM GERAL LTDA",
+   "coluna": "contrato",
+   "comercial": "Filipe Oliveira",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/26810958",
+   "nota": "Task fechada em 23/11",
+   "ordem": 6,
+   "origem": "teamwork",
+   "produto": "Construção, acabamento e ferramentas"
+  },
+  "26875420": {
+   "cliente": "CASA DAS IDEIAS LTDA",
+   "coluna": "pi",
+   "comercial": "",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/26875420",
+   "nota": "",
+   "ordem": 11,
+   "origem": "teamwork",
+   "produto": "Eletrônicos e afins"
+  },
+  "26919976": {
+   "cliente": "OKITAS MAGAZINE LTDA",
+   "coluna": "contrato",
+   "comercial": "",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/26919976",
+   "nota": "Task fechada em 23/11",
+   "ordem": 7,
+   "origem": "teamwork",
+   "produto": "CAIXA ORGANIZADORA INFANTIL"
+  },
+  "26964958": {
+   "cliente": "NR SOLUCOES LTDA",
+   "coluna": "pi",
+   "comercial": "Gustavo Merighi",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/26964958",
+   "nota": "",
+   "ordem": 12,
+   "origem": "teamwork",
+   "produto": "Latex / Borracha / Fio"
+  },
+  "26982044": {
+   "cliente": "INJETTA PRIME E COMERCIO LTDA",
+   "coluna": "contrato",
+   "comercial": "",
+   "desde": "2026-11-22",
+   "link": "https://project.chinalinktrading.com/app/tasks/26982044",
+   "nota": "Task fechada em 22/11",
+   "ordem": 8,
+   "origem": "teamwork",
+   "produto": "Máquinas"
+  },
+  "26982278": {
+   "cliente": "DISMOTOR COMERCIO DE MOTORES ELETRICOS LTDA",
+   "coluna": "contrato",
+   "comercial": "",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/26982278",
+   "nota": "",
+   "ordem": 9,
+   "origem": "teamwork",
+   "produto": "Máquinas"
+  },
+  "27014726": {
+   "cliente": "BACEL INSTALACOES E SERVICOS LTDA",
+   "coluna": "pi",
+   "comercial": "Alana Dezena",
+   "desde": "2026-11-23",
+   "link": "https://project.chinalinktrading.com/app/tasks/27014726",
+   "nota": "",
+   "ordem": 14,
+   "origem": "teamwork",
+   "produto": "Construção, acabamento e ferramentas"
+  }
+ }
+}
