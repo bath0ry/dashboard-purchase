@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-23 13:31",
+ "atualizado": "2026-11-24 09:31",
  "desde": "2026-07-01",
  "fonte": "Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
  "projetos": [
@@ -12,7 +12,7 @@
    "comercial": "Antonio Rosa",
    "data": "2026-11-23",
    "mes": "2026-11",
-   "concluida": false,
+   "concluida": true,
    "pedido": "1",
    "qtdFornecedores": "1",
    "operacao": "Direto",
@@ -52,7 +52,7 @@
    "comercial": "Thadeu Friederichs",
    "data": "2026-11-19",
    "mes": "2026-11",
-   "concluida": false,
+   "concluida": true,
    "pedido": "54",
    "qtdFornecedores": "1",
    "operacao": "Conta e Ordem",
@@ -4645,7 +4645,7 @@
    "temSimLink": true,
    "nInvoices": 1,
    "fornecedores": [],
-   "nota": "",
+   "nota": "simulação > 10 MB (Simulação Academia Gustavo.xlsx, 19,5 MB)",
    "seg": "A classificar",
    "tipo": "—",
    "ganhoFonte": "",
@@ -4655,7 +4655,8 @@
    "fornCliente": false,
    "status": "sem",
    "revisar": false,
-   "naoPreco": []
+   "naoPreco": [],
+   "simTentado": "2026-11-24"
   },
   {
    "id": 26621599,
@@ -4693,7 +4694,10 @@
    "fornCliente": false,
    "status": "sem",
    "revisar": false,
-   "naoPreco": []
+   "naoPreco": [],
+   "valorMercadoriaUSD": 16900.0,
+   "incoterm": "FOB",
+   "simFile": 7273922
   },
   {
    "id": 26614096,
@@ -4732,7 +4736,10 @@
    "fornCliente": false,
    "status": "sem",
    "revisar": false,
-   "naoPreco": []
+   "naoPreco": [],
+   "valorMercadoriaUSD": 7700.0,
+   "incoterm": "EXW",
+   "simFile": 7273242
   },
   {
    "id": 26611823,
