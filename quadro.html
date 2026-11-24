@@ -159,23 +159,47 @@ async function ler(){
   return r.json();
 }
 
-// aplica uma mudança e grava no repositório; em conflito, relê e reaplica
+// Persistência: toda mudança vira um "pendente" guardado neste navegador (sobrevive a sair e voltar)
+// e, com o GitHub conectado, é gravada em data/quadro.json para todo mundo. Em conflito, relê e reaplica os pendentes.
+const PEND_KEY="quadro_pendentes_v1";
+const lerPend=()=>{try{return JSON.parse(localStorage.getItem(PEND_KEY)||"{}");}catch(e){return {};}};
+const salvarPend=p=>{try{Object.keys(p).length?localStorage.setItem(PEND_KEY,JSON.stringify(p)):localStorage.removeItem(PEND_KEY);}catch(e){}};
+function aplicarPend(cs,p){for(const [id,v] of Object.entries(p)){ if(v===null) delete cs[id]; else cs[id]=v; } return cs;}
+let avisouTok=false;
 function gravar(mudar,msg){
+  const antes=JSON.parse(JSON.stringify(cards));
   mudar(cards); render();
-  if(!podeEscrever()){st("Mudança só nesta tela: conecte o GitHub para salvar.");return;}
+  const p=lerPend();
+  for(const id of new Set([...Object.keys(antes),...Object.keys(cards)])){
+    if(JSON.stringify(antes[id])!==JSON.stringify(cards[id])) p[id]=cards[id]?JSON.parse(JSON.stringify(cards[id])):null;
+  }
+  salvarPend(p);
+  if(!podeEscrever()){
+    st("Salvo neste navegador. Para todo mundo ver, clique em “Conectar GitHub”.");
+    if(!avisouTok){avisouTok=true; $("f-tok").value=""; $("dlgTok").showModal();}
+    return;
+  }
+  enviar(msg);
+}
+function enviar(msg){
   fila=fila.then(async()=>{
-    for(let tent=0;tent<3;tent++){
+    for(let tent=0;tent<4;tent++){
       try{
-        if(tent>0){const d=await ler(); cards=d.cards||{}; mudar(cards); render();}
+        const p=lerPend(); if(!Object.keys(p).length){st(contagem()+" · salvo no GitHub");return;}
+        if(tent>0||!sha){const d=await ler(); cards=aplicarPend(d.cards||{},p); render();}
         const corpo=JSON.stringify({atualizado:new Date().toISOString().slice(0,16).replace("T"," "),cards},null,1);
         const r=await fetch(API,{method:"PUT",headers:{Authorization:"Bearer "+getTok(),Accept:"application/vnd.github+json"},
           body:JSON.stringify({message:"Quadro: "+msg,content:b64e(corpo),sha,branch:BRANCH})});
-        if(r.status===409||r.status===422){continue;}
-        if(!r.ok){st("Não foi possível salvar no GitHub ("+r.status+"). Verifique o token.");return;}
-        const j=await r.json(); sha=j.content.sha; st(contagem()+" · salvo no GitHub"); return;
+        if(r.status===409||r.status===422){sha=null;continue;}
+        if(r.status===401||r.status===403){st("Token do GitHub inválido ou sem permissão. As mudanças ficaram salvas neste navegador.");return;}
+        if(!r.ok){st("Não foi possível salvar no GitHub ("+r.status+"). As mudanças ficaram salvas neste navegador e serão enviadas depois.");return;}
+        const j=await r.json(); sha=j.content.sha;
+        // limpa só os pendentes que já foram enviados (os que chegaram durante o envio continuam)
+        const agora=lerPend(); for(const [id,v] of Object.entries(p)) if(JSON.stringify(agora[id])===JSON.stringify(v)) delete agora[id];
+        salvarPend(agora); st(contagem()+" · salvo no GitHub"); return;
       }catch(e){ if(e.message==="auth") return; }
     }
-    st("Outra pessoa salvou ao mesmo tempo. Recarregue a página e tente de novo.");
+    st("Não consegui salvar no GitHub agora (conflito). As mudanças ficaram salvas neste navegador e serão enviadas ao recarregar.");
   });
 }
 const contagem=()=>Object.keys(cards).length+" projetos";
@@ -262,9 +286,15 @@ $("sairTok").addEventListener("click",()=>{setTok("");$("dlgTok").close();render
 $("formTok").addEventListener("submit",async e=>{e.preventDefault();setTok($("f-tok").value.trim());$("dlgTok").close();await carregar();});
 
 async function carregar(){
-  try{ const d=await ler(); cards=d.cards||{}; render();
-    st(contagem()+(podeEscrever()?" · arraste os blocos entre as etapas ou use os botões ← →":" · conecte o GitHub para salvar as mudanças"));
-  }catch(e){ if(e.message!=="auth") st("Não consegui carregar o quadro agora. Recarregue a página."); }
+  try{ const d=await ler(); const p=lerPend(); cards=aplicarPend(d.cards||{},p); render();
+    const n=Object.keys(p).length;
+    if(n&&podeEscrever()){ st(contagem()+" · enviando "+n+" mudança(s) pendente(s) ao GitHub…"); enviar("mudanças pendentes"); }
+    else st(contagem()+(podeEscrever()?" · arraste os blocos entre as etapas ou use os botões ← →":n?" · "+n+" mudança(s) salvas só neste navegador: conecte o GitHub para todo mundo ver":" · conecte o GitHub para salvar para todo mundo"));
+  }catch(e){
+    if(e.message==="auth") return;
+    const p=lerPend(); if(Object.keys(p).length){cards=aplicarPend(cards,p);render();}
+    st("Não consegui carregar o quadro agora. Recarregue a página.");
+  }
 }
 render(); carregar();
 </script>
