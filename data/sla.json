@@ -1,0 +1,1249 @@
+{
+ "atualizado": "2026-11-25 09:01",
+ "slaDiasUteis": 2,
+ "desde": "2026-07-01",
+ "regra": "Solicitação = comentário com a simulação final (xlsx) na SOURCING TASK › Purchase/Projeto Fechado. Entrega = primeiro comentário seguinte de outra pessoa com a PI do fornecedor (arquivo ou link). Comercial = da entrega da PI até a criação da task de Handover (Sales Support). Dias úteis, sem fins de semana e feriados nacionais; o dia da solicitação não conta.",
+ "ciclos": [
+  {
+   "task": 26890038,
+   "link": "https://project.chinalinktrading.com/app/tasks/26890038",
+   "nome": "Sourcing · NOVALUZ SERVICOS DE ITABIRA LTDA · Construção, acabamento e ferramentas",
+   "solicitante": "Antonio Rosa",
+   "solicitado": "2026-11-24 16:51",
+   "simulacao": [
+    "NOVALUZ SERVICOS DE ITABIRA LTDA - NOVA  - (CLT) PLANILHA_CUSTOS_HIBRIDA_SC_2027_CBS_IBS (1).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": null,
+   "diasEmAberto": 1,
+   "noPrazo": null
+  },
+  {
+   "task": 25881128,
+   "link": "https://project.chinalinktrading.com/app/tasks/25881128",
+   "nome": "Farmahof Ltda - AGULHAS E CANULAS / 1",
+   "solicitante": "Nathaly Nunes dos Santos",
+   "solicitado": "2026-11-24 16:20",
+   "simulacao": [
+    "PLANILHA FARMAHOF (1).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": null,
+   "diasEmAberto": 1,
+   "noPrazo": null
+  },
+  {
+   "task": 27014726,
+   "link": "https://project.chinalinktrading.com/app/tasks/27014726",
+   "nome": "Sourcing · BACEL INSTALACOES E SERVICOS LTDA · Construção, acabamento e ferramentas",
+   "solicitante": "Alana Dezena",
+   "solicitado": "2026-11-24 11:19",
+   "simulacao": [
+    "OUTLET DOS  FORROS -40HC PLANILHA CUSTOS HÍBRIDA.xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": null,
+   "diasEmAberto": 1,
+   "noPrazo": null
+  },
+  {
+   "task": 26875420,
+   "link": "https://project.chinalinktrading.com/app/tasks/26875420",
+   "nome": "Sourcing · CASA DAS IDEIAS LTDA · Eletrônicos e afins",
+   "solicitante": "Christiano Zanzini Freire",
+   "solicitado": "2026-11-23 15:21",
+   "simulacao": [
+    "Unificada - CASA DAS IDEIAS LTDA - (CLT) PLANILHA CUSTOS HÍBRIDA SC (7).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": null,
+   "diasEmAberto": 2,
+   "noPrazo": null
+  },
+  {
+   "task": 26718306,
+   "link": "https://project.chinalinktrading.com/app/tasks/26718306",
+   "nome": "TFT BRINQUEDOS, PAPELARIA E ESCRITORIO LTDA - Construção, acabamento e ferramentas /",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-11-23 12:31",
+   "simulacao": [
+    "TFT BRINQUEDOS, PAPELARIA E ESCRITORIO LTDA - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (57) (2) (1).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": null,
+   "diasEmAberto": 2,
+   "noPrazo": null
+  },
+  {
+   "task": 26958278,
+   "link": "https://project.chinalinktrading.com/app/tasks/26958278",
+   "nome": "Sourcing · JONATHA CORDEIRO NEGOCIOS IMOBILIARIOS LTDA · Scooter",
+   "solicitante": "Gabriel Silva",
+   "solicitado": "2026-11-19 14:31",
+   "simulacao": [
+    "P1 SIMULAÇÃO - JONATHA CORDEIRO NEGOCIOS IMOBILIARIOS LTDA.xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": null,
+   "diasEmAberto": 3,
+   "noPrazo": null
+  },
+  {
+   "task": 26919976,
+   "link": "https://project.chinalinktrading.com/app/tasks/26919976",
+   "nome": "Sourcing · OKITAS MAGAZINE LTDA · CAIXA ORGANIZADORA INFANTIL",
+   "solicitante": "Sally Sepulveda",
+   "solicitado": "2026-11-18 10:10",
+   "simulacao": [
+    "OKITAS - (CLT) PLANILHA CUSTOS HÍBRIDA SC - 03.11 (1) (1).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": "2026-11-23 08:23",
+   "arquivoPI": [
+    "PI JA260402012.pdf"
+   ],
+   "diasPI": 2,
+   "horasPI": 118.2,
+   "noPrazo": true,
+   "diasComercialEmAberto": 2
+  },
+  {
+   "task": 26613060,
+   "link": "https://project.chinalinktrading.com/app/tasks/26613060",
+   "nome": "Ferreira e Azevedo  - academia / 55433485",
+   "solicitante": "Antonio Rosa",
+   "solicitado": "2026-11-17 17:36",
+   "simulacao": [
+    "FERREIRA E AZEVEDO LTDA - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (7) (1).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": "2026-11-19 08:49",
+   "arquivoPI": [
+    "PI - FERREIRA E AZEVEDO-BRTW20261023CXN(1).xlsx"
+   ],
+   "diasPI": 2,
+   "horasPI": 39.2,
+   "noPrazo": true,
+   "atualizacaoPI": true,
+   "handover": "2026-11-05",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26987151"
+  },
+  {
+   "task": 26787365,
+   "link": "https://project.chinalinktrading.com/app/tasks/26787365",
+   "nome": "Lidyane Mores Fisioterapia Especializada - Esportes /",
+   "solicitante": "Antonio Rosa",
+   "solicitado": "2026-11-17 15:15",
+   "simulacao": [
+    "LIDYANE MORES FISIOTERAPIA 17 NOVEMBRO 2026.xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": "2026-11-23 07:56",
+   "arquivoPI": [
+    "BJPI2608325 (18).pdf"
+   ],
+   "diasPI": 3,
+   "horasPI": 136.7,
+   "noPrazo": false,
+   "handover": "2026-11-23",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/27050563",
+   "diasComercial": 0
+  },
+  {
+   "task": 26810958,
+   "link": "https://project.chinalinktrading.com/app/tasks/26810958",
+   "nome": "CAESA COMERCIO EM GERAL LTDA - Construção, acabamento e ferramentas /",
+   "solicitante": "Filipe Oliveira",
+   "solicitado": "2026-11-17 14:39",
+   "simulacao": [
+    "CAESA ARAME - SIMULAÇÃO APROVADA ATUALIZADA.xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": null,
+   "diasEmAberto": 5,
+   "noPrazo": null
+  },
+  {
+   "task": 26982044,
+   "link": "https://project.chinalinktrading.com/app/tasks/26982044",
+   "nome": "Sourcing · INJETTA PRIME E COMERCIO LTDA · Máquinas",
+   "solicitante": "Matheus Benatti Pereira",
+   "solicitado": "2026-11-16 17:00",
+   "simulacao": [
+    "INJETTA PRIME E COMERCIO LTDA - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (68).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": "2026-11-25 08:18",
+   "arquivoPI": [
+    "invoice for the bead mold and packing maching  .pdf"
+   ],
+   "diasPI": 6,
+   "horasPI": 207.3,
+   "noPrazo": false,
+   "diasComercialEmAberto": 0
+  },
+  {
+   "task": 25665636,
+   "link": "https://project.chinalinktrading.com/app/tasks/25665636",
+   "nome": "MARAGATA - CHAPÉUS E VESTUÁRIO / 1",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-11-16 16:48",
+   "simulacao": [
+    "MARAGATA - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (1) (2).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 6,
+   "noPrazo": null
+  },
+  {
+   "task": 25835697,
+   "link": "https://project.chinalinktrading.com/app/tasks/25835697",
+   "nome": "My Fit Mood LTDA - Roupa Fitness / 48751978",
+   "solicitante": "Antonio Rosa",
+   "solicitado": "2026-11-12 13:37",
+   "simulacao": [
+    "MY FIT MOOD - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (59).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": "2026-11-23 08:05",
+   "arquivoPI": [
+    "PI_MYFITMOOD.pdf"
+   ],
+   "diasPI": 6,
+   "horasPI": 258.5,
+   "noPrazo": false,
+   "diasComercialEmAberto": 2
+  },
+  {
+   "task": 26982278,
+   "link": "https://project.chinalinktrading.com/app/tasks/26982278",
+   "nome": "Sourcing · DISMOTOR COMERCIO DE MOTORES ELETRICOS LTDA · Máquinas",
+   "solicitante": "Matheus Benatti Pereira",
+   "solicitado": "2026-11-12 12:41",
+   "simulacao": [
+    "DISMOTOR  AEREO.xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 8,
+   "noPrazo": null,
+   "handover": "2026-11-16",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/27023780",
+   "verificar": "PI não está nos comentários da sourcing task, mas o handover foi criado em 2026-11-16"
+  },
+  {
+   "task": 26860078,
+   "link": "https://project.chinalinktrading.com/app/tasks/26860078",
+   "nome": "Sourcing · ASAF - P6 LUCAS DA SILVA GABRIEL · Máquinas",
+   "solicitante": "Sally Sepulveda",
+   "solicitado": "2026-11-12 11:43",
+   "simulacao": [
+    "ASAF - (CLT) PLANILHA CUSTOS HÍBRIDA SC - Atualizado novembro 2 (1).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": "Lucas Miguel",
+   "entregue": "2026-11-13 06:52",
+   "arquivoPI": [
+    "PI-NLTG2026CH03.xlsx"
+   ],
+   "diasPI": 1,
+   "horasPI": 19.2,
+   "noPrazo": true,
+   "handover": "2026-11-16",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/27025253",
+   "diasComercial": 1
+  },
+  {
+   "task": 26959989,
+   "link": "https://project.chinalinktrading.com/app/tasks/26959989",
+   "nome": "Sourcing · CASA DO FORRO COMERCIO DE PVC LTDA · Construção",
+   "solicitante": "Natália",
+   "solicitado": "2026-11-10 21:50",
+   "simulacao": [
+    "CASA FORRO-1-40HC-(CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (61).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 10,
+   "noPrazo": null,
+   "handover": "2026-11-12",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/27017338",
+   "verificar": "PI não está nos comentários da sourcing task, mas o handover foi criado em 2026-11-12"
+  },
+  {
+   "task": 26566127,
+   "link": "https://project.chinalinktrading.com/app/tasks/26566127",
+   "nome": "NEVERTON RODRIGUES DA SILVA - AUTO ELETRICA LTDA - Autopeças Elétricas e Eletrônicas",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-11-05 15:32",
+   "simulacao": [
+    "AUTO ELÉTRICA RODRIGUES - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (47) (1).xlsx"
+   ],
+   "mes": "2026-11",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 13,
+   "noPrazo": null
+  },
+  {
+   "task": 25587974,
+   "link": "https://project.chinalinktrading.com/app/tasks/25587974",
+   "nome": "Ka2 Comercio de Material elétrico e Utilidades doméstica - Panelas e caçarolas / 22",
+   "solicitante": "Victor Gustavo",
+   "solicitado": "2026-10-30 17:31",
+   "simulacao": [
+    "KA2 COMERCIO - (CLT) PLANILHA CUSTOS HÍBRIDA SC - 30-10.xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Victor Augusto",
+   "entregue": "2026-11-05 12:43",
+   "arquivoPI": [
+    "Finally  MS-261105PI - EDITADO CHINA LINK(1).xlsx"
+   ],
+   "diasPI": 3,
+   "horasPI": 139.2,
+   "noPrazo": false,
+   "handover": "2026-11-05",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26988264",
+   "diasComercial": 0
+  },
+  {
+   "task": 26684289,
+   "link": "https://project.chinalinktrading.com/app/tasks/26684289",
+   "nome": "CONTRISUL COMERCIO DE MAQUINAS E UTILIDADES PARA GASTRONOMIA LTDA - Serra de Fita Corta Carne Meatkutter Premium MKP 16 x 0,46 Milímetros e Dentição de 6 - MKP16X6/SK-4 /",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-10-30 15:25",
+   "simulacao": [
+    "CONTRISUL COMERCIO DE MAQUINAS E UTILIDADES PARA GASTRONOMIA LTDA - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (38) (1).xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Jonathan Corrêa",
+   "entregue": "2026-11-03 01:03",
+   "arquivoPI": [
+    "EXW PI CS20261103006.xlsx"
+   ],
+   "diasPI": 1,
+   "horasPI": 81.6,
+   "noPrazo": true,
+   "diasComercialEmAberto": 15
+  },
+  {
+   "task": 26615173,
+   "link": "https://project.chinalinktrading.com/app/tasks/26615173",
+   "nome": "COMAGRO PECAS E SERVICOS LTDA - Autopeças e Acessórios /",
+   "solicitante": "Gabriel Silva",
+   "solicitado": "2026-10-28 11:41",
+   "simulacao": [
+    "P1 SIMULAÇÃO - COMAGRO PECAS E SERVICOS LTDA (1).xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 18,
+   "noPrazo": null,
+   "verificar": "solicitação sem PI nos comentários há mais de 15 dias úteis: conferir se a PI foi enviada por outro caminho"
+  },
+  {
+   "task": 26683378,
+   "link": "https://project.chinalinktrading.com/app/tasks/26683378",
+   "nome": "TECH TREND LTDA - ITENS DE COZINHA (VIVA HOME)",
+   "solicitante": "Graziele Galdino",
+   "solicitado": "2026-10-27 12:33",
+   "simulacao": [
+    "VIVA HOME - CENARIO FECHADO 19.10.xlsx",
+    "Cartao CNPJ_P1.pdf"
+   ],
+   "mes": "2026-10",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 19,
+   "noPrazo": null,
+   "verificar": "solicitação sem PI nos comentários há mais de 15 dias úteis: conferir se a PI foi enviada por outro caminho"
+  },
+  {
+   "task": 26697332,
+   "link": "https://project.chinalinktrading.com/app/tasks/26697332",
+   "nome": "Construfer - Painéis Ripados / 59466293",
+   "solicitante": "Victor Gustavo",
+   "solicitado": "2026-10-26 14:33",
+   "simulacao": [
+    "20261021 Construfer - (CLT) PLANILHA CUSTOS HÍBRIDA SC (3).xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Jonathan Corrêa",
+   "entregue": "2026-10-27 00:31",
+   "arquivoPI": [
+    "26A11NJR01.xlsx"
+   ],
+   "diasPI": 1,
+   "horasPI": 10,
+   "noPrazo": true,
+   "handover": "2026-10-26",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26940821",
+   "diasComercial": 0
+  },
+  {
+   "task": 26763121,
+   "link": "https://project.chinalinktrading.com/app/tasks/26763121",
+   "nome": "FORSUN BRASIL LTDA - Vestuário, tecidos, joias e acessórios /",
+   "solicitante": "Alan Castellano",
+   "solicitado": "2026-10-24 02:00",
+   "simulacao": [
+    "invoice(2)(1).xlsx",
+    "FORSUN - (CLT) PLANILHA CUSTOS HÍBRIDA SC - CORRIGIDA (3).xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 21,
+   "noPrazo": null,
+   "verificar": "PI não está nos comentários da sourcing task, mas o handover foi criado em 2026-10-24",
+   "handover": "2026-10-24",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26936136"
+  },
+  {
+   "task": 26697332,
+   "link": "https://project.chinalinktrading.com/app/tasks/26697332",
+   "nome": "Construfer - Painéis Ripados / 59466293",
+   "solicitante": "Bruna Zambao",
+   "solicitado": "2026-10-21 15:00",
+   "simulacao": [
+    "20261021 Construfer - (CLT) PLANILHA CUSTOS HÍBRIDA SC.xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Jonathan Corrêa",
+   "entregue": "2026-10-23 00:28",
+   "arquivoPI": [
+    "26A11NJR01.xlsx"
+   ],
+   "diasPI": 2,
+   "horasPI": 33.5,
+   "noPrazo": true,
+   "handover": "2026-10-26",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26940821",
+   "diasComercial": 1
+  },
+  {
+   "task": 26683378,
+   "link": "https://project.chinalinktrading.com/app/tasks/26683378",
+   "nome": "TECH TREND LTDA - ITENS DE COZINHA (VIVA HOME)",
+   "solicitante": "Graziele Galdino",
+   "solicitado": "2026-10-20 19:01",
+   "simulacao": [
+    "VIVA HOME - CENARIO FECHADO 19.10.xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Rhaissa Max",
+   "entregue": "2026-10-26 09:06",
+   "arquivoPI": [
+    "单次采购合同_中英对照版(1).docx"
+   ],
+   "diasPI": 4,
+   "horasPI": 134.1,
+   "noPrazo": false,
+   "diasComercialEmAberto": 20
+  },
+  {
+   "task": 26763121,
+   "link": "https://project.chinalinktrading.com/app/tasks/26763121",
+   "nome": "FORSUN BRASIL LTDA - Vestuário, tecidos, joias e acessórios /",
+   "solicitante": "Gabrielly Bispo",
+   "solicitado": "2026-10-20 18:48",
+   "simulacao": [
+    "FORSUN - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA (3) (2).xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Alan Castellano",
+   "entregue": "2026-10-20 22:19",
+   "arquivoPI": [
+    "PI - ORANGE GLASSES.xlsx",
+    "FORSUN - (CLT) PLANILHA CUSTOS HÍBRIDA SC - CORRIGIDA.xlsx"
+   ],
+   "diasPI": 0,
+   "horasPI": 3.5,
+   "noPrazo": true,
+   "handover": "2026-10-24",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26936136",
+   "diasComercial": 3
+  },
+  {
+   "task": 25665636,
+   "link": "https://project.chinalinktrading.com/app/tasks/25665636",
+   "nome": "MARAGATA - CHAPÉUS E VESTUÁRIO / 1",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-10-20 15:39",
+   "simulacao": [
+    "MARAGATA - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (1).xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Jorgeha Almeida de Brito",
+   "entregue": "2026-10-23 08:47",
+   "arquivoPI": [
+    "POFZ-26.10.23 - PI.xlsx"
+   ],
+   "diasPI": 3,
+   "horasPI": 65.1,
+   "noPrazo": false,
+   "diasComercialEmAberto": 21
+  },
+  {
+   "task": 26815368,
+   "link": "https://project.chinalinktrading.com/app/tasks/26815368",
+   "nome": "VIBE ACADEMIA - Máquinas de academia / 1",
+   "solicitante": "Antonio Rosa",
+   "solicitado": "2026-10-20 13:53",
+   "simulacao": [
+    "VIBE ACADEMIA - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (7).xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Rhaissa Max",
+   "entregue": "2026-10-23 08:08",
+   "arquivoPI": [
+    "PI - VIBE ACADEMIA - 23.10.26.pdf"
+   ],
+   "diasPI": 3,
+   "horasPI": 66.2,
+   "noPrazo": false,
+   "handover": "2026-10-23",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26931890",
+   "diasComercial": 0
+  },
+  {
+   "task": 26613060,
+   "link": "https://project.chinalinktrading.com/app/tasks/26613060",
+   "nome": "Ferreira e Azevedo  - academia / 55433485",
+   "solicitante": "Antonio Rosa",
+   "solicitado": "2026-10-19 17:14",
+   "simulacao": [
+    "Ferreira e Azevedo LTDA - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (7).xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Rhaissa Max",
+   "entregue": "2026-10-27 16:29",
+   "arquivoPI": [
+    "FERREIRA E AZEVEDO-BRTW20261023CXN.pdf"
+   ],
+   "diasPI": 6,
+   "horasPI": 191.2,
+   "noPrazo": false,
+   "handover": "2026-11-05",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26987151",
+   "diasComercial": 6
+  },
+  {
+   "task": 26841506,
+   "link": "https://project.chinalinktrading.com/app/tasks/26841506",
+   "nome": "Filipe & Muniz - Scooter / 1",
+   "solicitante": "Matheus Benatti Pereira",
+   "solicitado": "2026-10-19 14:27",
+   "simulacao": [
+    "SIMULAÇÃO - FELIPE MUNIZ - P1 scooter.xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Victor Augusto",
+   "entregue": "2026-10-20 08:14",
+   "arquivoPI": [
+    "PI-FILIPE MUNIZ-GUANGXIAN.xls"
+   ],
+   "diasPI": 1,
+   "horasPI": 17.8,
+   "noPrazo": true,
+   "handover": "2026-10-20",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26915793",
+   "diasComercial": 0
+  },
+  {
+   "task": 26354000,
+   "link": "https://project.chinalinktrading.com/app/tasks/26354000",
+   "nome": "CENTRAL IMPLEMENTOS AGRICOLAS - Máquinas /",
+   "solicitante": "Juliana Benevenuto",
+   "solicitado": "2026-10-19 11:43",
+   "simulacao": [
+    "CENTRAL - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA (3) (1) (1).xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Victor Augusto",
+   "entregue": "2026-10-20 09:24",
+   "arquivoPI": [
+    "PI 20261020(1).pdf"
+   ],
+   "diasPI": 1,
+   "horasPI": 21.7,
+   "noPrazo": true,
+   "handover": "2026-10-21",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26917068",
+   "diasComercial": 1
+  },
+  {
+   "task": 26773032,
+   "link": "https://project.chinalinktrading.com/app/tasks/26773032",
+   "nome": "Centro Automotivo Ibipitanga Limpeza Urbana - PATINETE ELÉTRICO / 1",
+   "solicitante": "Gabriel Silva",
+   "solicitado": "2026-10-19 10:31",
+   "simulacao": [
+    "P1 SIMULAÇÃO - CENTRO AUTOMOTIVO (SCOOTER) atualizado.xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Victor Augusto",
+   "entregue": "2026-10-19 16:57",
+   "arquivoPI": [
+    "Invoice   110PCA.pdf"
+   ],
+   "diasPI": 0,
+   "horasPI": 6.4,
+   "noPrazo": true,
+   "handover": "2026-10-20",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26912918",
+   "diasComercial": 1
+  },
+  {
+   "task": 26654757,
+   "link": "https://project.chinalinktrading.com/app/tasks/26654757",
+   "nome": "LMSTORE LTDA - Papelaria e festa /",
+   "solicitante": "Lais Ferreira",
+   "solicitado": "2026-10-15 18:43",
+   "simulacao": [
+    "LMSTORE LTDA - SIMULAÇÃO ORGANIZADORES Atualizada.xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 27,
+   "noPrazo": null,
+   "verificar": "solicitação sem PI nos comentários há mais de 15 dias úteis: conferir se a PI foi enviada por outro caminho"
+  },
+  {
+   "task": 26608292,
+   "link": "https://project.chinalinktrading.com/app/tasks/26608292",
+   "nome": "SJ BUSINESS LTDA - Vestuário, tecidos, joias e acessórios /",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-10-15 16:28",
+   "simulacao": [
+    "SJ BUSINESS - ROUPAS  - (CLT) PLANILHA CUSTOS HÍBRIDA SC.xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Natália",
+   "entregue": "2026-11-17 00:54",
+   "arquivoPI": [
+    "link no comentário"
+   ],
+   "diasPI": 22,
+   "horasPI": 776.4,
+   "noPrazo": false,
+   "handover": "2026-10-27",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26950455",
+   "diasComercial": 0
+  },
+  {
+   "task": 26557684,
+   "link": "https://project.chinalinktrading.com/app/tasks/26557684",
+   "nome": "Dennis e Rudh - filamento 3D",
+   "solicitante": "Graziele Galdino",
+   "solicitado": "2026-10-09 18:50",
+   "simulacao": [
+    "DENNIS E RODH FCL - 02.10 - PROJETO FECHADO.xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Alan Castellano",
+   "entregue": "2026-10-16 10:13",
+   "arquivoPI": [
+    "link no comentário"
+   ],
+   "diasPI": 4,
+   "horasPI": 159.4,
+   "noPrazo": false,
+   "handover": "2026-10-20",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26915454",
+   "diasComercial": 2
+  },
+  {
+   "task": 25873969,
+   "link": "https://project.chinalinktrading.com/app/tasks/25873969",
+   "nome": "P1 - Malcon Metalurgica LTDA - Arruela, Parafusos, Rebite / 49266211",
+   "solicitante": "Vitória Silvestre",
+   "solicitado": "2026-10-08 09:54",
+   "simulacao": [
+    "MALCON - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA (3) (2).xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Victor Augusto",
+   "entregue": "2026-10-15 10:07",
+   "arquivoPI": [
+    "Proforma Invoice-SNY26594(1).pdf"
+   ],
+   "diasPI": 4,
+   "horasPI": 168.2,
+   "noPrazo": false,
+   "handover": "2026-10-15",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26893312",
+   "diasComercial": 0
+  },
+  {
+   "task": 26725160,
+   "link": "https://project.chinalinktrading.com/app/tasks/26725160",
+   "nome": "OKA PARTICIPACOES LTDA - SCOOTER /",
+   "solicitante": "Gabriel Silva",
+   "solicitado": "2026-10-07 16:06",
+   "simulacao": [
+    "P1 SIMULAÇÃO - OKA PARTICIPACOES LTDA.xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": "Victor Augusto",
+   "entregue": "2026-10-08 13:25",
+   "arquivoPI": [
+    "Brazil-CHINA LINK OKA PARTICIPAÇÕES PI(1).xlsx"
+   ],
+   "diasPI": 1,
+   "horasPI": 21.3,
+   "noPrazo": true,
+   "handover": "2026-10-08",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26869901",
+   "diasComercial": 0
+  },
+  {
+   "task": 26201403,
+   "link": "https://project.chinalinktrading.com/app/tasks/26201403",
+   "nome": "ECOMAX ENERGIA MATERIAL ELETRICO E ELETRONICO LTDA - Carregador Elétrico / 1",
+   "solicitante": "Graziele Galdino",
+   "solicitado": "2026-10-05 17:23",
+   "simulacao": [
+    "ECOMAX - PROJETO FECHADO 30.09.xlsx"
+   ],
+   "mes": "2026-10",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 34,
+   "noPrazo": null,
+   "verificar": "PI não está nos comentários da sourcing task, mas o handover foi criado em 2026-10-20",
+   "handover": "2026-10-20",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26912801"
+  },
+  {
+   "task": 26545575,
+   "link": "https://project.chinalinktrading.com/app/tasks/26545575",
+   "nome": "BELLAGIO PARTICIPACOES SOCIETARIAS LTDA - Energia e meio ambiente /",
+   "solicitante": "Gabriel Silva",
+   "solicitado": "2026-09-30 16:54",
+   "simulacao": [
+    "SIMULAÇÃO - BELLAGIO - P1 atualizada..xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 37,
+   "noPrazo": null,
+   "verificar": "PI não está nos comentários da sourcing task, mas o handover foi criado em 2026-10-01",
+   "handover": "2026-10-01",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26839971"
+  },
+  {
+   "task": 26797783,
+   "link": "https://project.chinalinktrading.com/app/tasks/26797783",
+   "nome": "NAVEGARE COMERCIO DE IMPORTACAO E EXPORTACAO DE EQUIPAMENTOS NAUTICOS E TRANSPORTADORA LTDA - Motor Naval / 38334064",
+   "solicitante": "Victor Gustavo",
+   "solicitado": "2026-09-30 15:12",
+   "simulacao": [
+    "Navegare - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (44) (2).xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": "2026-10-06 10:40",
+   "arquivoPI": [
+    "PI of Total -20260923.xlsx"
+   ],
+   "diasPI": 4,
+   "horasPI": 139.5,
+   "noPrazo": false,
+   "handover": "2026-10-06",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26860103",
+   "diasComercial": 0
+  },
+  {
+   "task": 26375080,
+   "link": "https://project.chinalinktrading.com/app/tasks/26375080",
+   "nome": "Neoca Comércio e Serviços - Espelho orgânico / 1",
+   "solicitante": "Nívia Souza",
+   "solicitado": "2026-09-29 17:07",
+   "simulacao": [
+    "NEOCA COMERCIO (40hq) - 29_09_26.xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": "Jonathan Corrêa",
+   "entregue": "2026-10-05 20:40",
+   "arquivoPI": [
+    "2026-1002 FINAL PI with red seal -YIER HK TRADING LIMITED.pdf"
+   ],
+   "diasPI": 4,
+   "horasPI": 147.5,
+   "noPrazo": false,
+   "diasComercialEmAberto": 34
+  },
+  {
+   "task": 26042467,
+   "link": "https://project.chinalinktrading.com/app/tasks/26042467",
+   "nome": "Motor 100 Distribuidora de Autopecas  - KIT DE ROLAMENTO / 1100",
+   "solicitante": "Bruna Zambao",
+   "solicitado": "2026-09-29 14:52",
+   "simulacao": [
+    "20260721 - ÚLTIMA VER - MOTOR 100 KIT ROLAMENTO - (CLT) PLANILHA CUSTOS HÍBRIDA SC.xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 38,
+   "noPrazo": null,
+   "verificar": "solicitação sem PI nos comentários há mais de 15 dias úteis: conferir se a PI foi enviada por outro caminho"
+  },
+  {
+   "task": 26582259,
+   "link": "https://project.chinalinktrading.com/app/tasks/26582259",
+   "nome": "COPESUL - Eixo de cambio / 3",
+   "solicitante": "Victor Gustavo",
+   "solicitado": "2026-09-28 16:10",
+   "simulacao": [
+    "Copesul - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (41) (1).xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": "Victor Augusto",
+   "entregue": "2026-09-29 14:50",
+   "arquivoPI": [
+    "PI-Qinghe Aoyu Auto Control System Co., LTD..xlsx",
+    "PI-Shaoxing Change Auto Synchronizer Ring Co., Ltd..xls"
+   ],
+   "diasPI": 1,
+   "horasPI": 22.7,
+   "noPrazo": true,
+   "handover": "2026-09-29",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26825511",
+   "diasComercial": 0
+  },
+  {
+   "task": 26595640,
+   "link": "https://project.chinalinktrading.com/app/tasks/26595640",
+   "nome": "VF SOLUCOES EMPRESARIAIS LTDA - Scooter /",
+   "solicitante": "Gabriel Silva",
+   "solicitado": "2026-09-25 17:30",
+   "simulacao": [
+    "SIMULAÇÃO - VF SOLUÇÕES - P1 SCOOTER E PEÇAS ATUALIZADA.xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": "Victor Augusto",
+   "entregue": "2026-10-14 09:34",
+   "arquivoPI": [
+    "2026.10.14YIER HK INVOICE.xlsx",
+    "财神.pdf"
+   ],
+   "diasPI": 12,
+   "horasPI": 448.1,
+   "noPrazo": false,
+   "handover": "2026-10-14",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26888973",
+   "diasComercial": 0
+  },
+  {
+   "task": 26343625,
+   "link": "https://project.chinalinktrading.com/app/tasks/26343625",
+   "nome": "Vanessa - Acessórios / 1",
+   "solicitante": "Vitória Silvestre",
+   "solicitado": "2026-09-21 14:35",
+   "simulacao": [
+    "Vanessa - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - ICMS (17) Custos atualizados.xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": "Alan Castellano",
+   "entregue": "2026-09-24 09:39",
+   "arquivoPI": [
+    "PI - HAISHU GARRON - VANESSA.pdf"
+   ],
+   "diasPI": 3,
+   "horasPI": 67.1,
+   "noPrazo": false,
+   "handover": "2026-10-08",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26867314",
+   "diasComercial": 10
+  },
+  {
+   "task": 26597000,
+   "link": "https://project.chinalinktrading.com/app/tasks/26597000",
+   "nome": "ESTERIFACIL COMERCIO LTDA - Médico e hospitalar /",
+   "solicitante": "Sally Sepulveda",
+   "solicitado": "2026-09-21 08:25",
+   "simulacao": [
+    "ESTERIFACIL COMERCIO LTDA - (CLT) PLANILHA CUSTOS HÍBRIDA SC - ATUALIZAÇÃO 2 (1) (1).xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": "Alan Castellano",
+   "entregue": "2026-10-20 14:28",
+   "arquivoPI": [
+    "PI#26FJ10-219101 cleaning brush from CHINA-BASE (1).pdf"
+   ],
+   "diasPI": 20,
+   "horasPI": 702.1,
+   "noPrazo": false,
+   "handover": "2026-10-28",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26955134",
+   "diasComercial": 6
+  },
+  {
+   "task": 25759432,
+   "link": "https://project.chinalinktrading.com/app/tasks/25759432",
+   "nome": "MAXIMUS ATACADO LTDA - Capa de Chuva / 1",
+   "solicitante": "Graziele Galdino",
+   "solicitado": "2026-09-18 10:45",
+   "simulacao": [
+    "MAXIMUS ATACADO LTDA - 17.09 - MENOS QUANTIDADES.xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": "Isabelle Barroso",
+   "entregue": "2026-09-18 12:19",
+   "arquivoPI": [
+    "PI-ZK260225 for Rian coat   71.pdf"
+   ],
+   "diasPI": 0,
+   "horasPI": 1.6,
+   "noPrazo": true,
+   "handover": "2026-09-18",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26781596",
+   "diasComercial": 0
+  },
+  {
+   "task": 26583930,
+   "link": "https://project.chinalinktrading.com/app/tasks/26583930",
+   "nome": "COMPLEXO DAS CAMISETAS LTDA - Funko /",
+   "solicitante": "Lais Ferreira",
+   "solicitado": "2026-09-04 19:13",
+   "simulacao": [
+    "COMPLEXO DAS CAMISETAS - FUNKO.xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": "Isabelle Barroso",
+   "entregue": "2026-09-14 14:43",
+   "arquivoPI": [
+    "20260912-Figures-Invoice -- Isabele Barroso-2.pdf"
+   ],
+   "diasPI": 5,
+   "horasPI": 235.5,
+   "noPrazo": false,
+   "handover": "2026-09-04",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26726119",
+   "diasComercial": 0
+  },
+  {
+   "task": 26424572,
+   "link": "https://project.chinalinktrading.com/app/tasks/26424572",
+   "nome": "RJ Instalações Comerciais LTDA - Chuveiro filtrado de 6 polegadas com filtro iônico  /",
+   "solicitante": "Lais Lira",
+   "solicitado": "2026-09-02 15:58",
+   "simulacao": [
+    "RJ INSTALAÇÕES - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - 2025-09-01T102634.495 - 2026-05-26T114512.121 (1) - 2026-07-08T100232.223 (3)-completa (1)v2.xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": "Isabelle Barroso",
+   "entregue": "2026-09-03 14:46",
+   "arquivoPI": [
+    "PI 26AQ18.pdf"
+   ],
+   "diasPI": 1,
+   "horasPI": 22.8,
+   "noPrazo": true,
+   "handover": "2026-09-28",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26819739",
+   "diasComercial": 16
+  },
+  {
+   "task": 25835697,
+   "link": "https://project.chinalinktrading.com/app/tasks/25835697",
+   "nome": "My Fit Mood LTDA - Roupa Fitness / 48751978",
+   "solicitante": "Antonio Rosa",
+   "solicitado": "2026-09-01 18:37",
+   "simulacao": [
+    "MY FIT MOOD 1 - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - 2025-09-01T102634.495 - 2026-05-26T114512.121 (1) - 2026-06-19T095721.169.xlsx"
+   ],
+   "mes": "2026-09",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": "2026-09-10 03:04",
+   "arquivoPI": [
+    "link no comentário"
+   ],
+   "diasPI": 6,
+   "horasPI": 200.4,
+   "noPrazo": false,
+   "handover": "2026-09-10",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26745442",
+   "diasComercial": 0
+  },
+  {
+   "task": 26410252,
+   "link": "https://project.chinalinktrading.com/app/tasks/26410252",
+   "nome": "B2K Selantes - Fitas / 62",
+   "solicitante": "Juliana Benevenuto",
+   "solicitado": "2026-08-27 19:10",
+   "simulacao": [
+    "Quotation from Lechao 20260826.pdf",
+    "B2K SELANTES (CLT) PLANILHA CUSTOS HÍBRIDA - atualizada 2.xlsx"
+   ],
+   "mes": "2026-08",
+   "comprador": "Alan Castellano",
+   "entregue": "2026-09-01 10:12",
+   "arquivoPI": [
+    "link no comentário"
+   ],
+   "diasPI": 3,
+   "horasPI": 111,
+   "noPrazo": false,
+   "handover": "2026-09-08",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26735661",
+   "diasComercial": 4
+  },
+  {
+   "task": 26244730,
+   "link": "https://project.chinalinktrading.com/app/tasks/26244730",
+   "nome": "CG Bravo E-commerce - Casa, cozinha, garrafas, afins e pet /",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-08-27 10:48",
+   "simulacao": [
+    "CG BRAVO  - (CLT) PLANILHA CUSTOS HÍBRIDA SC (1).xlsx"
+   ],
+   "mes": "2026-08",
+   "comprador": "Isabelle Barroso",
+   "entregue": "2026-09-18 10:44",
+   "arquivoPI": [
+    "Sample-PI.pdf"
+   ],
+   "diasPI": 15,
+   "horasPI": 527.9,
+   "noPrazo": false,
+   "handover": "2026-08-31",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26699783",
+   "diasComercial": 0
+  },
+  {
+   "task": 26359265,
+   "link": "https://project.chinalinktrading.com/app/tasks/26359265",
+   "nome": "Lojas Real - Vestuário, tecidos, joias e acessórios /",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-08-24 09:23",
+   "simulacao": [
+    "LOJAS REAL -roupas 1.xlsx"
+   ],
+   "mes": "2026-08",
+   "comprador": "Camily",
+   "entregue": "2026-08-27 22:23",
+   "arquivoPI": [
+    "link no comentário"
+   ],
+   "diasPI": 3,
+   "horasPI": 85,
+   "noPrazo": false,
+   "handover": "2026-09-11",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26752724",
+   "diasComercial": 10
+  },
+  {
+   "task": 25275494,
+   "link": "https://project.chinalinktrading.com/app/tasks/25275494",
+   "nome": "FERNANDO OLIVEIRA LUCENA - Ferramentas em geral",
+   "solicitante": "Antonio Rosa",
+   "solicitado": "2026-08-13 15:09",
+   "simulacao": [
+    "Simulação Fechada.xlsx"
+   ],
+   "mes": "2026-08",
+   "comprador": "Arthur Leite",
+   "entregue": "2026-09-02 07:38",
+   "arquivoPI": [
+    "PI- REPAIR KIT -YIER HK TRADING LIMITED - lucena.xlsx"
+   ],
+   "diasPI": 14,
+   "horasPI": 472.5,
+   "noPrazo": false,
+   "diasComercialEmAberto": 56
+  },
+  {
+   "task": 25881128,
+   "link": "https://project.chinalinktrading.com/app/tasks/25881128",
+   "nome": "Farmahof Ltda - AGULHAS E CANULAS / 1",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-08-10 15:04",
+   "simulacao": [
+    "2FARMAHOF - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - 2025-09-01T102634.495 - 2026-05-26T114512.121 (1) - 2026-06-17T105139.598 (1) (3).xlsx"
+   ],
+   "mes": "2026-08",
+   "comprador": "Alan Castellano",
+   "entregue": "2026-08-13 10:36",
+   "arquivoPI": [
+    "link no comentário"
+   ],
+   "diasPI": 3,
+   "horasPI": 67.5,
+   "noPrazo": false,
+   "handover": "2026-09-29",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26825345",
+   "diasComercial": 32
+  },
+  {
+   "task": 26055062,
+   "link": "https://project.chinalinktrading.com/app/tasks/26055062",
+   "nome": "Vimont Moveis  - Casa, cozinha, garrafas, afins e pet /",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-08-07 17:38",
+   "simulacao": [
+    "VIMONT - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - 2025-09-01T102634.495 - 2026-05-26T114512.121 (1) - 2026-07-27T153720.598 (50).xlsx"
+   ],
+   "mes": "2026-08",
+   "comprador": "Isabelle Barroso",
+   "entregue": "2026-08-20 03:05",
+   "arquivoPI": [
+    "PI AMOSTRA.pdf",
+    "PI ORDER VMONT.pdf"
+   ],
+   "diasPI": 9,
+   "horasPI": 297.4,
+   "noPrazo": false,
+   "handover": "2026-08-20",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26656026",
+   "diasComercial": 0
+  },
+  {
+   "task": 26230494,
+   "link": "https://project.chinalinktrading.com/app/tasks/26230494",
+   "nome": "Arte Sedução - Produtos de beleza / 1",
+   "solicitante": "274067",
+   "solicitado": "2026-08-06 16:56",
+   "simulacao": [
+    "巴西0803.xlsx"
+   ],
+   "mes": "2026-08",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 75,
+   "noPrazo": null,
+   "verificar": "PI não está nos comentários da sourcing task, mas o handover foi criado em 2026-08-18",
+   "handover": "2026-08-18",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26641590"
+  },
+  {
+   "task": 26490333,
+   "link": "https://project.chinalinktrading.com/app/tasks/26490333",
+   "nome": "TICHU TECH LTDA - Vasos sanitários / 1",
+   "solicitante": "Victor Gustavo",
+   "solicitado": "2026-08-05 11:39",
+   "simulacao": [
+    "TICHU TECH LTDA - (CLT) PLANILHA CUSTOS HÍBRIDA SC - AJUSTADA.xlsx"
+   ],
+   "mes": "2026-08",
+   "comprador": "Jonathan Corrêa",
+   "entregue": "2026-08-06 23:22",
+   "arquivoPI": [
+    "COMPANY -Smart Toilets--PI-2026-8-7.pdf",
+    "RM-260806-CL PI.xls"
+   ],
+   "diasPI": 1,
+   "horasPI": 35.7,
+   "noPrazo": true,
+   "handover": "2026-08-14",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26625284",
+   "diasComercial": 6
+  },
+  {
+   "task": 26445401,
+   "link": "https://project.chinalinktrading.com/app/tasks/26445401",
+   "nome": "RM COUTINHO II COMERCIO DE BICICLETAS  - Scooter /",
+   "solicitante": "Fernando Alves",
+   "solicitado": "2026-07-14 14:56",
+   "simulacao": [
+    "SIMULAÇÃO - RM COUTINHO - P1 atualizada.xlsx"
+   ],
+   "mes": "2026-07",
+   "comprador": "Victor Augusto",
+   "entregue": "2026-07-15 09:45",
+   "arquivoPI": [
+    "PI-JINING GUANGXIAN ELECTRONIC COMMERCE CO., LTD.xls"
+   ],
+   "diasPI": 1,
+   "horasPI": 18.8,
+   "noPrazo": true,
+   "handover": "2026-07-16",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26490172",
+   "diasComercial": 1
+  },
+  {
+   "task": 24864644,
+   "link": "https://project.chinalinktrading.com/app/tasks/24864644",
+   "nome": "NS DRONES - PEÇAS DE DRONES/37937747",
+   "solicitante": "274067",
+   "solicitado": "2026-07-10 10:32",
+   "simulacao": [
+    "NS DRONES - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - 2025-09-01T102634.495 - 2026-05-26T114512.121 (1) - 2026-06-29T114421.368.xlsx"
+   ],
+   "mes": "2026-07",
+   "comprador": "Paulo Cesar Gomes",
+   "entregue": "2026-07-14 12:07",
+   "arquivoPI": [
+    "YIER-Invoice 20260714.xls"
+   ],
+   "diasPI": 2,
+   "horasPI": 97.6,
+   "noPrazo": true,
+   "handover": "2026-07-14",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26481642",
+   "diasComercial": 0
+  },
+  {
+   "task": 26369897,
+   "link": "https://project.chinalinktrading.com/app/tasks/26369897",
+   "nome": "GAUCHO COMERCIO DE PARAFUSOS E FERRAMENTAS LTDA - DISCO DE CORTE / 54840511",
+   "solicitante": "Breno Santos",
+   "solicitado": "2026-07-08 22:58",
+   "simulacao": [
+    "GAUCHO COMERCIO - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - 2025-09-01T102634.495 - 2026-05-26T114512.121 (1) - 2026-07-07T095415.647.xlsx"
+   ],
+   "mes": "2026-07",
+   "comprador": "Natália",
+   "entregue": "2026-07-16 04:05",
+   "arquivoPI": [
+    "7.16 Invoice for natalia.pdf"
+   ],
+   "diasPI": 6,
+   "horasPI": 173.1,
+   "noPrazo": false,
+   "handover": "2026-07-18",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26498288",
+   "diasComercial": 1
+  },
+  {
+   "task": 26097144,
+   "link": "https://project.chinalinktrading.com/app/tasks/26097144",
+   "nome": "FISATOMU IMPORTADORA E DISTRIBUIDORA LTDA - Eletrônicos e afins /",
+   "solicitante": "Matthew Nogueira",
+   "solicitado": "2026-07-06 13:46",
+   "simulacao": [
+    "FISATOMU - (CLT) PLANILHA CUSTOS HÍBRIDA SC - NOVA - 2025-09-01T102634.495 - 2026-05-26T114512.121 (1) - 2026-06-23T115519.947 (1).xlsx"
+   ],
+   "mes": "2026-07",
+   "comprador": null,
+   "entregue": null,
+   "diasEmAberto": 98,
+   "noPrazo": null,
+   "verificar": "PI não está nos comentários da sourcing task, mas o handover foi criado em 2026-07-10",
+   "handover": "2026-07-10",
+   "handoverLink": "https://project.chinalinktrading.com/app/tasks/26472197"
+  }
+ ]
+}
