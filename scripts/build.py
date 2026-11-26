@@ -8,6 +8,8 @@ lp = root/"assets/logo-white.png"
 logo = ("data:image/png;base64," + base64.b64encode(lp.read_bytes()).decode()) if lp.exists() else (root/"assets/logo-white.b64").read_text().strip()
 payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 full = html.replace("/*__LOGO__*/", logo).replace("/*__DATA__*/", payload)
+# no Artifact o botão do quadro abre a versão do quadro no claude.ai; no GitHub abre quadro.html do próprio repositório
+full = full.replace('href="quadro.html"', 'href="https://claude.ai/artifact/8WtkfUXKVZeWmiCKxPGx79" target="_blank" rel="noopener"')
 # no GitHub o logo vem de assets/ (arquivo menor); no Artifact vai embutido
 (root/"index.html").write_text(html.replace("/*__LOGO__*/", "assets/logo-white.png").replace("/*__DATA__*/", payload), encoding="utf-8")
 frag = re.sub(r"<!DOCTYPE html>\s*<html[^>]*>\s*<head>\s*<meta charset=\"UTF-8\">\s*<meta name=\"viewport\"[^>]*>\s*", "", full)
