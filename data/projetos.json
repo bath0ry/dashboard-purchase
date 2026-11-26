@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-26 10:45",
+ "atualizado": "2026-11-26 10:58",
  "desde": "2026-07-01",
  "fonte": "Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
  "projetos": [
@@ -2409,9 +2409,9 @@
    "qtdFornecedores": "4",
    "operacao": "Direto",
    "comp": "Alan Castellano",
-   "temGanho": false,
+   "temGanho": true,
    "ganhoTexto": "",
-   "ganhoInformado": null,
+   "ganhoInformado": 1867,
    "ganhoPct": null,
    "temOff": false,
    "off": "",
@@ -2421,17 +2421,39 @@
    "temSimLink": true,
    "nInvoices": 1,
    "simTentado": "2026-11-18",
-   "nota": "só PIs em PDF nos comentários",
+   "nota": "Ganho achado só na SOURCING TASK (Purchase/Projeto Fechado); o formulário de handover diz 'sem ganho'. Conferir o valor: a PI da Holly é de US$ 2.592,80",
    "fornecedores": [],
    "seg": "Varejo / Atacado",
    "tipo": "—",
-   "ganhoFonte": "",
-   "ganho": 0,
+   "ganhoFonte": "SOURCING TASK › Purchase/Projeto Fechado (comentário)",
+   "ganho": 1867,
    "colchaoUSD": 0,
-   "ganhoBruto": 0,
+   "ganhoBruto": 1867,
    "fornCliente": false,
-   "status": "sem",
+   "status": "ganho",
    "revisar": false,
+   "ganhoComentario": {
+    "texto": "Atenção, ganho realizado junto a HOLLY de $ 1,867 dólares",
+    "link": "https://project.chinalinktrading.com/app/tasks/26343625",
+    "autor": "Alan Castellano",
+    "data": "2026-09-29"
+   },
+   "historicoGanho": [
+    {
+     "data": "2026-09-29",
+     "valor": 1867,
+     "autor": "Alan Castellano",
+     "texto": "Ganho realizado junto a HOLLY de $ 1,867 (PI HY260929S1, US$ 2.592,80)",
+     "link": "https://project.chinalinktrading.com/app/tasks/26343625"
+    },
+    {
+     "data": "2026-10-08",
+     "valor": null,
+     "autor": "formulário de handover",
+     "texto": "Tem ganho? Não (formulário); a conversa da sourcing task prevalece",
+     "link": "https://project.chinalinktrading.com/app/tasks/26867314"
+    }
+   ],
    "naoPreco": []
   },
   {
