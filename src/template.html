@@ -106,8 +106,11 @@
   .note{font-size:12px;color:var(--muted);line-height:1.7}
   .note b{color:var(--text)}
   .note code{background:var(--soft);padding:1px 5px;border-radius:4px;font-size:11px}
+  .navlink{font-family:var(--body);font-weight:600;font-size:13px;color:#001489;background:#fff;border-radius:8px;padding:8px 12px;text-decoration:none;white-space:nowrap}
+  .navlink:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   footer{text-align:center;color:var(--muted);font-size:11px;padding:20px}
 </style>
+
 </head>
 <body>
 <header class="gutter">
@@ -118,6 +121,8 @@
       <div><small>Escritório China · Purchase</small><h1>KPIs de Purchase</h1><div class="upd" id="upd"></div></div>
     </div>
     <div class="filters">
+      <a class="navlink" href="quadro.html">Projetos em andamento →</a>
+     
       <select id="fComprador" aria-label="Comprador"></select>
       <select id="fComercial" aria-label="Comercial"></select>
       <select id="fSegmento" aria-label="Segmento"></select>
@@ -153,13 +158,14 @@
     <div class="card"><h3>Motivos e projetos</h3><div id="colchaoLista"></div></div>
   </div>
 
-  <h2 class="sec">Projetos fechados <span>formulário de handover + conversas das tasks · clique para ver detalhes</span></h2>
+  <h2 class="sec">3 · Projetos fechados <span>formulário de handover + conversas das tasks · clique para ver detalhes</span></h2>
   <div class="card">
     <div class="tabs" id="tabs">
       <button class="tab active" data-f="all">Todos</button>
       <button class="tab" data-f="ganho">Com ganho</button>
       <button class="tab" data-f="sem">Sem ganho</button>
       <button class="tab" data-f="colchao">Com ganho abatido</button>
+      <button class="tab" data-f="naopreco">＋ Outras negociações</button>
       <button class="tab" data-f="ganho_sem_valor">⚠ Ganho sem valor</button>
       <button class="tab" data-f="semfob">Sem valor da mercadoria</button>
     </div>
@@ -170,6 +176,24 @@
           <th class="num">Mercadoria (USD)</th><th>Incoterm</th><th class="num">Saving USD</th><th class="num">Saving %</th><th class="num">Abatido</th><th>Status</th>
         </tr></thead>
         <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <h2 class="sec">4 · Prazo da PI <span>da simulação final na sourcing task até a PI entregue · prazo = data de entrega da task (até 2 dias úteis) · depois, o tempo do comercial até abrir o Sales Support</span></h2>
+  <div class="grid kpis" id="slaKpis"></div>
+  <div class="card" style="margin-top:14px">
+    <h3>Solicitações de PI <small id="slaEscopo"></small></h3>
+    <div class="tabs" id="slaTabs">
+      <button class="tab active" data-f="all">Todas</button>
+      <button class="tab" data-f="fora">Fora do prazo</button>
+      <button class="tab" data-f="aberto">PI em aberto</button>
+      <button class="tab" data-f="comercial">Aguardando comercial</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Sourcing task</th><th>Pedido por</th><th>Solicitado</th><th>Prazo</th><th>Comprador</th><th>PI entregue</th><th class="num">Dias úteis (PI)</th><th>Sales Support criado</th><th class="num">Dias úteis (comercial)</th><th>Obs.</th></tr></thead>
+        <tbody id="slaBody"></tbody>
       </table>
     </div>
   </div>
@@ -186,6 +210,9 @@
     <b>Comprador</b>: a partir de 17/11/2026 todos os projetos fechados ficam com Paulo Cesar Gomes. Antes disso, vale o "Sourcing responsável" do formulário (com exceções corrigidas, como o Piemonte). O nome do formulário continua nos detalhes do projeto.<br>
     <b>Ganho sem valor no formulário</b>: buscamos o valor nos detalhes da task, nos comentários e nos arquivos. Quando ninguém escreveu o valor, comparamos a simulação/PI CLT enviada ao cliente com a PI do fornecedor; a conta aparece nos detalhes do projeto ("Conta nos arquivos").<br>
     <b>Taxa de ganho</b> = projetos com ganho negociado ÷ projetos fechados. <b>Ganho médio por projeto</b> = ganho negociado ÷ projetos com ganho negociado (só os que de fato tiveram ganho).<br>
+    <b>Prazo da PI</b>: a solicitação é o comentário com a simulação final fechada (planilha xlsx) na SOURCING TASK › coluna Purchase/Projeto Fechado. A entrega é o primeiro comentário seguinte de outra pessoa com a PI do fornecedor (arquivo ou link). O <b>prazo</b> é a data de entrega da sourcing task (ajustada pelo comprador para no máximo 2 dias úteis); quando a task não tem data, vale solicitação + 2 dias úteis. Os dias contados são úteis (sem sábado, domingo e feriados nacionais), e o dia da solicitação não entra. Se o comercial manda uma simulação nova antes da PI, o prazo recomeça.<br>
+    <b>Tempo do comercial</b>: começa quando a PI é enviada (se a PI foi reenviada, conta da última) e termina quando o comercial cria a task do Sales Support do cliente na lista <b>Handover - Delivery</b> (a verdadeira, com link da PI/invoice, link da simulação e dados do projeto). A task do <b>Handover - Contrato</b> é criada automaticamente pelo formulário do contrato (só nome, CNPJ e valor) e não conta. Se o cliente já tinha Handover - Delivery aberto depois da sourcing task, o projeto já está com o comercial e não entra em "aguardando comercial". A aba de mês e o filtro de comprador valem pelo mês da solicitação.<br>
+    <b>＋ Outras negociações</b> = o que o comprador conseguiu para o cliente além do preço (termo de pagamento, peças de reposição ou amostras grátis, frete/incoterm, prazo de produção, embalagem/personalização, garantia etc.). Aparece em verde abaixo do nome do cliente e nos detalhes do projeto; não entra no valor do saving.<br>
     <b>⚠ Ganho sem valor</b> = formulário marcado "Tem ganho? Sim" sem valor em USD. Corrigir o formulário ou comentar o valor.
   </div>
 </main>
@@ -305,12 +332,12 @@ function render(){
   hbars($("porComprador"),Object.entries(bc).map(([k,v])=>[k,v.b,v.s<v.b?`líq. ${usd(v.s)}`:""]));
   hbars($("porComercial"),Object.entries(bm).map(([k,v])=>[k,v.b,v.s<v.b?`líq. ${usd(v.s)}`:""]));
 
-  const rows=d.filter(p=>tabFilter==="all"||(tabFilter==="semfob"?!p.valorMercadoriaUSD:tabFilter==="colchao"?p.colchaoUSD>0:tabFilter==="sem"?["sem","consumido"].includes(p.status):p.status===tabFilter));
+  const rows=d.filter(p=>tabFilter==="all"||(tabFilter==="semfob"?!p.valorMercadoriaUSD:tabFilter==="colchao"?p.colchaoUSD>0:tabFilter==="naopreco"?(p.naoPreco||[]).length>0:tabFilter==="sem"?["sem","consumido"].includes(p.status):p.status===tabFilter));
   $("tbody").innerHTML=rows.map(p=>{
     const open=abertos.has(p.id), gp=p.valorMercadoriaUSD&&p.ganho?p.ganho/p.valorMercadoriaUSD*100:null;
-    const det=[p.sourcing&&`Sourcing (formulário): ${esc(p.sourcing)}`,p.qtdFornecedores&&`Fornecedores: ${esc(p.qtdFornecedores)}`,p.certificacao&&`Certificação: ${esc(p.certificacao)}`,p.chinaMember&&`China Member: ${esc(p.chinaMember)}`,p.beneficio&&`Benefício: ${esc(p.beneficio)}`,p.ganhoTexto&&`Ganho no formulário: "${esc(p.ganhoTexto)}"`,p.ganhoComentario&&!p.historicoGanho&&`Ganho na conversa (${esc(p.ganhoComentario.autor)}, ${esc(p.ganhoComentario.data)}): "${esc(p.ganhoComentario.texto)}"`,p.historicoGanho&&`<b>Histórico do ganho</b>: `+p.historicoGanho.map(h=>`${dataLbl(h.data)} ${usd(h.valor)} (${esc(h.autor)}: "${esc(h.texto)}" <a class="tw" href="${esc(h.link)}" target="_blank" rel="noopener">ver</a>)`).join(" → "),p.ganhoCalculo&&`<b>Conta nos arquivos</b>: ${esc(p.ganhoCalculo)}`,p.colchao&&`<b>Abatido</b>: −${usd(p.colchaoUSD)} · ${esc(p.colchao.motivo)}`,p.temOff&&`Off: ${esc(p.off||"Sim")}`,p.purchaseTask&&`<a class="tw" href="${esc(p.purchaseTask)}" target="_blank" rel="noopener">task Purchase - Ganho</a>`].filter(Boolean);
+    const det=[p.sourcing&&`Sourcing (formulário): ${esc(p.sourcing)}`,p.qtdFornecedores&&`Fornecedores: ${esc(p.qtdFornecedores)}`,p.certificacao&&`Certificação: ${esc(p.certificacao)}`,p.chinaMember&&`China Member: ${esc(p.chinaMember)}`,p.beneficio&&`Benefício: ${esc(p.beneficio)}`,p.ganhoTexto&&`Ganho no formulário: "${esc(p.ganhoTexto)}"`,p.ganhoComentario&&!p.historicoGanho&&`Ganho na conversa (${esc(p.ganhoComentario.autor)}, ${esc(p.ganhoComentario.data)}): "${esc(p.ganhoComentario.texto)}"`,p.historicoGanho&&`<b>Histórico do ganho</b>: `+p.historicoGanho.map(h=>`${dataLbl(h.data)} ${usd(h.valor)} (${esc(h.autor)}: "${esc(h.texto)}" <a class="tw" href="${esc(h.link)}" target="_blank" rel="noopener">ver</a>)`).join(" → "),p.ganhoCalculo&&`<b>Conta nos arquivos</b>: ${esc(p.ganhoCalculo)}`,p.colchao&&`<b>Abatido</b>: −${usd(p.colchaoUSD)} · ${esc(p.colchao.motivo)}`,(p.naoPreco||[]).length&&`<b>Outras negociações</b>: ${p.naoPreco.map(x=>`<b>${esc(x.tipo)}</b>${x.descricao?" — "+esc(x.descricao):""}${x.autor||x.data?` (${esc(x.autor||"")}${x.data?" "+dataLbl(x.data):""})`:""}${x.link?` <a class="tw" href="${esc(x.link)}" target="_blank" rel="noopener">ver</a>`:""}`).join("; ")}`,p.temOff&&`Off: ${esc(p.off||"Sim")}`,p.purchaseTask&&`<a class="tw" href="${esc(p.purchaseTask)}" target="_blank" rel="noopener">task Purchase - Ganho</a>`].filter(Boolean);
     const main=`<tr class="proj" data-id="${p.id}">
-      <td><span class="caret">${open?"▾":"▸"}</span><b>${esc(p.cliente)}</b> <a class="tw" href="${esc(p.link)}" target="_blank" rel="noopener">abrir</a>${p.nota?`<br><span class="flag" style="margin-left:14px">⚠ ${esc(p.nota)}</span>`:""}</td>
+      <td><span class="caret">${open?"▾":"▸"}</span><b>${esc(p.cliente)}</b> <a class="tw" href="${esc(p.link)}" target="_blank" rel="noopener">abrir</a>${(p.naoPreco||[]).length?`<br><span class="chip ok" style="margin-left:14px" title="${esc(p.naoPreco.map(x=>x.tipo).join(", "))}">＋ ${p.naoPreco.map(x=>esc(x.tipo)).join(" · ")}</span>`:""}${p.nota?`<br><span class="flag" style="margin-left:14px">⚠ ${esc(p.nota)}</span>`:""}</td>
       <td>${esc(p.comercial)}</td><td>${esc(p.comp)}</td><td>${dataLbl(p.data)}</td><td>${esc(p.pedido)}</td><td>${esc(p.operacao)}</td>
       <td class="num">${usd(p.valorMercadoriaUSD)}</td><td>${esc(p.incoterm||"—")}</td><td class="num ${p.ganho>0?"up":""}">${p.status==="ganho_sem_valor"?"?":usd(p.ganho)}${p.colchaoUSD?`<br><small style="color:var(--muted)">de ${usd(p.ganhoBruto)}</small>`:""}</td>
       <td class="num">${gp==null?"—":pct(gp)}</td><td class="num ${p.colchaoUSD?"down":""}">${p.colchaoUSD?"−"+usd(p.colchaoUSD):"—"}</td>
@@ -319,15 +346,48 @@ function render(){
     return main+sub;
   }).join("") || '<tr><td colspan="12" style="text-align:center;color:var(--muted)">Nenhum projeto neste filtro</td></tr>';
 }
-document.querySelectorAll("select").forEach(s=>s.addEventListener("change",render));
+document.querySelectorAll("select").forEach(s=>s.addEventListener("change",()=>render()));
 $("tabs").addEventListener("click",e=>{const b=e.target.closest(".tab"); if(!b)return;
-  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active")); b.classList.add("active"); tabFilter=b.dataset.f; render();});
+  document.querySelectorAll("#tabs .tab").forEach(x=>x.classList.remove("active")); b.classList.add("active"); tabFilter=b.dataset.f; render();});
 $("mtabs").addEventListener("click",e=>{const b=e.target.closest(".mtab"); if(!b)return; periodo=b.dataset.m; prep(); render();});
 $("tbody").addEventListener("click",e=>{if(e.target.closest("a"))return; const r=e.target.closest("tr.proj"); if(!r)return; const id=+r.dataset.id; abertos.has(id)?abertos.delete(id):abertos.add(id); render();});
+// ---- 3 · Prazo da PI ----
+let slaFiltro="all";
+const dtBR=s=>s?s.slice(8,10)+"/"+s.slice(5,7)+" "+s.slice(11,16):"—";
+function renderSLA(){
+  const S=DATA.slaPI; if(!S){$("slaKpis").innerHTML='<div class="card note">Prazo da PI ainda não calculado nesta atualização.</div>';return;}
+  const comp=sel("fComprador");
+  const L=S.ciclos.filter(c=>(periodo==="all"||c.mes===periodo)&&(comp==="all"||c.comprador===comp));
+  const ent=L.filter(c=>c.entregue), ab=L.filter(c=>!c.entregue&&!c.verificar), noP=ent.filter(c=>c.noPrazo);
+  const med=ent.length?ent.reduce((a,c)=>a+c.diasPI,0)/ent.length:null;
+  const com=L.filter(c=>c.diasComercial!=null), aguard=L.filter(c=>c.diasComercialEmAberto!=null);
+  const medC=com.length?com.reduce((a,c)=>a+c.diasComercial,0)/com.length:null;
+  const atras=ab.filter(c=>c.atrasada);
+  const d1=v=>v==null?"—":v.toFixed(1).replace(".",",");
+  const K=[
+    {l:"Prazo médio da PI",v:med==null?"—":d1(med)+" d",c:`média de dias úteis da solicitação até a PI · ${ent.length} PIs entregues`,m:med==null?'<span class="chip mid">Sem PIs no filtro</span>':`<span class="chip ${med<=S.slaDiasUteis?"ok":"bad"}">${med<=S.slaDiasUteis?"No prazo":"Acima do prazo"}</span> prazo: até ${S.slaDiasUteis} dias úteis`},
+    {l:"PIs no prazo",v:ent.length?pct(noP.length/ent.length*100,0):"—",c:`${noP.length} de ${ent.length} entregues até a data de entrega da task`,m:`${ent.length-noP.length} fora do prazo`},
+    {l:"PIs em aberto",v:String(ab.length),c:ab.length?`a mais antiga com ${Math.max(...ab.map(c=>c.diasEmAberto))} dias úteis`:"nenhuma solicitação esperando PI",m:atras.length?`<span class="chip bad">${atras.length} já passaram do prazo</span>`:'<span class="chip ok">Nenhuma atrasada</span>'},
+    {l:"Tempo do comercial",v:medC==null?"—":d1(medC)+" d",c:`média de dias úteis da PI enviada até o Sales Support · ${com.length} projetos`,m:aguard.length?`<span class="chip wrn">${aguard.length} PIs esperando o comercial</span> (a mais antiga: ${Math.max(...aguard.map(c=>c.diasComercialEmAberto))} dias úteis)`:'<span class="chip mid">Nenhuma PI esperando</span>'},
+  ];
+  $("slaKpis").innerHTML=K.map(k=>`<div class="card kpi"><div class="label">${k.l}</div><div class="value">${k.v}</div><div class="calc">${k.c}</div><div class="meta">${k.m}</div></div>`).join("");
+  $("slaEscopo").textContent=`· ${L.length} solicitações no filtro · atualizado em ${S.atualizado}`;
+  const rows=L.filter(c=>slaFiltro==="all"||(slaFiltro==="fora"?(c.entregue&&!c.noPrazo)||(!c.entregue&&c.atrasada):slaFiltro==="aberto"?!c.entregue:c.diasComercialEmAberto!=null));
+  $("slaBody").innerHTML=rows.map(c=>{
+    const dPI=c.entregue?`<span class="chip ${c.noPrazo?"ok":"bad"}">${c.diasPI}</span>`:`<span class="chip ${c.atrasada?"bad":"wrn"}">${c.diasEmAberto} em aberto</span>`;
+    const dC=c.diasComercial!=null?String(c.diasComercial):c.diasComercialEmAberto!=null?`<span class="chip wrn">${c.diasComercialEmAberto} esperando</span>`:c.jaPassado?'<span class="chip mid">já com o comercial</span>':c.novaSimulacao?'<span class="chip mid">nova simulação</span>':"—";
+    const obs=[c.verificar&&`⚠ ${esc(c.verificar)}`,c.piAtualizada&&`PI reenviada ${dtBR(c.piAtualizada)}${c.diasComercialEmAberto!=null?" (o tempo do comercial conta daí)":""}`,c.jaPassado&&`Sales Support do cliente já existia (${esc(c.salesSupportLista||"")}, ${dataLbl(c.salesSupport)})`,c.novaSimulacao&&"o comercial mandou nova simulação depois desta PI"].filter(Boolean).join(" · ");
+    return `<tr><td><b>${esc(c.nome)}</b> <a class="tw" href="${esc(c.link)}" target="_blank" rel="noopener">abrir</a><br><small style="color:var(--muted)">${esc((c.simulacao||[]).join(", "))}</small></td><td>${esc(c.solicitante)}</td><td class="num">${dtBR(c.solicitado)}</td><td class="num">${dataLbl(c.prazo)}<br><small style="color:var(--muted)">${esc(c.prazoFonte||"")}</small></td><td>${esc(c.comprador||"—")}</td><td class="num">${dtBR(c.entregue)}${c.arquivoPI?`<br><small style="color:var(--muted)">${esc(c.arquivoPI[0])}</small>`:""}</td><td class="num">${dPI}</td><td class="num">${c.salesSupport?`<a class="tw" href="${esc(c.salesSupportLink)}" target="_blank" rel="noopener">${dataLbl(c.salesSupport)}</a><br><small style="color:var(--muted)">${esc(c.salesSupportLista||"")}</small>`:"—"}</td><td class="num">${dC}</td><td style="font-size:12px;color:var(--muted)">${obs}</td></tr>`;
+  }).join("")||'<tr><td colspan="10" style="text-align:center;color:var(--muted)">Nenhuma solicitação neste filtro</td></tr>';
+}
+$("slaTabs").addEventListener("click",e=>{const b=e.target.closest(".tab"); if(!b)return; document.querySelectorAll("#slaTabs .tab").forEach(x=>x.classList.remove("active")); b.classList.add("active"); slaFiltro=b.dataset.f; renderSLA();});
+const _render=render; render=function(){_render(); renderSLA();};
 prep(); render();
 if(location.protocol.startsWith("http") && !location.hostname.endsWith("claude.ai")){
   fetch("data/projetos.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.atualizado&&j.atualizado>DATA.atualizado){DATA=j;prep();render();}}).catch(()=>{});
 }
 </script>
+
+
 </body>
 </html>
