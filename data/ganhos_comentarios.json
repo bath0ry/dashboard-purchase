@@ -231,6 +231,31 @@
   },
   "nota": "Budget de US$ 300 da gift box consumido"
  },
+ "26798671": {
+  "ganhoUSD": 13110,
+  "fonte": "formulário + handover do projeto de importação (Importação - P1 - PHISIOFIT)",
+  "autor": "Sabrina / Erika (handover importação)",
+  "data": "2026-09-28",
+  "texto": "Ganho de 13.110USD",
+  "link": "https://project.chinalinktrading.com/app/tasks/26595315",
+  "historico": [
+   {
+    "data": "2026-09-28",
+    "valor": 13110,
+    "autor": "handover do projeto de importação",
+    "texto": "S1 é fob Tianjin, corrigir simu e PO. Ganho de 13.110USD",
+    "link": "https://project.chinalinktrading.com/app/tasks/26595315"
+   },
+   {
+    "data": "2026-11-19",
+    "valor": null,
+    "autor": "Importação - P1 - PHISIOFIT (câmbio)",
+    "texto": "Antonio Rosa liberou um desconto ao cliente, retirando parte do nosso ganho (valor não informado)",
+    "link": "https://project.chinalinktrading.com/app/tasks/26595249"
+   }
+  ],
+  "nota": "19/11: parte do ganho foi cedida como desconto ao cliente (Antonio Rosa), valor não informado na task — confirmar quanto foi abatido"
+ },
  "26867314": {
   "temGanho": true,
   "ganhoUSD": 1867,

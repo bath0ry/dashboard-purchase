@@ -1,0 +1,58 @@
+{
+ "26761247": {
+  "id": 26761247,
+  "link": "https://project.chinalinktrading.com/app/tasks/26761247",
+  "origem": "SOURCING TASK (sem handover)",
+  "task": "TOTI MOTOS SHOPING BIKE COMERCIO E SERVICOS LTDA (Gabriel Silva)",
+  "cliente": "TOTI MOTOS SHOPING BIKE COMERCIO E SERVICOS LTDA",
+  "comercial": "Gabriel Silva",
+  "data": "2026-11-26",
+  "mes": "2026-11",
+  "concluida": false,
+  "pedido": "1",
+  "qtdFornecedores": "1",
+  "operacao": "Direto",
+  "comp": "Paulo Cesar Gomes",
+  "temGanho": true,
+  "ganhoTexto": "1764USD",
+  "ganhoInformado": 1764,
+  "ganhoPct": null,
+  "temOff": false,
+  "off": "",
+  "certificacao": "",
+  "chinaMember": "",
+  "beneficio": "",
+  "temSimLink": true,
+  "nInvoices": 1,
+  "valorMercadoriaUSD": 29468.4,
+  "incoterm": "EXW",
+  "simFile": 7328830,
+  "fornecedores": [],
+  "nota": "Projeto fechado na SOURCING TASK (coluna Purchase/Projeto Fechado); Handover - Delivery ainda não aberto. Simulação P1 'ATUALIZADA 2' de 25/11 lida.",
+  "seg": "Autopeças / Motos",
+  "tipo": "—",
+  "ganhoFonte": "SOURCING TASK › Purchase/Projeto Fechado (comentário)",
+  "ganhoComentario": {
+   "texto": "Segue PI em anexo. Ganho: 1764USD",
+   "link": "https://project.chinalinktrading.com/app/tasks/26761247",
+   "autor": "Paulo Cesar",
+   "data": "2026-11-26"
+  },
+  "historicoGanho": [
+   {
+    "data": "2026-11-26",
+    "valor": 1764,
+    "autor": "Paulo Cesar",
+    "texto": "Segue PI em anexo. Ganho: 1764USD",
+    "link": "https://project.chinalinktrading.com/app/tasks/26761247"
+   }
+  ],
+  "ganho": 1764,
+  "colchaoUSD": 0,
+  "ganhoBruto": 1764,
+  "fornCliente": false,
+  "status": "ganho",
+  "revisar": false,
+  "naoPreco": []
+ }
+}

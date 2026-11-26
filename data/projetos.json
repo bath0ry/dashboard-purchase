@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-26 10:58",
+ "atualizado": "2026-11-26 11:30",
  "desde": "2026-07-01",
  "fonte": "Teamwork · Sales Support › Handover - Delivery + Purchase - Ganho + comentários das tasks",
  "projetos": [
@@ -41,6 +41,62 @@
    "status": "sem",
    "revisar": false,
    "simTentado": "2026-11-26",
+   "naoPreco": []
+  },
+  {
+   "id": 26761247,
+   "link": "https://project.chinalinktrading.com/app/tasks/26761247",
+   "origem": "SOURCING TASK (sem handover)",
+   "task": "TOTI MOTOS SHOPING BIKE COMERCIO E SERVICOS LTDA (Gabriel Silva)",
+   "cliente": "TOTI MOTOS SHOPING BIKE COMERCIO E SERVICOS LTDA",
+   "comercial": "Gabriel Silva",
+   "data": "2026-11-26",
+   "mes": "2026-11",
+   "concluida": false,
+   "pedido": "1",
+   "qtdFornecedores": "1",
+   "operacao": "Direto",
+   "comp": "Paulo Cesar Gomes",
+   "temGanho": true,
+   "ganhoTexto": "1764USD",
+   "ganhoInformado": 1764,
+   "ganhoPct": null,
+   "temOff": false,
+   "off": "",
+   "certificacao": "",
+   "chinaMember": "",
+   "beneficio": "",
+   "temSimLink": true,
+   "nInvoices": 1,
+   "valorMercadoriaUSD": 29468.4,
+   "incoterm": "EXW",
+   "simFile": 7328830,
+   "fornecedores": [],
+   "nota": "Projeto fechado na SOURCING TASK (coluna Purchase/Projeto Fechado); Handover - Delivery ainda não aberto. Simulação P1 'ATUALIZADA 2' de 25/11 lida.",
+   "seg": "Autopeças / Motos",
+   "tipo": "—",
+   "ganhoFonte": "SOURCING TASK › Purchase/Projeto Fechado (comentário)",
+   "ganhoComentario": {
+    "texto": "Segue PI em anexo. Ganho: 1764USD",
+    "link": "https://project.chinalinktrading.com/app/tasks/26761247",
+    "autor": "Paulo Cesar",
+    "data": "2026-11-26"
+   },
+   "historicoGanho": [
+    {
+     "data": "2026-11-26",
+     "valor": 1764,
+     "autor": "Paulo Cesar",
+     "texto": "Segue PI em anexo. Ganho: 1764USD",
+     "link": "https://project.chinalinktrading.com/app/tasks/26761247"
+    }
+   ],
+   "ganho": 1764,
+   "colchaoUSD": 0,
+   "ganhoBruto": 1764,
+   "fornCliente": false,
+   "status": "ganho",
+   "revisar": false,
    "naoPreco": []
   },
   {
@@ -2876,18 +2932,40 @@
    "nInvoices": 1,
    "purchaseTask": "https://project.chinalinktrading.com/app/tasks/26798670",
    "simTentado": "2026-11-18",
-   "nota": "só PIs em PDF nos comentários",
+   "nota": "19/11: parte do ganho foi cedida como desconto ao cliente (Antonio Rosa), valor não informado na task — confirmar quanto foi abatido",
    "fornecedores": [],
    "seg": "Fitness / Academia",
    "tipo": "—",
-   "ganhoFonte": "formulário",
+   "ganhoFonte": "formulário + handover do projeto de importação (Importação - P1 - PHISIOFIT)",
    "ganho": 13110,
    "colchaoUSD": 0,
    "ganhoBruto": 13110,
    "fornCliente": false,
    "status": "ganho",
    "revisar": false,
-   "naoPreco": []
+   "naoPreco": [],
+   "ganhoComentario": {
+    "texto": "Ganho de 13.110USD",
+    "link": "https://project.chinalinktrading.com/app/tasks/26595315",
+    "autor": "Sabrina / Erika (handover importação)",
+    "data": "2026-09-28"
+   },
+   "historicoGanho": [
+    {
+     "data": "2026-09-28",
+     "valor": 13110,
+     "autor": "handover do projeto de importação",
+     "texto": "S1 é fob Tianjin, corrigir simu e PO. Ganho de 13.110USD",
+     "link": "https://project.chinalinktrading.com/app/tasks/26595315"
+    },
+    {
+     "data": "2026-11-19",
+     "valor": null,
+     "autor": "Importação - P1 - PHISIOFIT (câmbio)",
+     "texto": "Antonio Rosa liberou um desconto ao cliente, retirando parte do nosso ganho (valor não informado)",
+     "link": "https://project.chinalinktrading.com/app/tasks/26595249"
+    }
+   ]
   },
   {
    "id": 26792456,
