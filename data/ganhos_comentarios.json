@@ -198,6 +198,17 @@
   "link": "https://project.chinalinktrading.com/app/tasks/26741932",
   "nota": "Ganho de 1% confirmado em US$ 135 na conversa"
  },
+ "26764872": {
+  "naoPreco": [
+   {
+    "tipo": "Embalagem/personalização",
+    "descricao": "Fornecedora fará a personalização (adesivos nos equipamentos) sem custo, pelo histórico de parceria; só as anilhas de ferro ficam sem personalização",
+    "autor": "Erika Matos",
+    "data": "2026-11-27",
+    "link": "https://project.chinalinktrading.com/app/tasks/26267604"
+   }
+  ]
+ },
  "26765213": {
   "ganhoInicialUSD": 300,
   "ganhoUSD": 0,
@@ -284,11 +295,11 @@
  },
  "26912918": {
   "ganhoInicialUSD": 3410,
-  "ganhoUSD": 3410,
-  "autor": "Sabrina Rocha",
-  "data": "2026-11-17",
-  "texto": "Segue PI atualizada sem off. Ganho de 3410,00USD",
-  "link": "https://project.chinalinktrading.com/app/tasks/26742137",
+  "ganhoUSD": 0,
+  "autor": "Vincenzo Calcopietro",
+  "data": "2026-11-27",
+  "texto": "Para alterar o motor será necessário pagar a diferença de um motor para o outro, totalizando USD 3410, que é exatamente o valor do ganho que esse projeto teria. [...] Com isso, o custo final será de USD 3550, deixando um prejuízo de USD 140.",
+  "link": "https://project.chinalinktrading.com/app/tasks/26742116",
   "historico": [
    {
     "data": "2026-10-20",
@@ -317,9 +328,25 @@
     "autor": "Sabrina Rocha",
     "texto": "Segue PI atualizada sem off. Ganho de 3410,00USD",
     "link": "https://project.chinalinktrading.com/app/tasks/26742137"
+   },
+   {
+    "data": "2026-11-27",
+    "valor": 0,
+    "autor": "Vincenzo Calcopietro",
+    "texto": "Motor da PI era 500 W etiquetado como 1000 W; a troca para 1000 W custa a diferença de US$ 3.410 (todo o ganho) + comissão de US$ 360 do sourcing externo; negociada a mão de obra, custo final US$ 3.550 (prejuízo de US$ 140). Comercial confirmou seguir com a troca",
+    "link": "https://project.chinalinktrading.com/app/tasks/26742116"
    }
   ],
-  "nota": "Ganho reconfirmado em US$ 3.410 em 17/11 (PI sem off); a comissão de 3% do agente (US$ 360) citada em 11/11 não aparece mais abatida — conferir"
+  "nota": "27/11: ganho de US$ 3.410 todo usado para trocar os motores (500 W etiquetados como 1000 W) e pagar a comissão de US$ 360; custo final US$ 3.550, prejuízo de US$ 140 além do ganho",
+  "fonte": "handover/projeto de importação (Importação - P1 - Centro Automotivo Ibipitanga)",
+  "colchao": {
+   "valor": 3410,
+   "motivo": "Erro de especificação: PI do fornecedor com motor de 500 W etiquetado como 1000 W (cliente comprou 1000 W). A troca dos motores custa US$ 3.410 + US$ 360 de comissão do sourcing externo − desconto negociado na mão de obra = US$ 3.550; o ganho todo foi usado e ainda ficam US$ 140 de prejuízo",
+   "autor": "Vincenzo Calcopietro",
+   "data": "2026-11-27",
+   "texto": "Para alterar o motor será necessário pagar a diferença de um motor para o outro, totalizando USD 3410, que é exatamente o valor do ganho que esse projeto teria. [...] Com isso, o custo final será de USD 3550, deixando um prejuízo de USD 140.",
+   "link": "https://project.chinalinktrading.com/app/tasks/26742116"
+  }
  },
  "26931890": {
   "ganhoInicialUSD": 300,
