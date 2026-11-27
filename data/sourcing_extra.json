@@ -54,5 +54,69 @@
   "status": "ganho",
   "revisar": false,
   "naoPreco": []
+ },
+ "26890038": {
+  "id": 26890038,
+  "link": "https://project.chinalinktrading.com/app/tasks/26890038",
+  "origem": "SOURCING TASK (sem handover)",
+  "task": "NOVALUZ SERVICOS DE ITABIRA LTDA (Antonio Rosa)",
+  "cliente": "NOVALUZ SERVICOS DE ITABIRA LTDA",
+  "comercial": "Antonio Rosa",
+  "data": "2026-11-27",
+  "mes": "2026-11",
+  "concluida": false,
+  "pedido": "1",
+  "qtdFornecedores": "1",
+  "operacao": "Direto",
+  "comp": "Paulo Cesar Gomes",
+  "temGanho": true,
+  "ganhoTexto": "50USD",
+  "ganhoInformado": 50,
+  "ganhoPct": null,
+  "temOff": false,
+  "off": "",
+  "certificacao": "",
+  "chinaMember": "",
+  "beneficio": "",
+  "temSimLink": true,
+  "nInvoices": 1,
+  "valorMercadoriaUSD": 6550,
+  "incoterm": "EXW",
+  "simFile": 7328637,
+  "fornecedores": [],
+  "nota": "Projeto fechado na SOURCING TASK (coluna Purchase/Projeto Fechado); Handover - Delivery ainda não aberto. Simulação de 25/11 (cliente acrescentou 1 unidade) lida. Peças de reposição grátis (lâmina e filtro) ainda em negociação, não confirmadas.",
+  "seg": "Construção / Ferragens",
+  "tipo": "—",
+  "ganhoFonte": "SOURCING TASK › Purchase/Projeto Fechado (comentário)",
+  "ganhoComentario": {
+   "texto": "Segue PI. Ganho: 50USD. Negociado termo de pagamento para 30/70.",
+   "link": "https://project.chinalinktrading.com/app/tasks/26890038",
+   "autor": "Paulo Cesar",
+   "data": "2026-11-27"
+  },
+  "historicoGanho": [
+   {
+    "data": "2026-11-27",
+    "valor": 50,
+    "autor": "Paulo Cesar",
+    "texto": "Segue PI. Ganho: 50USD. Negociado termo de pagamento para 30/70.",
+    "link": "https://project.chinalinktrading.com/app/tasks/26890038"
+   }
+  ],
+  "ganho": 50,
+  "colchaoUSD": 0,
+  "ganhoBruto": 50,
+  "fornCliente": false,
+  "status": "ganho",
+  "revisar": false,
+  "naoPreco": [
+   {
+    "tipo": "Termo de pagamento",
+    "descricao": "Fornecedor aceitou pagamento 30/70 (30% de depósito e 70% de saldo)",
+    "autor": "Paulo Cesar",
+    "data": "2026-11-27",
+    "link": "https://project.chinalinktrading.com/app/tasks/26890038"
+   }
+  ]
  }
 }
